@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>salex.com</title>
+        <link rel="stylesheet" href="ecommerce.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#searchproduct").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myDiv *").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+        
+        
+        <script> 
+            $(document).ready(function(){
+              $("#searchproduct").click(function(){
+                $(".demosearch").slideToggle();
+              });
+            });
+            </script>
+
+
+
+
+           
+<style>
+   .demosearch{
+        background-color: white; 
+        height: 3cm;
+         width: 6cm;
+          margin-left: 3.5cm;
+           position: absolute;
+           box-shadow: 2px 2px 4px black;
+           margin-top: .3cm;
+           overflow: hidden;
+          display: none;
+          border-radius: 10px;
+        
+    }
+    .demosearch p a{
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+        margin-left: .3cm;
+    }
+    .demosearch p a:hover{
+        color: blue;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+</style>
+
+       
+    </head>
+    
+    
+    
+<body style="height: 12cm; background-color: white;">
+
+   
+    <section id="header">
+        <div class="logo" onclick="window.location.href='home.html';">
+           <img style="width: 4cm; height: 4cm; margin-top: -.8cm; margin-left: .8cm;" src="S-removebg-preview.png">
+        </div>
+
+        <div class="searchbar">
+
+            <input id="searchproduct" type="text" placeholder="Search...">
+           <div class="demosearch">
+            <div id="myDiv">
+               <p><a href="b1product.html">G-Shock Watch</a></p>
+               <p><a href="bproduct.html">Blue Cotton  Trousers</a></p>
+               <p><a href="b2product.html">Black Regular Shorts</a></p>
+               <p><a href="b3product.html">Men Solid Ankle </a></p>
+               <p><a href="b5product.html"> Round Neck  Black T-Shirt</a></p>
+               <p><a href="b6product.html">Round Neck Red T-Shirt </a></p>
+               <p><a href="b7product.html">Women Black Dress </a></p>
+               <p><a href="b8product.html"> Women  Pink Dress</a></p>
+               <p><a href="b9product.html"> Women Dark Blue  Dress</a></p>
+               <p><a href="cproduct.html"> Acer Nitro 5 Laptop</a></p>
+               <p><a href="c1product.html"> ASUS ROG Strix Laptop</a></p>
+               <p><a href="c2product.html"> DELL Intel Core i5 Laptop</a></p>
+               <p><a href="c3product.html"> SAMSUNG  Book 2 Laptop</a></p>
+               <p><a href="c4product.html"> OnePlus 11 5G Phone</a></p>
+               <p><a href="c5product.html"> OnePlus 10 Pro 5G</a></p>
+               <p><a href="c6product.html"> IQOO Z7 Pro 5G </a></p>
+               <p><a href="c7product.html"> Apple iPhone 15</a></p>
+               <p><a href="c8product.html"> boAt Rockerz 255 earphone</a></p>
+               <p><a href="c9product.html"> Canon 1500D DSLR Camera</a></p>
+               <p><a href="c10product.html"> beatXP Tune XPods wirless earphone</a></p>
+               <p><a href="c11product.html"> TECHON shinecon vr box</a></p>
+
+               <p><a href="Dproduct.html"> Men Regular Wear  White Sandal</a></p>
+               <p><a href="D1product.html"> Men Polyester White, Black T-Shirt</a></p>
+               <p><a href="D2product.html"> Pack of 4 Men Round Neck t-shirt</a></p>
+               <p><a href="D3product.html"> Men  Round Neck Cotton  Black T-Shirt</a></p>
+               <p><a href="D4product.html"> Orange Running Shoes For Men</a></p>
+               <p><a href="D5product.html"> Acer NITRO 21.5 inch Laptop</a></p>
+               <p><a href="D6product.html"> Charger</a></p>
+               
+               <p><a href="sproduct.html"> Pure Cotton Brown T-Shirt</a></p>
+               <p><a href="s1product.html">   Printed Casual Shirt</a></p>
+               <p><a href="s2product.html"> Men check t-shirt</a></p>
+               <p><a href="s3product.html">  Running Shoes For Men</a></p>
+               <p><a href="s4product.html"> Men check t-shirt</a></p>
+               <p><a href="s5product.html">  puma Men Slides </a></p>
+               <p><a href="s6product.html"> Ferrari RS-X Sneakers for men</a></p>
+               <p><a href="s7product.html"> Men Solid  Black T-Shirt </a></p>
+               <p><a href="s8product.html"> allen solly  green Casual Shirt</a></p>
+               <p><a href="s9product.html">  raymond Formal Shirt</a></p>
+
+               <p><a href="mobilecollection.html">phone store</a></p>
+               <p><a href="mobilecollection.html">oppo phones</a></p>
+               <p><a href="mobilecollection.html">realme phones</a></p>
+               <p><a href="mobilecollection.html">nothing phones</a></p>
+
+               <p><a href="Grocery.html">Grocery store</a></p>
+               <p><a href="Appliance.html"> Home Appliances</a></p>
+               <p><a href="countdown.html"> baby products</a></p>
+               
+            </div>
+           </div>
+
+            </div>
+         
+        <div class="navbar">
+         
+            <div class="mediaone">
+            <ul>
+             <li><a  href="home.html">Home</a></li>
+             <li><a class="active" href="shop.html">Shop</a></li>
+             <li><a href="blog.html">Blog</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+            </div>
+        </div>
+     </section>
+
+     <section class="startingpage">
+        <img width="100%" height="100%" src="https://egrocery.asia/wp-content/uploads/2018/08/baby-care-product.jpg">
+     </section>
+
+
+     <section>
+     
+        <div id="countdown" class="countdown">
+             <br>
+            <div class="time">
+                <h2 id="days"></h2>
+                <small class="small">days</small>
+
+            </div>
+
+
+            <div class="time">
+                <h2 id="hours"></h2>
+                <small class="small">Hours</small>
+
+            </div>
+
+
+            
+            <div class="time">
+                <h2 id="minutes"></h2>
+                <small class="small">Minutes</small>
+
+            </div>
+
+
+
+            <div class="time">
+                <h2 id="seconds"></h2>
+                <small class="small">Seconds</small>
+
+            </div>
+             
+
+        </div>
+    </section>
+
+    <div class="soonopening">
+     </div>
+
+
+     <button class="buttonload">
+        <i class="fa fa-refresh fa-spin"></i>
+      </button>
+
+  
+
+    <script src="ecommerce.js"></script>
+    </body>     
+</html>

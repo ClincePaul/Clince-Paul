@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>salex.com</title>
+        <link rel="stylesheet" href="ecommerce.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#searchproduct").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myDiv *").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+        
+        
+        <script> 
+            $(document).ready(function(){
+              $("#searchproduct").click(function(){
+                $(".demosearch").slideToggle();
+              });
+            });
+            </script>
+
+
+
+
+           
+<style>
+   .demosearch{
+        background-color: white; 
+        height: 3cm;
+         width: 6cm;
+          margin-left: 3.5cm;
+           position: absolute;
+           box-shadow: 2px 2px 4px black;
+           margin-top: .3cm;
+           overflow: hidden;
+          display: none;
+          border-radius: 10px;
+        
+    }
+    .demosearch p a{
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+        margin-left: .3cm;
+    }
+    .demosearch p a:hover{
+        color: blue;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+</style>
+    </head>
+
+ 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+
+
+    <body>
+      
+        <section id="header">
+           <div class="logo"onclick="window.location.href='home.html';">
+              <img style="width: 4cm; height: 4cm; margin-top: -.8cm; margin-left: .8cm;" src="S-removebg-preview.png">
+           </div>
+
+           <div class="searchbar">
+
+            <input id="searchproduct" type="text" placeholder="Search...">
+           <div class="demosearch">
+            <div id="myDiv">
+               <p><a href="b1product.html">G-Shock Watch</a></p>
+               <p><a href="bproduct.html">Blue Cotton  Trousers</a></p>
+               <p><a href="b2product.html">Black Regular Shorts</a></p>
+               <p><a href="b3product.html">Men Solid Ankle </a></p>
+               <p><a href="b5product.html"> Round Neck  Black T-Shirt</a></p>
+               <p><a href="b6product.html">Round Neck Red T-Shirt </a></p>
+               <p><a href="b7product.html">Women Black Dress </a></p>
+               <p><a href="b8product.html"> Women  Pink Dress</a></p>
+               <p><a href="b9product.html"> Women Dark Blue  Dress</a></p>
+               <p><a href="cproduct.html"> Acer Nitro 5 Laptop</a></p>
+               <p><a href="c1product.html"> ASUS ROG Strix Laptop</a></p>
+               <p><a href="c2product.html"> DELL Intel Core i5 Laptop</a></p>
+               <p><a href="c3product.html"> SAMSUNG  Book 2 Laptop</a></p>
+               <p><a href="c4product.html"> OnePlus 11 5G Phone</a></p>
+               <p><a href="c5product.html"> OnePlus 10 Pro 5G</a></p>
+               <p><a href="c6product.html"> IQOO Z7 Pro 5G </a></p>
+               <p><a href="c7product.html"> Apple iPhone 15</a></p>
+               <p><a href="c8product.html"> boAt Rockerz 255 earphone</a></p>
+               <p><a href="c9product.html"> Canon 1500D DSLR Camera</a></p>
+               <p><a href="c10product.html"> beatXP Tune XPods wirless earphone</a></p>
+               <p><a href="c11product.html"> TECHON shinecon vr box</a></p>
+
+               <p><a href="Dproduct.html"> Men Regular Wear  White Sandal</a></p>
+               <p><a href="D1product.html"> Men Polyester White, Black T-Shirt</a></p>
+               <p><a href="D2product.html"> Pack of 4 Men Round Neck t-shirt</a></p>
+               <p><a href="D3product.html"> Men  Round Neck Cotton  Black T-Shirt</a></p>
+               <p><a href="D4product.html"> Orange Running Shoes For Men</a></p>
+               <p><a href="D5product.html"> Acer NITRO 21.5 inch Laptop</a></p>
+               <p><a href="D6product.html"> Charger</a></p>
+               
+               <p><a href="sproduct.html"> Pure Cotton Brown T-Shirt</a></p>
+               <p><a href="s1product.html">   Printed Casual Shirt</a></p>
+               <p><a href="s2product.html"> Men check t-shirt</a></p>
+               <p><a href="s3product.html">  Running Shoes For Men</a></p>
+               <p><a href="s4product.html"> Men check t-shirt</a></p>
+               <p><a href="s5product.html">  puma Men Slides </a></p>
+               <p><a href="s6product.html"> Ferrari RS-X Sneakers for men</a></p>
+               <p><a href="s7product.html"> Men Solid  Black T-Shirt </a></p>
+               <p><a href="s8product.html"> allen solly  green Casual Shirt</a></p>
+               <p><a href="s9product.html">  raymond Formal Shirt</a></p>
+
+               <p><a href="mobilecollection.html">phone store</a></p>
+               <p><a href="mobilecollection.html">oppo phones</a></p>
+               <p><a href="mobilecollection.html">realme phones</a></p>
+               <p><a href="mobilecollection.html">nothing phones</a></p>
+
+               <p><a href="Grocery.html">Grocery store</a></p>
+               <p><a href="Appliance.html"> Home Appliances</a></p>
+               <p><a href="countdown.html"> baby products</a></p>
+               
+            </div>
+           </div>
+
+            </div>
+
+           <div class="navbar">
+            
+               <div class="mediaone">
+               <ul>
+                <li><a  href="home.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               </ul>
+               </div>
+           </div>
+        </section>
+
+
+        <section class="mobile-details">
+            <h3 class="section-p1">Mobile Phones</h3>
+            <p style="font-size: 14px; margin-top: -.7cm; margin-left: 3cm; color: black; line-height:.6cm;"><i> Mobiles are no longer for sending a text or making a call. From budget to state-of-the-art smartphones; 
+                indigenous names to global big-wigs - a whole universe of mobiles await you on <strong style="color: red;"> SaleX </strong>.Whether you’re looking for waterdrop notch screens, a high screen to body ratio, AI-powered sensational
+                 cameras, high storage capacity,  rest assured you won’t have to venture <br> anywhere else for your smartphone needs. The information you are reading has been last updated on 23-Feb-24. </i></p>
+        </section>
+
+
+   <section id="page-header" style="height: 13cm; width: 100%;">
+        <img class="page-img" style="height: 12cm; margin-top: -.001cm;" src="https://www.alezay.com/wp-content/uploads/2021/06/ONEPLUS-NORD-CE-5G-MAIN-BANNER-ALEZAY-KUWAIT.jpg">
+       
+    </section>
+
+
+    <section class="latest">
+          <h3 style=" font-size: 33px; text-align: center; text-shadow: 3px 3px 5px black;">BEST SELLING FLAGSHIP PHONES</h3>
+
+          <div class="flagship">
+             <div class="selling-imgs">
+           <a href="#realme"><img style="height: 3cm; width: 100%;" src="https://arafatelecom.com/wp-content/uploads/2022/12/brand-banner-realme.jpg"></a>
+             </div>
+
+             <div class="selling-imgs">
+               <a href="#iphonestore"><img style="height: 3cm; width: 100%;" src="https://i.pinimg.com/736x/8e/f7/26/8ef726ffe903afa19aa545e23f3b9c72.jpg"></a>
+             </div>
+
+             <div class="selling-imgs">
+               <a href="#Nothingseries"><img style="height: 3cm; width: 100%;" src="https://images.fonearena.com/blog/wp-content/uploads/2023/07/Nothing-Phone-2-Vijay-Sales-1024x431.jpg"></a>
+             </div>
+
+             <div class="selling-imgs">
+             <a href="#oppo"><img style="height: 3cm; width: 100%;" src="https://fdn.gsmarena.com/imgroot/news/21/03/oppo-find-x3-pro-red-dot-award/-1200/gsmarena_001.jpg"></a>
+             </div>
+          
+             
+             
+
+          </div>
+    </section>
+
+
+    <section class="collections">
+
+        <div class="collections1">
+           <div class="reddiv">
+              <h3>Filters</h3>
+                  <div class="searchingdiv">
+                     <p style=" color: black;"><strong>Brand</strong></p>
+                     
+                     <input id="myInput" type="text" placeholder="Search..">
+
+                            <div id="myDIV">
+                                <p>One Plus</p>
+                               <a href="#iphonestore" style="text-decoration: none;"> <p> Apple</p></a>
+                                <p>Samsung</p>
+                                <a href="#realme" style="text-decoration: none;"> <p>Realme</p></a>
+                               <a href="#redmi" style="text-decoration: none;" ><p>Xiaomi</p></a>
+                               <a href="#oppo" style="text-decoration: none;" > <p>Oppo</p></a>
+                              <a href="#vivo" style="text-decoration: none;"><p>Vivo</p></a>
+                                <p>Motorola</p>
+                               <a href="#Huawei" style="text-decoration: none;"><p>Huawei</p></a>
+                                <p>ASUS</p>
+                                <p>Honor</p>
+                                <p>Google Pixel</p>
+                                <p>Poco</p>
+                                <p>LG</p>
+                                <p>Sony</p>
+                                <p>Acer</p>
+                                <p>Lava</p>
+                                <a href="#Nothingseries" style="text-decoration: none;"><p>Nothing</p></a>
+                             </div>
+                      
+                    
+
+
+                 </div>
+
+                 <div>
+                   <a href="explore.html"><button class="logobutton">Explore Now</button></a>
+                 </div>
+
+                 <div class="customerrating">
+                  <h3 style="font-size: 16px; text-align: center;">CUSTOMER RATINGS</h3>
+                 <input type="checkbox" style="height: .5cm; width: .5cm; margin-left: .5cm; margin-top: .5cm;">
+                  <label>4 <i class="fa-solid fa-star"></i> & above</label>
+                  <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-left: .5cm; margin-top: .5cm;">
+                  <label>3 <i class="fa-solid fa-star"></i> & above</label>
+                 </div>
+
+                 <div class="customerrating">
+                  <h3 style="font-size: 15px; text-align: center;;">GST INVOICE AVAILABLE</h3>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .8cm;">
+                  <label>Gst  available</label>
+                 </div>
+
+                 <div class="customerrating">
+                  <h3 style="font-size: 17px;margin-left: .3cm;">RAM <span style="font-size: 14px;" >(Available)</span></h3></h3>
+                     <p style="color: black; font-size: 15px;margin-left: 1cm; margin-top: .4cm;">12 GB</p>
+                     <p  style="color: black; font-size: 15px;margin-left: 1cm; margin-top: .4cm;">8 GB</p>
+                     <p style="color: black; font-size: 15px;margin-left: 1cm; margin-top: .4cm;">6 GB</p>
+                     <p style="color: black; font-size: 15px;margin-left: 1cm; margin-top: .4cm;">4 GB</p>
+                     <p style="color: black; font-size: 15px;margin-left: 1cm; margin-top: .4cm;">2 GB  <span style="font-size: 14px;">(Base Models)</span></p>
+                 </div>
+
+                 <div class="customerrating">
+                  <h3 style="font-size: 15px;margin-left: .2cm; margin-top: .4cm;">INTERNAL STORAGE</h3>
+                  <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                   <label>256 GB & Above</label>
+                   <br>
+                   <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                   <label>128 - 255.9 GB</label>
+                   <br>
+                   <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                   <label>64 - 127.9 GB</label>
+                   <br>
+                   <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                   <label>32 - 63.9 GB</label>
+                   <br>
+                   <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                   <label>16 - 31.9 GB</label>
+                   <br>
+                   <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                   <label>8 - 15.9 GB</label>
+                   <br>
+                   <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                   <label>4 - 7.9 GB</label>
+                 </div>
+
+                 <div class="customerrating">
+                  <h3 style="font-size: 15px;margin-left: .2cm; margin-top: .4cm;">BATTERY CAPACITY</h3>
+                  <p class="iamp">1000 - 1999 mAh</p>
+                  <p class="iamp">2000 - 2999 mAh</p>
+                  <p class="iamp">3000 - 3999 mAh</p>
+                  <p class="iamp">4000 - 4999 mAh</p>
+                  <p class="iamp">5000 - 5999 mAh</p>
+                  <p class="iamp">6000 mAh & Above</p>
+                 </div>
+
+                <div class="customerrating">
+                  <h3 style="font-size: 15px;margin-left: .4cm; margin-top: .4cm;">PROCESSOR BRAND</h3>
+                   <br>
+                   <p class="iamp1"> A16 Bionic Chip</p>
+                   <p class="iamp1"> Snapdragon</p>
+                  <p class="iamp1"> Media Tek</p>
+                  <p class="iamp1"> Kirin</p>
+                  <p class="iamp1"> Exynos</p>
+                  <p class="iamp1"> Intel</p>
+                </div>
+
+                <div class="customerrating">
+                  <h3 style="font-size: 15px;margin-left: .2cm; margin-top: .4cm;">SPECIALITY</h3>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                  <label>Big Storage</label>
+                  <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                  <label>Higher Performance</label>
+                  <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                  <label>Long-Lasting-Battery</label>
+                  <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                  <label>Selfie Camera</label>
+                </div>
+
+                <div class="customerrating">
+
+                  <h3 style="font-size: 15px;margin-left: .3cm; margin-top: .4cm;">OPERATING SYSTEM</h3>
+                  <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                  <label>Android</label>
+                  <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                  <label>iOS</label>
+                </div>
+                 
+                <div class="customerrating">
+
+                  <h3 style="font-size: 15px;margin-left: .3cm; margin-top: .4cm;">NETWORK TYPE</h3>
+                  <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                  <label>2G</label>
+                  <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                  <label>3G</label>
+                    <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                  <label>4G</label>
+                    <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                  <label>4G VOLTE</label>
+                     <br>
+                  <input type="checkbox" style="height: .5cm; width: .5cm; margin-top: .5cm; margin-left: .4cm;">
+                  <label>5G</label>
+                </div>
+
+                <div class="customerrating" class="edit hrere futurephones">
+
+                  <h3 style="font-size: 15px;margin-left: .3cm; margin-top: .4cm;">TYPE</h3>
+                  <br>
+                 
+                  
+                  <a href="#oneplusstore" style="text-decoration: none;" ><label class="iamp">SmartPhones</label></a>
+                     <br>
+                     <br>
+                 <a href="#" style="text-decoration: none;"> <label class="iamp">FeaturePhones</label></a>
+                </div>
+
+           </div>
+         </div>
+
+
+         <div class="collections2">
+
+            <div class="mobile1" id="oneplusstore">
+                <div class="mob1">
+                <img class="mob-imgggg"  src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/7/h/k/-original-imagawn2gggtuvwd.jpeg?q=70">
+                </div>
+                <div class="mob-details">
+                   <div class="full-details">
+                      <h3>OnePlus 9R 5G (Carbon Black, 256 GB)</h3>
+                      <button id="rating" style="background-color: #329B24; margin-top: .2cm;">4<i class="fa-solid fa-star"></i></button>
+                      <span>66 Ratings and 2 Reviews</span>
+                      
+                        <p style="color: black;"> 12 GB RAM | 256 GB ROM</p>
+                        <p style="color: black;">16.64cm (6.55inch) Display</p>
+                        <p style="color: black;">48MP Rear Camera</p>
+                        <p style="color: black;">4500 mAh Battery</p>
+                        <p style="color: black;"> <span>12 months</span></p>
+
+                        <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+                           <button class="buy-now">Buy Now</button>
+                        </div>
+                   </div>
+                </div>
+                <div class="mob-price">
+                   <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">421.57 <strong style="color:#088178;">$</strong></h2>
+                   <p style="color: black; text-align: center;"><s><strong>530.11 </strong></s><strong style="color: #088178;">$</strong></p>
+
+                </div>
+            </div>
+
+
+            <div class="mobile1">
+                <div class="mob1">
+                <img class="mob-imgggg"  src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/n/y/-original-imagdhtmgbg6vyrd.jpeg?q=70">
+                </div>
+                <div class="mob-details">
+                   <div class="full-details">
+                      <h3>OnePlus 9 5G (Winter Mist, 256 GB)</h3>
+                      <button id="rating" style="background-color: #329B24; margin-top: .2cm;">4<i class="fa-solid fa-star"></i></button>
+                      <span>357 Ratings and 36 Reviews</span>
+                      
+                        <p style="color: black;"> 12 GB RAM | 256 GB ROM</p>
+                        <p style="color: black;">16.64cm (6.55inch) Display</p>
+                        <p style="color: black;">48MP Rear Camera</p>
+                        <p style="color: black;">4500 mAh Battery</p>
+                        <p style="color: black;"> <span>1 Year</span></p>
+                       
+                        <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+                           <button class="buy-now">Buy Now</button>
+                        </div>
+
+                   </div>
+                </div>
+
+                <div class="mob-price">
+                   <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">444.34 <strong style="color:#088178;">$</strong></h2>
+                   <p style="color: black; text-align: center;"><s><strong>662.64 </strong></s><strong style="color: #088178;">$</strong></p>
+
+                </div>
+            </div>
+
+            <div class="mobile1">
+                <div class="mob1">
+                <img class="mob-imgggg"  src="https://rukminim2.flixcart.com/image/312/312/l27wtjk0/mobile/i/t/v/9-pro-le2121-oneplus-original-imagdm32wypz44tr.jpeg?q=70">
+                </div>
+                <div class="mob-details">
+                   <div class="full-details">
+                      <h3>OnePlus 9 Pro 5G (Pine Green, 256 GB) </h3>
+                      <button id="rating" style="margin-top: .2cm;">3.8<i class="fa-solid fa-star"></i></button>
+                      <span>287 Ratings and 25 Reviews</span>
+                      
+                        <p style="color: black;"> 12 GB RAM | 256 GB ROM</p>
+                        <p style="color: black;">17.02cm (6.7inch) Display</p>
+                        <p style="color: black;">48MP Rear Camera</p>
+                        <p style="color: black;">4500 mAh Battery</p>
+                        <p style="color: black;"> <span>1 Year</span></p>
+                      
+                        <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+                           <button class="buy-now">Buy Now</button>
+                        </div>
+
+                   </div>
+                </div>
+
+                <div class="mob-price">
+                   <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">656.03 <strong style="color:#088178;">$</strong></h2>
+                   <p style="color: black; text-align: center;"><s><strong>700.01 </strong></s><strong style="color: #088178;">$</strong></p>
+
+                </div>
+            </div>
+
+            <div class="iphone-series" id="iphonestore">
+                <img style="height: 10cm; width: 100%;" src="https://shop.daisycomms.co.uk/wp-content/uploads/2023/09/Apple-iPhone-15-promo-banner-buy-now-scaled.jpg">
+            </div>
+
+            <div class="mobile1">
+               <div class="mob1">
+               <img style="height: 4.5cm; margin-top: 1.4cm;" class="mob-imgggg"  src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70">
+               <div style="margin-top: -4.5cm;">
+               <button style=" background-color: #1292e2; height: .6cm; width: 2.1cm; color: white; border: none; border-radius: 5px;">Bestseller</button>
+               </div>
+               </div>
+               <div class="mob-details">
+                  <div class="full-details">
+                     <h3>Apple iPhone 15 (Black, 128 GB)</h3>
+                     <button id="rating" style="margin-top: .2cm; background-color:#088178;">4.6<i class="fa-solid fa-star"></i></button>
+                     <span>11699 Ratings and 787 Reviews</span>
+                     
+                       <p style="color: black;"> 128 GB ROM</p>
+                       <p style="color: black;">15.49cm (6.1 inch) Super Retina XDR Display</p>
+                       <p style="color: black;">48MP + 12MP | Front Camera</p>
+                       <p style="color: black;">A16 Bionic Chip, 6 Core Processor</p>
+                       <p style="color: black;"> <span>1 Year Warranty For Phone</span></p>
+
+                       <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+                        <button class="buy-now">Buy Now</button>
+                     </div>
+                     
+                  </div>
+               </div>
+
+               <div class="mob-price">
+                  <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">879.51 <strong style="color:#088178;">$</strong></h2>
+                  <p style="color: black; text-align: center;"><s><strong>962.66 </strong></s><strong style="color: #088178;">$</strong></p>
+
+               </div>
+           </div>
+
+            
+           <div class="mobile1">
+            <div class="mob1">
+            <img style="height: 4.5cm; margin-top: 1.4cm;" class="mob-imgggg"  src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/z/0/j/-original-imagtc6fqymfzq8a.jpeg?q=70">
+            
+            </div>
+            <div class="mob-details">
+               <div class="full-details">
+                  <h3>Apple iPhone 15 (Black, 128 GB)</h3>
+                  <button id="rating" style="margin-top: .2cm; background-color:#088178;">4.6<i class="fa-solid fa-star"></i></button>
+                  <span>11699 Ratings and 787 Reviews</span>
+                  
+                    <p style="color: black;"> 256 GB ROM</p>
+                    <p style="color: black;">17.02cm (6.7 inch) Super Retina XDR Display</p>
+                    <p style="color: black;">48MP + 12MP | Front Camera</p>
+                    <p style="color: black;">A16 Bionic Chip, 6 Core Processor</p>
+                    <p style="color: black;"> <span>1 Year Warranty For Phone</span></p>
+
+                    <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+                     <button class="buy-now">Buy Now</button>
+                  </div>
+                  
+               </div>
+            </div>
+
+            <div class="mob-price">
+               <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">1120.48 <strong style="color:#088178;">$</strong></h2>
+               <p style="color: black; text-align: center;"><s><strong>1203.62 </strong></s><strong style="color: #088178;">$</strong></p>
+
+            </div>
+           </div>
+        
+
+           <div class="mobile1">
+         <div class="mob1">
+         <img style="height: 4.5cm; margin-top: 1.4cm;" class="mob-imgggg"  src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/r/5/-original-imagtc3kcmph6ax5.jpeg?q=70">
+         
+         </div>
+         <div class="mob-details">
+            <div class="full-details">
+               <h3>Apple iPhone 15 Pro Max (Black Titanium, 256 GB)</h3>
+               <button id="rating" style="margin-top: .2cm; background-color:#088178;">4.7<i class="fa-solid fa-star"></i></button>
+               <span>346 Ratings and 29 Reviews</span>
+               
+                 <p style="color: black;"> 256 GB ROM</p>
+                 <p style="color: black;">17.02cm (6.7 inch) Super Retina XDR Display</p>
+                 <p style="color: black;">48MP + 12MP + 12MP | 12MP Front Camera</p>
+                 <p style="color: black;">A17 Pro  Chip, 6 Core Processor</p>
+                 <p style="color: black;"> <span>1 Year Warranty For Phone</span></p>
+
+                 <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+                  <button class="buy-now">Buy Now</button>
+               </div>
+               
+            </div>
+         </div>
+
+         <div class="mob-price">
+            <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">1890.37 <strong style="color:#088178;">$</strong></h2>
+            <p style="color: black; text-align: center;"><s><strong>1926.52 </strong></s><strong style="color: #088178;">$</strong></p>
+
+         </div>
+          </div>
+
+
+         <div class="iphone-series" id="Nothingseries">
+      <img style="height: 10cm; width: 100%;" src="https://images.fonearena.com/blog/wp-content/uploads/2023/07/Nothing-Phone-2-Vijay-Sales-1024x431.jpg">
+        </div>
+         
+     
+         <div class="mobile1">
+   <div class="mob1">
+   <img style="height: 4.5cm; margin-top: 1.4cm;" class="mob-imgggg"  src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/u/m/b/-original-imagrdefbw6bhbjr.jpeg?q=70">
+   
+   </div>
+   <div class="mob-details">
+      <div class="full-details">
+         <h3>Nothing Phone (2) (Dark Grey, 512 GB)  (12 GB RAM)</h3>
+         <button id="rating" style="margin-top: .2cm; background-color:green;">4.4<i class="fa-solid fa-star"></i></button>
+         <span>1101 Ratings and 1397 Reviews</span>
+         
+           <p style="color: black;"> 12 GB RAM | 512 GB ROM</p>
+           <p style="color: black;">17.02cm (6.7 inch) Full HD+  Display</p>
+           <p style="color: black;">50MP(OIS) + 50MP | 32MP Front Camera</p>
+           <p style="color: black;">Qualcomm Snapdragon 8+ Gen 1  Processor</p>
+           <p style="color: black;"> <span>1 Year Manufacturing Warranty</span></p>
+
+           <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+            <button class="buy-now">Buy Now</button>
+         </div>
+         
+      </div>
+   </div>
+
+   <div class="mob-price">
+      <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">481.92 <strong style="color:#088178;">$</strong></h2>
+      <p style="color: black; text-align: center;"><s><strong>722.90 </strong></s><strong style="color: #088178;">$</strong></p>
+
+   </div>
+         </div>
+
+
+          
+        <div class="mobile1">
+   <div class="mob1">
+   <img style="height: 4cm; margin-top: 1.4cm;" class="mob-imgggg"  src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/i/s/b/-original-imagrdefh2xgenzz.jpeg?q=70">
+   
+   <div style="margin-top: -4cm;">
+      <button style=" background-color: #1292e2; height: .6cm; width: 2.1cm; color: white; border: none; border-radius: 5px;">Bestseller</button>
+      </div>
+
+   </div>
+   <div class="mob-details">
+      <div class="full-details">
+         <h3>Nothing Phone (2) (White, 256 GB)  (12 GB RAM)</h3>
+         <button id="rating" style="margin-top: .2cm; background-color:green;">4.4<i class="fa-solid fa-star"></i></button>
+         <span>1101 Ratings and 1397 Reviews</span>
+         
+           <p style="color: black;"> 12 GB RAM | 256 GB ROM</p>
+           <p style="color: black;">17.02cm (6.7 inch) Full HD+  Display</p>
+           <p style="color: black;">50MP(OIS) + 50MP | 32MP Front Camera</p>
+           <p style="color: black;">Qualcomm Snapdragon 8+ Gen 1  Processor</p>
+           <p style="color: black;"> <span>1 Year Manufacturing Warranty</span></p>
+
+           <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+            <button class="buy-now">Buy Now</button>
+         </div>
+         
+      </div>
+   </div>
+
+   <div class="mob-price">
+      <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">445.77 <strong style="color:#088178;">$</strong></h2>
+      <p style="color: black; text-align: center;"><s><strong>722.90 </strong></s><strong style="color: #088178;">$</strong></p>
+
+   </div>
+        </div>
+      
+
+
+         </div>
+
+
+    </section>
+
+
+    <section class="latest-launches">
+
+      <h3>LATEST &nbsp; LAUNCHES</h3>
+          <div class="latest-div">
+               <div class="latest-garage" id="vivo">
+                  <img width="100%" height="100%" src="https://etimg.etb2bimg.com/photo/79448033.cms">
+               </div>
+               <div class="latest-garage">
+                  <img width="100%" height="100%" src="https://www.smartprix.com/bytes/wp-content/uploads/2022/07/reno-8-1.jpg">
+               </div>
+               <div class="latest-garage">
+                  <img width="100%" height="100%" src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-12/20/full/1703050157-5496.jpg">
+               </div>
+          </div>
+
+          <div class="latest-div" >
+           <div class="latest-garage" >
+               <img width="100%" height="100%" src="https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/09/narzo50pro.webp?ssl=1">
+            </div>
+            <div class="latest-garage" id="Huawei">
+               <img width="100%" height="100%" src="https://synergyzer.com/wp-content/uploads/2018/09/Nova3-Banner.jpeg">
+            </div>
+            <div class="latest-garage" id="redmi">
+               <img width="100%" height="100%" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo7D3M5LICA5iswUwI8xIK3PXPq9Kaddhpdcz3GBtJT98673M0w3XRyL4eaIoghxH75gM6xabx0qJtbruId0Fut5_2GRTLYqMPlgJ_aCU2GLVTt0NdTwd-h-FO0brZWf2hI24sE0px5ZITx9sK4XVp-ASLEPJgQ-_ExNwtt3IqxNKbBbYEQiYvdoXyTBE/s1200/Redmi%20Note%2013%205G%20series%20to%20launch%20today%20in%20India.webp">
+            </div>
+          </div>
+    </section>
+
+
+   
+    <section class="collections" style="height: 53cm;">
+
+      <div class="collections1" style="height: 51cm;">
+         
+       </div>
+
+
+       <div class="collections2" style="height: 52cm;">
+
+         <div class="iphone-series" id="realme">
+            <img style="height: 10cm; width: 100%;" src="https://pbs.twimg.com/media/F4MgeFMWIAANeSO.jpg">
+        </div> 
+
+          <div class="mobile1">
+              <div class="mob1">
+              <img class="mob-imgggg" style="height: 4.5cm; margin-top: 1.4cm;"  src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/j/d/-original-imagtqqddnkayg4x.jpeg?q=70">
+              </div>
+              <div class="mob-details">
+                 <div class="full-details">
+                    <h3>realme 11 5G (Glory Gold, 128 GB) (8 GB RAM)</h3>
+                    <button id="rating" style="margin-top: .2cm;background-color: green;">4.3<i class="fa-solid fa-star"></i></button>
+                    <span>52533 Ratings and 252 Reviews</span>
+                    
+                      <p style="color: black;"> 8 GB RAM | 128 GB ROM | Expandable Upto 2 TB</p>
+                      <p style="color: black;">17.07cm (6.72inch) Full HD+ Display</p>
+                      <p style="color: black;">108MP + 2MP | 16MP Front Camera</p>
+                      <p style="color: black;">5000 mAh Battery</p>
+                      <p style="color: black;"> <span>1 Year</span></p>
+                    
+                      <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+                         <button class="buy-now">Buy Now</button>
+                      </div>
+
+                 </div>
+              </div>
+
+              <div class="mob-price">
+                 <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">204.63 <strong style="color:#088178;">$</strong></h2>
+                 <p style="color: black; text-align: center;"><s><strong>252.78 </strong></s><strong style="color: #088178;">$</strong></p>
+
+              </div>
+          </div>
+
+          <div class="mobile1">
+            <div class="mob1">
+            <img class="mob-imgggg" style="height: 4.5cm; margin-top: 1.4cm;"  src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/w/s/3/-original-imagtqqdw4tnwjbh.jpeg?q=70">
+            
+   <div style="margin-top: -4cm;">
+      <button style=" background-color: #1292e2; height: .6cm; width: 2.1cm; color: white; border: none; border-radius: 5px;">Bestseller</button>
+      </div>
+            </div>
+
+            <div class="mob-details">
+               <div class="full-details">
+                  <h3>realme 11x 5G (Midnight Black, 128 GB)  (6 GB RAM)</h3>
+                  <button id="rating" style="margin-top: .2cm;background-color: green;">4.4<i class="fa-solid fa-star"></i></button>
+                  <span>52533 Ratings and 252 Reviews</span>
+                  
+                    <p style="color: black;"> 6 GB RAM | 128 GB ROM | Expandable Upto 2 TB</p>
+                    <p style="color: black;">17.07cm (6.72inch) Full HD+ Display</p>
+                    <p style="color: black;">108MP + 2MP | 8MP Front Camera</p>
+                    <p style="color: black;">5000 mAh Battery</p>
+                    <p style="color: black;"> <span>1 Year</span></p>
+                  
+                    <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+                       <button class="buy-now">Buy Now</button>
+                    </div>
+
+               </div>
+            </div>
+
+            <div class="mob-price">
+               <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">180.55 <strong style="color:#088178;">$</strong></h2>
+               <p style="color: black; text-align: center;"><s><strong>204.63 </strong></s><strong style="color: #088178;">$</strong></p>
+
+            </div>
+        </div>
+
+
+
+          <div class="iphone-series" id="oppo">
+              <img style="height: 10cm; width: 100%;" src="https://image.oppo.com/content/dam/oppo-campaign-site/in/events/store-opening/f21/launch/banner03-pc-v2.jpg.thumb.webp">
+          </div>
+
+          <div class="mobile1">
+             <div class="mob1">
+             <img style="height: 4.5cm; margin-top: 1.4cm;" class="mob-imgggg"  src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/m/9/7/-original-imagrxbuvyjxa9vb.jpeg?q=70">
+             <div style="margin-top: -4.5cm;">
+             <button style=" background-color: #1292e2; height: .6cm; width: 2.1cm; color: white; border: none; border-radius: 5px;">Bestseller</button>
+             </div>
+             </div>
+             <div class="mob-details">
+                <div class="full-details">
+                   <h3>OPPO F21s Pro (Dawnlight Gold, 128 GB)  (8 GB RAM)</h3>
+                   <button id="rating" style="margin-top: .2cm; background-color:#088178;">4.8<i class="fa-solid fa-star"></i></button>
+                   <span>1509 Ratings and 187 Reviews</span>
+                   
+                     <p style="color: black;">8 GB RAM | 128 GB ROM</p>
+                     <p style="color: black;">16.33cm (6.43 inch) Full HD+ Display</p>
+                     <p style="color: black;">64MP + 2MP + 2MP | 32MP Front Camera</p>
+                     <p style="color: black;">4500 mAh Battery</p>
+                     <p style="color: black;"> <span>1 Year Warranty For Phone</span></p>
+
+                     <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+                      <button class="buy-now">Buy Now</button>
+                   </div>
+                   
+                </div>
+             </div>
+
+             <div class="mob-price">
+                <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">337.04 <strong style="color:#088178;">$</strong></h2>
+                <p style="color: black; text-align: center;"><s><strong>350.78 </strong></s><strong style="color: #088178;">$</strong></p>
+
+             </div>
+         </div>
+
+          
+         <div class="mobile1">
+          <div class="mob1">
+          <img style="height: 5.5cm; margin-top: 1.4cm;" class="mob-imgggg"  src="https://rukminim2.flixcart.com/image/312/312/l1zc6fk0/mobile/o/0/k/f21-pro-5g-cph2341-oppo-original-imagdf4ghefkddgm.jpeg?q=70">
+          
+          </div>
+          <div class="mob-details">
+             <div class="full-details">
+                <h3>OPPO F21 Pro 5G (Rainbow Spectrum, 128 GB)  (8 GB RAM)</h3>
+                <button id="rating" style="margin-top: .2cm; background-color:#088178;">4.7<i class="fa-solid fa-star"></i></button>
+                <span>1094 Ratings and 77 Reviews</span>
+                
+                
+                <p style="color: black;">8 GB RAM | 128 GB ROM</p>
+                <p style="color: black;">16.33cm (6.43 inch)  Display</p>
+                <p style="color: black;">16MP Rear Camera</p>
+                <p style="color: black;">4500 mAh Battery</p>
+                <p style="color: black;"> <span>1 Year Warranty For Phone</span></p>
+
+
+
+
+                  <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+                   <button class="buy-now">Buy Now</button>
+                </div>
+                
+             </div>
+          </div>
+
+          <div class="mob-price">
+             <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">281.55 <strong style="color:#088178;">$</strong></h2>
+             <p style="color: black; text-align: center;"><s><strong>385.19 </strong></s><strong style="color: #088178;">$</strong></p>
+
+          </div>
+         </div>
+    
+
+
+       </div>
+
+
+  </section>
+
+
+  <section id="newsletters" class="section-p1">
+   <div style="float: left; width: 50%; background-color:#253342; height: 4cm;">
+     <div style="margin-top: 1.5cm; margin-left: 3cm;">
+      <h4 style="color: #c8c8c8; font-size: 22px ; font-weight: 700;">Sign Up For Newsletters</h4>
+      <p style="font-size: 14px ; font-weight: 600; color: #818ea0;">Get E-mail update about our shop and <span style="color: #ffbd27;">Special offers</span></p>
+     </div>
+   </div>
+   
+   <div style="float: left; width: 50%; background-color: #253342; height: 4cm;">
+     <div class="form"  style="margin-top: 1.5cm; margin-left: 4cm;">
+        <input  type="email" placeholder="Enter your E-mail address">
+        <a href="#"><button class="normal">Sign Up</button></a>
+        </div>
+   </div>
+</section>
+
+ 
+<footer id="footdiv" class="section-p1" style="height: 9cm; background-color:white;">
+
+ <div class="col" style="float: left; width: 35%;">
+   <img class="logo" style="width: 4cm; height: 3.8cm; margin-top: -1.4cm;" src="S-removebg-preview.png">
+   
+   <h4 style="font-size: large; margin-top: 2.4cm; margin-left: .4cm;">Contact</h4>
+   <p style="margin-left: .4cm;"><strong>Address: </strong>562 Willington road, Street 32 ,San Francisco </p>
+   <p style="margin-left: .4cm;"><strong>Phone: </strong> 6235763536 / (+91) 88 2568 7536</p>
+   <p style="margin-left: .4cm;"><strong>Hours</strong>10:00 - 18:00 , Mon - Sat</p>
+   <br>
+   <div class="follow">
+     <h4 style="font-size: large; margin-left: .4cm;">Follow us</h4>
+     <div class="icon" style="margin-left: .4cm;">
+          <i style="color: #088178;" class="fab fa-facebook-f"></i>
+          <i style="color: #088178;" class="fab fa-twitter"></i>
+          <i style="color: #DD2A7B;" class="fab fa-instagram"></i>
+          <i style="color: #bd081c;" class="fab fa-pinterest-p"></i>
+          <i style="color: #E62117;" class="fab fa-youtube"></i>
+     </div>
+   </div>
+ </div>
+
+
+ <div class="col" style="float: left; width: 15%;">
+   <h4 style="font-size: large; margin-left: .4cm;">About</h4>
+
+   <a  href="about.html">About us</a>
+   <br>
+   <p></p>
+   <a  href="#">Delivery Information</a>
+   <br>
+   <p></p>
+   <a href="#">Privacy Policy</a>
+   <br>
+   <p></p>
+   <a href="#">Terms & Conditions</a>
+   <br>
+   <p></p>
+   <a href="contact.html">Contact us</a>
+ </div>
+
+
+ <div class="col" style="float: left; width: 15%;">
+
+   <h4 style="font-size: large; margin-left: .4cm;">My Accounts</h4>
+   <a href="#">Sign In</a>
+   <br>
+   <p></p>
+   <a href="#">View Cart</a>
+   <br>
+   <p></p>
+   <a href="#">My Wishlist</a>
+   <br>
+   <p></p>
+   <a  href="#">Track My Order</a>
+   <br>
+   <p></p>
+   <a href="#">Help</a>
+ </div>
+
+
+ <div class="col install" style="float: left; width: 35%;">
+ <h4 style="font-size: large; margin-left: .4cm;">Install App</h4>
+ <p style="margin-left: .4cm;">From App Store or Google Play</p>
+ <br>
+   <div class="row">
+       <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;"  src="png-transparent-google-play-app-store-app-market-download-button (1).png">
+       <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;" src="playstore.png">
+    </div>
+    <br>
+    <p style="margin-left:.4cm;">Secured Payment Gateways</p>
+    <img style="width: 5.5cm; height: 2.3cm; margin-left: .4cm; margin-top: -.5cm;" src="Payment-methods.png.2b9ba23475aaa15189f555f77ec3a549-removebg-preview.png">
+ </div>
+
+ <div class="copyright">
+    <p style="margin-left: 10.8cm; margin-top: -.8cm;"><i>copyright @ 2024 Coding Artist | Salex reserved</i></p>
+ </div>
+</footer>
+
+
+        <script src="ecommerce.js"></script>
+    </body>
+</html>

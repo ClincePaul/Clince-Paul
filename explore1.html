@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>salex.com</title>
+        <link rel="stylesheet" href="ecommerce.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#searchproduct").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myDiv *").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+        
+        
+        <script> 
+            $(document).ready(function(){
+              $("#searchproduct").click(function(){
+                $(".demosearch").slideToggle();
+              });
+            });
+            </script>
+
+
+
+
+           
+<style>
+   .demosearch{
+        background-color: white; 
+        height: 3cm;
+         width: 6cm;
+          margin-left: 3.5cm;
+           position: absolute;
+           box-shadow: 2px 2px 4px black;
+           margin-top: .3cm;
+           overflow: hidden;
+          display: none;
+          border-radius: 10px;
+        
+    }
+    .demosearch p a{
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+        margin-left: .3cm;
+    }
+    .demosearch p a:hover{
+        color: blue;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+</style>
+    </head>
+
+    <body>
+      
+        <section id="header">
+           <div class="logo" onclick="window.location.href='home.html';">
+              <img style="width: 4cm; height: 4cm; margin-top: -.8cm; margin-left: .8cm;" src="S-removebg-preview.png">
+           </div>
+
+           <div class="searchbar">
+
+            <input id="searchproduct" type="text" placeholder="Search...">
+           <div class="demosearch">
+            <div id="myDiv">
+               <p><a href="b1product.html">G-Shock Watch</a></p>
+               <p><a href="bproduct.html">Blue Cotton  Trousers</a></p>
+               <p><a href="b2product.html">Black Regular Shorts</a></p>
+               <p><a href="b3product.html">Men Solid Ankle </a></p>
+               <p><a href="b5product.html"> Round Neck  Black T-Shirt</a></p>
+               <p><a href="b6product.html">Round Neck Red T-Shirt </a></p>
+               <p><a href="b7product.html">Women Black Dress </a></p>
+               <p><a href="b8product.html"> Women  Pink Dress</a></p>
+               <p><a href="b9product.html"> Women Dark Blue  Dress</a></p>
+               <p><a href="cproduct.html"> Acer Nitro 5 Laptop</a></p>
+               <p><a href="c1product.html"> ASUS ROG Strix Laptop</a></p>
+               <p><a href="c2product.html"> DELL Intel Core i5 Laptop</a></p>
+               <p><a href="c3product.html"> SAMSUNG  Book 2 Laptop</a></p>
+               <p><a href="c4product.html"> OnePlus 11 5G Phone</a></p>
+               <p><a href="c5product.html"> OnePlus 10 Pro 5G</a></p>
+               <p><a href="c6product.html"> IQOO Z7 Pro 5G </a></p>
+               <p><a href="c7product.html"> Apple iPhone 15</a></p>
+               <p><a href="c8product.html"> boAt Rockerz 255 earphone</a></p>
+               <p><a href="c9product.html"> Canon 1500D DSLR Camera</a></p>
+               <p><a href="c10product.html"> beatXP Tune XPods wirless earphone</a></p>
+               <p><a href="c11product.html"> TECHON shinecon vr box</a></p>
+
+               <p><a href="Dproduct.html"> Men Regular Wear  White Sandal</a></p>
+               <p><a href="D1product.html"> Men Polyester White, Black T-Shirt</a></p>
+               <p><a href="D2product.html"> Pack of 4 Men Round Neck t-shirt</a></p>
+               <p><a href="D3product.html"> Men  Round Neck Cotton  Black T-Shirt</a></p>
+               <p><a href="D4product.html"> Orange Running Shoes For Men</a></p>
+               <p><a href="D5product.html"> Acer NITRO 21.5 inch Laptop</a></p>
+               <p><a href="D6product.html"> Charger</a></p>
+               
+               <p><a href="sproduct.html"> Pure Cotton Brown T-Shirt</a></p>
+               <p><a href="s1product.html">   Printed Casual Shirt</a></p>
+               <p><a href="s2product.html"> Men check t-shirt</a></p>
+               <p><a href="s3product.html">  Running Shoes For Men</a></p>
+               <p><a href="s4product.html"> Men check t-shirt</a></p>
+               <p><a href="s5product.html">  puma Men Slides </a></p>
+               <p><a href="s6product.html"> Ferrari RS-X Sneakers for men</a></p>
+               <p><a href="s7product.html"> Men Solid  Black T-Shirt </a></p>
+               <p><a href="s8product.html"> allen solly  green Casual Shirt</a></p>
+               <p><a href="s9product.html">  raymond Formal Shirt</a></p>
+
+               <p><a href="mobilecollection.html">phone store</a></p>
+               <p><a href="mobilecollection.html">oppo phones</a></p>
+               <p><a href="mobilecollection.html">realme phones</a></p>
+               <p><a href="mobilecollection.html">nothing phones</a></p>
+
+               <p><a href="Grocery.html">Grocery store</a></p>
+               <p><a href="Appliance.html"> Home Appliances</a></p>
+               <p><a href="countdown.html"> baby products</a></p>
+               
+            </div>
+           </div>
+
+            </div>
+
+           <div class="navbar">
+            
+               <div class="mediaone">
+               <ul>
+                <li><a  href="home.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               </ul>
+               </div>
+           </div>
+        </section>
+
+
+
+        <section class="autoanimation" >
+            <br>
+            <br>
+                <div class="autocontainer">
+                   
+                </div>
+          </section>
+
+
+     
+
+
+        <section class="explorebrands">
+            <div class="brandsss">
+                
+               <a href="#allensollyyy"> <div class="brandsssone">
+                 <img width="100%" height="100%" src="https://i.pinimg.com/originals/03/fc/9e/03fc9ea117d97ac227d8dfae27106ddd.jpg">
+                </div></a>
+     
+              <a href="#adidasss"><div class="brandsssone">
+                 <img width="80%" height="100%" style="margin-left: .7cm;" src="https://static.vecteezy.com/system/resources/previews/019/766/233/non_2x/adidas-logo-adidas-icon-transparent-free-png.png">
+               </div></a>
+     
+               <a href="#pumaaa"><div class="brandsssone">
+                  <img width="100%" height="100%" src="https://1000logos.net/wp-content/uploads/2017/05/PUMA-Logo-2003.png">
+                </div></a>
+     
+     
+                <div class="brandsssone">
+                  <img width="100%" height="100%" src="https://static.vecteezy.com/system/resources/previews/010/994/412/original/nike-logo-black-with-name-clothes-design-icon-abstract-football-illustration-with-white-background-free-vector.jpg">
+                </div>
+            </div>
+            
+            <br>
+            <br>
+     
+            <div class="brandsss">
+                
+            <div class="brandsssone" style="margin-left: 8.4cm;">
+              <img width="100%" height="100%" src="https://assets.turbologo.com/blog/en/2020/01/19084710/louis-vuitton-cover-958x575.png">
+            </div>
+     
+             <div class="brandsssone">
+               <img width="100%" height="100%" src="https://static.vecteezy.com/system/resources/previews/023/400/808/original/calvin-klein-brand-clothes-fashion-symbol-logo-design-illustration-with-gray-background-free-vector.jpg">
+             </div>
+     
+     
+            
+         </div>
+     </section>
+
+     <section class="explorebannerimg">
+       <img width="100%" height="100%" src="https://giftbig.s3.amazonaws.com/microsite/homebanner/slidebanner/slidebanner_2571.png">
+     </section>
+
+
+     <section id="allensollyyy" class="allensollycol" style="margin-top: 1cm;">
+        <br>
+         <div class="allencol">
+
+             <div class="allencol1">
+                 <div class="allenimg1">
+                   <img height="100%" width="85%" src="https://rukminim2.flixcart.com/image/612/612/l2tcfbk0/t-shirt/t/p/t/xxl-alkcvsgf297656-allen-solly-original-image2rvgpgjdhh4.jpeg?q=70">
+                 </div>
+                 <div class="allendesc1">
+                    <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+                
+                    <br>
+                   <span style="margin-left: .2cm;">Men Solid Round Neck <span style="margin-left: .2cm;">T-Shirt</span></span>
+                   
+                   <br>
+                   <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+                   <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+                   <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+                   <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+                   <button>Buy Now</button>
+                 </div>
+             </div>
+
+
+             <div class="allencol1">
+              <div class="allenimg1">
+                <img height="100%" width="85%" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7825603/2018/12/8/ab0cdf9d-2fa2-45d9-9bd4-ba374081f6d91544262177499-Allen-Solly-Sport-Men-Grey-Slim-Fit-Solid-Casual-Shirt-59915-1.jpg">
+              </div>
+              <div class="allendesc1">
+                 <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+             
+                 <br>
+                <span style="margin-left: .2cm;">Sport Men Grey Slim <span style="margin-left: .2cm;">Shirt</span></span>
+                
+                <br>
+                <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+                <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+                <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+                <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+                <button>Buy Now</button>
+              </div>
+          </div>
+
+
+          <div class="allencol1">
+            <div class="allenimg1">
+              <img height="100%" width="85%" src="data:image/jpeg;base64,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">
+            </div>
+            <div class="allendesc1">
+               <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+           
+               <br>
+              <span style="margin-left: .2cm;">Men  Solid Polo Neck T-<span style="margin-left: .2cm;">Shirt</span>
+              
+              <br>
+              <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+              <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+              <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+              <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+              <button>Buy Now</button>
+            </div>
+        </div>
+
+
+            
+        <div class="allencol1">
+          <div class="allenimg1">
+            <img height="100%" width="85%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoKUWhXF5d1MGJ6N7w8yER3d-dumm-UTC-sTSPIr6UFt9tyF-4HGWs4SLDOA3d01k-Ibc&usqp=CAU">
+          </div>
+          <div class="allendesc1">
+             <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+         
+             <br>
+            <span style="margin-left: .2cm;">Men Solid Round Neck <span style="margin-left: .2cm;">T-Shirt</span></span>
+            
+            <br>
+            <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+            <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+            <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+            <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+            <button>Buy Now</button>
+          </div>
+      </div>
+
+
+            
+      <div class="allencol1">
+        <div class="allenimg1">
+          <img height="100%" width="85%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg3c_zM3QbGLwD--JcyCnQComcS3ZXDMI9xHeUGdOxJl9aH8HqOjpJwGxFbapmPutDqHM&usqp=CAU">
+        </div>
+        <div class="allendesc1">
+           <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+       
+           <br>
+          <span style="margin-left: .2cm;">Men Solid V-Neck T-<span style="margin-left: .2cm;">Shirt</span></span>
+          
+          <br>
+          <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+          <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+          <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+          <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+          <button>Buy Now</button>
+        </div>
+    </div>
+
+         </div>
+
+
+        
+      
+
+        <div class="allensollyimgbanner">
+           <br>
+                  <div class="allencol1">
+            <div class="allenimg1">
+              <img height="100%" width="85%" src="https://assets.ajio.com/medias/sys_master/root/20210717/jBr0/60f1df03f997ddb3122a1fc0/-473Wx593H-460954367-navy-MODEL.jpg">
+            </div>
+            <div class="allendesc1">
+               <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+           
+               <br>
+              <span style="margin-left: .2cm;">Button  Printed Casual <span style="margin-left: .2cm;">Shirt</span>
+              
+              <br>
+              <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+              <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+              <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+              <span style="font-size: 14px;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+              <button>Buy Now</button>
+            </div>
+                  </div>
+
+                 <div class="allen-img12">
+                    <img height="100%" width="100%" src="https://wallpapercave.com/wp/wp3454327.jpg">
+                 </div>
+
+                 
+                 <div class="allencol1">
+                  <div class="allenimg1">
+                    <img height="100%" width="85%" src="https://lp2.hm.com/hmgoepprod?set=source[/69/09/69092d27b34d1361fd3d523dcda0689fc02d0b83.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]">
+                  </div>
+                  <div class="allendesc1">
+                     <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+                 
+                     <br>
+                    <span style="margin-left: .2cm;">Button Down Collar <span style="margin-left: .2cm;">Shirt</span></span>
+                    
+                    <br>
+                    <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+                    <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+                    <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+                    <span style="font-size: 14px;"><i  style="color: #088178 ;"  class="fa-regular fa-star"></i></span>
+                    <button>Buy Now</button>
+                  </div>
+                        </div>
+
+        </div>
+
+        <br>
+      <br>
+
+        <div class="allencol" style="margin-top: 8.1cm;">
+          <br>
+          <div class="allencol1">
+              <div class="allenimg1">
+                <img height="100%" width="85%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNEG-F-Lws7ICWK7Qw1q_m_13AmaZ9UDF8aw&usqp=CAU">
+              </div>
+              <div class="allendesc1">
+                 <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+             
+                 <br>
+                <span style="margin-left: .2cm;">Men Solid Casual Pink <span style="margin-left: .2cm;">Shirt</span></span>
+                
+                <br>
+                <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+                <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+                <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+                <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+                <button>Buy Now</button>
+              </div>
+          </div>
+
+
+          <div class="allencol1">
+           <div class="allenimg1">
+             <img height="100%" width="85%" src="https://images.jdmagicbox.com/quickquotes/images_main/allen-solly-shirts-07-06-2021-22972-227239024-9fg2b.jpg">
+           </div>
+           <div class="allendesc1">
+              <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+          
+              <br>
+             <span style="margin-left: .2cm;">Women Casual Pink  <span style="margin-left: .2cm;">Shirt</span></span>
+             
+             <br>
+             <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+             <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+             <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+             <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+             <button>Buy Now</button>
+           </div>
+       </div>
+
+
+       <div class="allencol1">
+         <div class="allenimg1">
+           <img height="100%" width="85%" src="https://imagescdn.planetfashion.in/img/app/product/4/478131-3449134.jpg?auto=format&w=494.40000000000003">
+         </div>
+         <div class="allendesc1">
+            <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+        
+            <br>
+           <span style="margin-left: .2cm;">Men Casual Red Collar <span style="margin-left: .2cm;"> Shirt</span>
+           
+           <br>
+           <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+           <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+           <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+           <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+           <button>Buy Now</button>
+         </div>
+     </div>
+
+
+         
+     <div class="allencol1">
+       <div class="allenimg1">
+         <img height="100%" width="85%" src="https://imagescdn.allensolly.com/img/app/product/4/401531-2222193.jpg?q=75&auto=format&w=375">
+       </div>
+       <div class="allendesc1">
+          <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+      
+          <br>
+         <span style="margin-left: .2cm;">Women Green Stripe <span style="margin-left: .2cm;">Shirt</span>
+         
+         <br>
+         <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+         <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+         <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+         <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+         <button>Buy Now</button>
+       </div>
+   </div>
+
+
+         
+   <div class="allencol1">
+     <div class="allenimg1">
+       <img height="100%" width="85%" src="https://imagescdn.planetfashion.in/img/app/product/5/512729-3860500.jpg?auto=format&w=494.40000000000003">
+     </div>
+     <div class="allendesc1">
+        <span style="font-size: 14px; margin-left: .2cm;">Allen Solly</span>
+    
+        <br>
+       <span style="margin-left: .2cm;"> Women Blue Casual <span style="margin-left: .2cm;">Shirt</span>
+       
+       <br>
+       <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+       <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+       <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+       <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+       
+       <button>Buy Now</button>
+     </div>
+ </div>
+
+      </div>
+
+      
+        
+      
+
+
+  
+     </section>
+
+
+     <section class=" adidas" id="adidasss" >
+      <br>
+         <img width="100%" height="100%" src="https://i.pinimg.com/originals/d0/b6/5c/d0b65c5c53657f897af6862c44d8a5e2.jpg">
+     </section>
+
+
+     
+     <section class="kitchen-appliances-container" style="margin-top: 2cm;">
+      <div class="kitchenone">
+
+
+
+         <div class="kitchen-products">
+           <div class="pree-products">
+              <img style="height: 5cm; width: 4.5cm; margin-top: .2cm; margin-left: .5cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/m/0/f/-original-imagxvywfgtxyf9j.jpeg?q=70">
+              <p style="color: black; margin-top: -4.8cm; margin-left: 1cm;"><strong>Adidas CriHase </strong></p>
+           </div>
+           <div class="pre-product-details">
+              <h3 style="margin-top: 1.3cm; margin-left: 1cm; font-size: 22px;">18.03 $</h3>
+              <p><s><strong style="color: green; margin-left: 1.3cm;">22.30 $</strong></s></p>
+              <button class="kitchen-button">Buy Now</button>
+           </div>
+
+         </div>
+
+         <div class="kitchen-products">
+           <div class="pree-products">
+              <img style="height: 5cm; width: 5.1cm; margin-top: .2cm; margin-left: .3cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/p/g/w/-original-imagxvyxbbyqycfs.jpeg?q=70">
+              <p style="color: black; margin-top: -4.8cm; margin-left: .7cm;"><strong>Adidas Cri Rise V2</strong></p>
+           </div>
+           <div class="pre-product-details">
+              <h3 style="margin-top: 1.3cm; margin-left: 1cm; font-size: 22px;">17.03 $</h3>
+              <p><s><strong style="color: green; margin-left: 1.3cm;">23.45 $</strong></s></p>
+              <button class="kitchen-button">Buy Now</button>
+           </div>
+
+         </div>
+
+
+         <div class="kitchen-products">
+           <div class="pree-products">
+              <img style="height: 5cm; width: 4.4cm; margin-top: .2cm; margin-left: .4cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/w/x/1/-original-imagxvyw6vuyexyz.jpeg?q=70">
+              <p style="color: black; margin-top: -4.8cm; margin-left: .7cm;"><strong>Adidas Baseliner V2</strong></p>
+           </div>
+           <div class="pre-product-details">
+              <h3 style="margin-top: 1.3cm; margin-left: 1cm; font-size: 22px;">24.71 $</h3>
+              <p><s><strong style="color: green; margin-left: 1.3cm;">27.98 $</strong></s></p>
+              <button class="kitchen-button">Buy Now</button>
+           </div>
+
+         </div>
+
+
+
+  </div>
+
+
+    <br>
+    <br>
+
+<div class="kitchenone">
+               
+   <div class="kitchen-products">
+       <div class="pree-products">
+          <img style="height: 5cm; width: 5cm; margin-top: .3cm; margin-left: .2cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/x/w/o/-original-imagxvyxanwnhtze.jpeg?q=70">
+          <p style="color: black; margin-top: -4.7cm; margin-left: .7cm;"><strong>Adidas flair mode </strong></p>
+       </div>
+       <div class="pre-product-details">
+          <h3 style="margin-top: 1.2cm; margin-left: 1cm; font-size: 22px;">27.09 $</h3>
+          <p><s><strong style="color: green; margin-left: 1.3cm;">31.32 $</strong></s></p>
+          <button class="kitchen-button">Buy Now</button>
+       </div>
+
+     </div>
+      
+     
+     <div class="kitchen-products">
+       <div class="pree-products">
+          <img style="height: 5cm; width: 4.5cm; margin-top: .2cm; margin-left: .5cm;"   src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/6/7/w/-original-imagxvywkm4qn3cc.jpeg?q=70">
+          <p style="color: black; margin-top: -4.8cm; margin-left: .7cm;"><strong>Adidas Cricup 23</strong></p>
+       </div>
+       <div class="pre-product-details">
+          <h3 style="margin-top: 1.2cm; margin-left: 1cm; font-size: 22px;">30.09 $</h3>
+          <p><s><strong style="color: green; margin-left: 1.3cm;">34.32 $</strong></s></p>
+          <button class="kitchen-button">Buy Now</button>
+       </div>
+
+     </div>
+
+      
+        
+     <div class="kitchen-products">
+       <div class="pree-products">
+          <img style="height: 5cm; width: 5cm; margin-top: .4cm; margin-left: .4cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/t/2/q/-original-imagxvyy2zpgzeex.jpeg?q=70">
+          <p style="color: black; margin-top: -4.7cm; margin-left: 1.7cm;"><strong>Adidas Quezt run M</strong></p>
+       </div>
+       <div class="pre-product-details">
+          <h3 style="margin-top: 1.2cm; margin-left: 1cm; font-size: 22px;">29.98 $</h3>
+          <p><s><strong style="color: green; margin-left: 1.3cm;">32.32 $</strong></s></p>
+          <button class="kitchen-button">Buy Now</button> 
+       </div>
+
+     </div>
+
+</div>
+</section>
+
+
+<section class="puma" id="pumaaa">
+ <img width="100%" height="100%" src="https://coupongizer.com/en/wp-content/uploads/2022/11/Puma-Coupon-Deals-uae.jpg">
+</section>
+
+
+
+  <section id="allensollyyy" class="allensollycol" style="margin-top: 1cm;">
+    <br>
+     <div class="allencol">
+
+         <div class="allencol1">
+             <div class="allenimg1">
+               <img height="100%" width="85%" src="https://i.pinimg.com/236x/fa/ac/bb/faacbb1530d90fd69fa1eac9c5c5e752.jpg">
+             </div>
+             <div class="allendesc1">
+                <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+            
+                <br>
+               <span style="margin-left: .2cm;">Men Solid Round Neck <span style="margin-left: .2cm;">Jacket</span></span>
+               
+               <br>
+               <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+               <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+               <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+               <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+               <button>Buy Now</button>
+             </div>
+         </div>
+
+
+         <div class="allencol1">
+          <div class="allenimg1">
+            <img width="90%" height="100%" src="https://rukminim2.flixcart.com/image/850/1000/xif0q/jacket/0/o/q/m-1-no-84991518-puma-original-imaghb47ndtbubr5.jpeg?q=20&crop=false">
+           </div>
+          <div class="allendesc1">
+             <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+         
+             <br>
+            <span style="margin-left: .2cm;">Sport Men blue Slim <span style="margin-left: .2cm;">Jacket</span></span>
+            
+            <br>
+            <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+            <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+            <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+            <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+            <button>Buy Now</button>
+          </div>
+      </div>
+
+
+      <div class="allencol1">
+        <div class="allenimg1">
+          <img height="100%" width="85%" src="https://rukminim2.flixcart.com/image/850/1000/kt0enww0/jacket/y/x/l/m-1-no-84678706-puma-original-imag6gagw64yqure.jpeg?q=90&crop=false">
+        </div>
+        <div class="allendesc1">
+           <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+       
+           <br>
+          <span style="margin-left: .2cm;">Men  Solid Polo Neck T-<span style="margin-left: .2cm;">Shirt</span>
+          
+          <br>
+          <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+          <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+          <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+          <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+          <button>Buy Now</button>
+        </div>
+    </div>
+
+
+        
+    <div class="allencol1">
+      <div class="allenimg1">
+        <img height="100%" width="85%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVvOOoOhJskCPJZ5WsDe-RGt2vuDcFsxO1euFK4xlYfJieQ73gyd6ZiRnBgQ05962pbCk&usqp=CAU">
+      </div>
+      <div class="allendesc1">
+         <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+     
+         <br>
+        <span style="margin-left: .2cm;">Men Solid Round Neck <span style="margin-left: .2cm;">Jacket</span></span>
+        
+        <br>
+        <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+        <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+        <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+        <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+        <button>Buy Now</button>
+      </div>
+  </div>
+
+
+        
+  <div class="allencol1">
+    <div class="allenimg1">
+      <img height="100%" width="90%" src="https://rukminim2.flixcart.com/image/850/1000/ktd9mkw0/jacket/e/g/t/m-1-no-52021201-puma-original-imag6q3yvku9uzc4.jpeg?q=20&crop=false">
+    </div>
+    <div class="allendesc1">
+       <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+   
+       <br>
+      <span style="margin-left: .2cm;">Men Solid V-Neck <span style="margin-left: .2cm;">Jacket</span></span>
+      
+      <br>
+      <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+      <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+      <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+      <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+      <button>Buy Now</button>
+    </div>
+</div>
+
+     </div>
+
+
+    
+  
+
+    <div class="allensollyimgbanner">
+       <br>
+              <div class="allencol1">
+        <div class="allenimg1">
+          <img height="100%" width="85%" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7473774/2018/12/19/6f9f7abe-7c26-445c-87ce-7179e8f938941545212829380-Puma-Women-Dresses-901545212829038-1.jpg">
+        </div>
+        <div class="allendesc1">
+           <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+       
+           <br>
+          <span style="margin-left: .2cm;">Womens Black Printed <span style="margin-left: .2cm;">Dress</span>
+          
+          <br>
+          <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+          <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+          <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+          <span style="font-size: 14px;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+          <button>Buy Now</button>
+        </div>
+              </div>
+
+             <div class="allen-img12">
+                <img height="100%" width="100%" src="https://staticg.sportskeeda.com/editor/2023/03/bda84-16779522739911-1920.jpg">
+             </div>
+
+             
+             <div class="allencol1">
+              <div class="allenimg1">
+                <img height="100%" width="85%" src="https://i.pinimg.com/originals/0e/72/4f/0e724f89e8794d732759e50a564df8d5.jpg">
+              </div>
+              <div class="allendesc1">
+                 <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+             
+                 <br>
+                <span style="margin-left: .2cm;">Women's Classical  <span style="margin-left: .2cm;">Dress</span>
+                
+                <br>
+                <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+                <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+                <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+                <span style="font-size: 14px;"><i  style="color: #088178 ;"  class="fa-regular fa-star"></i></span>
+                <button>Buy Now</button>
+              </div>
+                    </div>
+
+    </div>
+
+    <br>
+  <br>
+
+    <div class="allencol" style="margin-top: 8.1cm;">
+      <br>
+      <div class="allencol1">
+          <div class="allenimg1">
+            <img height="100%" width="85%" src="https://i.pinimg.com/474x/0f/a7/c8/0fa7c88034f11d8e9bd1bd011bddef1a.jpg">
+          </div>
+          <div class="allendesc1">
+             <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+         
+             <br>
+            <span style="margin-left: .2cm;"> Puma Glam Women's <span style="margin-left: .2cm;">T-Shirt</span></span>
+            
+            <br>
+            <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+            <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+            <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+            <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+            <button>Buy Now</button>
+          </div>
+      </div>
+
+
+      <div class="allencol1">
+       <div class="allenimg1">
+         <img height="100%" width="90%" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/25226678/2023/9/29/0a74001f-02df-4e93-b2b9-4c3ed86053741695927103552PumaWomenRibbedSheathDresses1.jpg">
+       </div>
+       <div class="allendesc1">
+          <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+      
+          <br>
+         <span style="margin-left: .2cm;">Women Orange Color T-<span style="margin-left: .2cm;">Shirt</span></span>
+         
+         <br>
+         <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+         <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+         <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+         <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+         <button>Buy Now</button>
+       </div>
+   </div>
+
+
+   <div class="allencol1">
+     <div class="allenimg1">
+       <img height="100%" width="85%" src="https://i.pinimg.com/originals/5a/d9/45/5ad945d90002a84a4047684d58560bba.jpg">
+     </div>
+     <div class="allendesc1">
+        <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+    
+        <br>
+       <span style="margin-left: .2cm;">Kid's Toddler girl outfits <span style="margin-left: .2cm;">Fashion</span>
+       
+       <br>
+       <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+       <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+       <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+       <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+       <button>Buy Now</button>
+     </div>
+ </div>
+
+
+     
+ <div class="allencol1">
+   <div class="allenimg1">
+    
+      <img height="100%" width="95%" style="margin-left: .1cm;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74DAvl8_y_ICKSBuoTg-_0bIBkPlwkTJBCw&usqp=CAU">
+    
+   </div>
+   <div class="allendesc1">
+      <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+  
+      <br>
+     <span style="margin-left: .2cm;">Puma kid's Clothing, <span style="margin-left: .2cm;">Footwear</span>
+     
+     <br>
+     <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+     <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+     <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+     <span style="font-size: 14px;"><i class="fa-regular fa-star"></i></span>
+     <button>Buy Now</button>
+   </div>
+</div>
+
+
+     
+<div class="allencol1">
+ <div class="allenimg1">
+   <img height="100%" width="85%" src="https://imagescdn.planetfashion.in/img/app/product/5/512729-3860500.jpg?auto=format&w=494.40000000000003">
+ </div>
+ <div class="allendesc1">
+    <span style="font-size: 14px; margin-left: .2cm;">Puma</span>
+
+    <br>
+   <span style="margin-left: .2cm;"> Women Blue Casual <span style="margin-left: .2cm;">Shirt</span>
+   
+   <br>
+   <span style="font-size: 14px; margin-left: .2cm;"><i style="color: #088178;" class="fa-solid fa-star"></i></span>
+   <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+   <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+   <span style="font-size: 14px;"><i style="color: #088178 ;" class="fa-solid fa-star"></i></span>
+   
+   <button>Buy Now</button>
+ </div>
+</div>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="section-p1" id="pagination">
+    <div class="pagediv">
+      <a href="shop.html">1</a>
+      <a href="explore1.html">2</a>
+    
+    </div>
+  </section>
+  
+  
+  
+  <section id="newsletters" >
+    <div style="float: left; width: 50%; background-color:#253342; height: 4cm;">
+      <div style="margin-top: 1.5cm; margin-left: 3cm;">
+       <h4 style="color: #c8c8c8; font-size: 22px ; font-weight: 700;">Sign Up For Newsletters</h4>
+       <p style="font-size: 14px ; font-weight: 600; color: #818ea0;">Get E-mail update about our shop and <span style="color: #ffbd27;">Special offers</span></p>
+      </div>
+    </div>
+    
+    <div style="float: left; width: 50%; background-color: #253342; height: 4cm;">
+      <div class="form"  style="margin-top: 1.5cm; margin-left: 4cm;">
+         <input  type="email" placeholder="Enter your E-mail address">
+         <a href="#"><button class="normal">Sign Up</button></a>
+         </div>
+    </div>
+  </section>
+  
+  
+  <footer id="footdiv" class="section-p1" style="height: 9cm; background-color:white;">
+  
+  <div class="col" style="float: left; width: 35%;">
+    <img class="logo" style="width: 4cm; height: 3.8cm; margin-top: -1.4cm;" src="S-removebg-preview.png">
+    
+    <h4 style="font-size: large; margin-top: 2.4cm; margin-left: .4cm;">Contact</h4>
+    <p style="margin-left: .4cm;"><strong>Address: </strong>562 Willington road, Street 32 ,San Francisco </p>
+    <p style="margin-left: .4cm;"><strong>Phone: </strong> 6235763536 / (+91) 88 2568 7536</p>
+    <p style="margin-left: .4cm;"><strong>Hours</strong>10:00 - 18:00 , Mon - Sat</p>
+    <br>
+    <div class="follow">
+      <h4 style="font-size: large; margin-left: .4cm;">Follow us</h4>
+      <div class="icon" style="margin-left: .4cm;">
+           <i style="color: #088178;" class="fab fa-facebook-f"></i>
+           <i style="color: #088178;" class="fab fa-twitter"></i>
+           <i style="color: #DD2A7B;" class="fab fa-instagram"></i>
+           <i style="color: #bd081c;" class="fab fa-pinterest-p"></i>
+           <i style="color: #E62117;" class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="col" style="float: left; width: 15%;">
+    <h4 style="font-size: large; margin-left: .4cm;">About</h4>
+  
+    <a  href="#">About us</a>
+    <br>
+    <p></p>
+    <a  href="#">Delivery Information</a>
+    <br>
+    <p></p>
+    <a href="#">Privacy Policy</a>
+    <br>
+    <p></p>
+    <a href="#">Terms & Conditions</a>
+    <br>
+    <p></p>
+    <a href="#">Contact us</a>
+  </div>
+  
+  
+  <div class="col" style="float: left; width: 15%;">
+  
+    <h4 style="font-size: large; margin-left: .4cm;">My Accounts</h4>
+    <a href="#">Sign In</a>
+    <br>
+    <p></p>
+    <a href="#">View Cart</a>
+    <br>
+    <p></p>
+    <a href="#">My Wishlist</a>
+    <br>
+    <p></p>
+    <a  href="#">Track My Order</a>
+    <br>
+    <p></p>
+    <a href="#">Help</a>
+  </div>
+  
+  
+  <div class="col install" style="float: left; width: 35%;">
+  <h4 style="font-size: large; margin-left: .4cm;">Install App</h4>
+  <p style="margin-left: .4cm;">From App Store or Google Play</p>
+  <br>
+    <div class="row">
+        <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;"  src="png-transparent-google-play-app-store-app-market-download-button (1).png">
+        <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;" src="playstore.png">
+     </div>
+     <br>
+     <p style="margin-left:.4cm;">Secured Payment Gateways</p>
+     <img style="width: 5.5cm; height: 2.3cm; margin-left: .4cm; margin-top: -.5cm;" src="Payment-methods.png.2b9ba23475aaa15189f555f77ec3a549-removebg-preview.png">
+  </div>
+  
+  <div class="copyright">
+     <p style="margin-left: 10.8cm; margin-top: -.8cm;"><i>copyright @ 2024 Coding Artist | Salex reserved</i></p>
+  </div>
+  </footer>
+
+
+    </body>
+</html>

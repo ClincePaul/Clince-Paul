@@ -1,0 +1,254 @@
+<html>
+    <head>
+        <title>salex.com</title>
+        <link rel="stylesheet" href="ecommerce.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
+   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $(".btnlogin-popup").click(function(){
+            $("#crossbox1").show(800);
+            $("#crossbox2").hide(800);
+            
+            
+          });
+        });
+        </script>
+
+
+<script>
+   $(document).ready(function(){
+     $("#crossmark").click(function(){
+       $("#crossbox1").hide("slow");
+     });
+   });
+   </script>
+
+
+<script>
+   $(document).ready(function(){
+     $("#crossmark1").click(function(){
+       $("#crossbox2").hide("slow");
+       $("#crossbox1").show("slow");
+     });
+   });
+   </script>
+
+
+<script>
+   $(document).ready(function(){
+     $("#crossmark3").click(function(){
+       $("#crossbox2").hide("slow");
+       $("#crossbox1").show("slow");
+     });
+   });
+   </script>
+
+
+
+
+<script>
+   $(document).ready(function(){
+     $("#registermark").click(function(){
+      $("#crossbox1").hide("slow");
+       $("#crossbox2").show("slow");
+     });
+   });
+   </script>
+
+      
+       <style>
+         #crossbox2{
+            display: none;
+         }
+       </style>
+
+
+    </head>
+    <body class="signbody">
+         <header class="loginpage">
+            <div class="logo" onclick="window.location.href='home.html';">
+                <img style="width: 4cm; height: 4cm; margin-top: -1cm; margin-left: -1.7cm;" src="S-removebg-preview.png">
+             </div>
+            <nav class="navvsignin">
+              <a href="home.html">Home</a>
+              <a href="shop.html">Shope</a>
+              <a href="Blog.html">Blog</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+              <button class="btnlogin-popup">Login</button>
+            </nav>
+
+         </header>
+
+         <div class="warapper" id="crossbox1">
+            
+            <div id="crossmark">
+          <span class="close-division">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+          </div>
+
+
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                      <div class="inputt-box">
+                         <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                         <input type="email" required>
+                         <label>Email</label>
+                      </div>
+
+                      <div class="inputt-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label>password</label>
+                     </div>
+
+                     <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password</a>
+                     </div>
+                     <button type="submit" class="submitbtn">Login</button>
+
+                     <div>
+                        <p class="register-link">Don't have an account ?<a href="#" id="registermark">Register</a></p>
+                  
+                     </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="form-box register">
+               <h2>Registeration</h2>
+               <form action="#">
+
+                  <div class="inputt-box">
+                     <span class="icon"><i class="fa-solid fa-user"></i></span>
+                     <input type="text" required>
+                     <label>Username</label>
+                  </div>
+
+                     <div class="inputt-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                     </div>
+
+                     <div class="inputt-box">
+                       <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                       <input type="password" required>
+                       <label>password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                       <label><input type="checkbox">I agree to the terms & conditions</label>
+                       
+                    </div>
+                    <button type="submit" class="submitbtn">Register</button>
+
+                    <div>
+                       <p class="register-link">Already have an account ?<a href="#">Login</a></p>
+                 
+                    </div>
+               </form>
+
+           </div>
+
+         </div>
+
+
+         <div class="warapper" id="crossbox2" style="height: 12cm;">
+
+
+            <div id="crossmark1">
+               <span class="close-division">
+                 <i class="fa-solid fa-xmark"></i>
+               </span>
+               </div>
+            
+            <div class="form-box login">
+                <h2>Register</h2>
+                <form action="#">
+                      <div class="inputt-box">
+                         <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                         <input type="email" required>
+                         <label>Email</label>
+                      </div>
+
+                      <div class="inputt-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label>password</label>
+                     </div>
+
+
+                     <div class="inputt-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label> conform password</label>
+                     </div>
+
+
+
+                     <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                     
+                     </div>
+                     <button id="crossmark3" type="submit" class="submitbtn">Register</button>
+
+                     <div>
+                        <p class="register-link">Don't have an account ?<a href="#">Login</a></p>
+                  
+                     </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="form-box register">
+               <h2>Registeration</h2>
+               <form action="#">
+
+                  <div class="inputt-box">
+                     <span class="icon"><i class="fa-solid fa-user"></i></span>
+                     <input type="text" required>
+                     <label>Username</label>
+                  </div>
+
+                     <div class="inputt-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                     </div>
+
+                     <div class="inputt-box">
+                       <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                       <input type="password" required>
+                       <label>password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                       <label><input type="checkbox">I agree to the terms & conditions</label>
+                       
+                    </div>
+                    <button type="submit" class="submitbtn">Register</button>
+
+                    <div>
+                       <p class="register-link">Already have an account ?<a href="#">Login</a></p>
+                 
+                    </div>
+               </form>
+
+           </div>
+
+         </div>
+    </body>
+</html>

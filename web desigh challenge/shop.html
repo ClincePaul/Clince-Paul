@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>salex.com</title>
+        <link rel="stylesheet" href="ecommerce.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#searchproduct").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myDiv *").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+        
+        
+        <script> 
+            $(document).ready(function(){
+              $("#searchproduct").click(function(){
+                $(".demosearch").slideToggle();
+              });
+            });
+            </script>
+
+
+
+
+           
+<style>
+   .demosearch{
+        background-color: white; 
+        height: 3cm;
+         width: 6cm;
+          margin-left: 3.5cm;
+           position: absolute;
+           box-shadow: 2px 2px 4px black;
+           margin-top: .3cm;
+           overflow: hidden;
+          display: none;
+          border-radius: 10px;
+        
+    }
+    .demosearch p a{
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+        margin-left: .3cm;
+    }
+    .demosearch p a:hover{
+        color: blue;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+</style>
+
+    </head>
+
+    <body>
+      
+        <section id="header">
+           <div class="logo" onclick="window.location.href='home.html';">
+              <img style="width: 4cm; height: 4cm; margin-top: -.8cm; margin-left: .8cm;" src="S-removebg-preview.png">
+           </div>
+           
+           <div class="searchbar">
+
+            <input id="searchproduct" type="text" placeholder="Search...">
+           <div class="demosearch">
+            <div id="myDiv">
+               <p><a href="b1product.html">G-Shock Watch</a></p>
+               <p><a href="bproduct.html">Blue Cotton  Trousers</a></p>
+               <p><a href="b2product.html">Black Regular Shorts</a></p>
+               <p><a href="b3product.html">Men Solid Ankle </a></p>
+               <p><a href="b5product.html"> Round Neck  Black T-Shirt</a></p>
+               <p><a href="b6product.html">Round Neck Red T-Shirt </a></p>
+               <p><a href="b7product.html">Women Black Dress </a></p>
+               <p><a href="b8product.html"> Women  Pink Dress</a></p>
+               <p><a href="b9product.html"> Women Dark Blue  Dress</a></p>
+               <p><a href="cproduct.html"> Acer Nitro 5 Laptop</a></p>
+               <p><a href="c1product.html"> ASUS ROG Strix Laptop</a></p>
+               <p><a href="c2product.html"> DELL Intel Core i5 Laptop</a></p>
+               <p><a href="c3product.html"> SAMSUNG  Book 2 Laptop</a></p>
+               <p><a href="c4product.html"> OnePlus 11 5G Phone</a></p>
+               <p><a href="c5product.html"> OnePlus 10 Pro 5G</a></p>
+               <p><a href="c6product.html"> IQOO Z7 Pro 5G </a></p>
+               <p><a href="c7product.html"> Apple iPhone 15</a></p>
+               <p><a href="c8product.html"> boAt Rockerz 255 earphone</a></p>
+               <p><a href="c9product.html"> Canon 1500D DSLR Camera</a></p>
+               <p><a href="c10product.html"> beatXP Tune XPods wirless earphone</a></p>
+               <p><a href="c11product.html"> TECHON shinecon vr box</a></p>
+
+               <p><a href="Dproduct.html"> Men Regular Wear  White Sandal</a></p>
+               <p><a href="D1product.html"> Men Polyester White, Black T-Shirt</a></p>
+               <p><a href="D2product.html"> Pack of 4 Men Round Neck t-shirt</a></p>
+               <p><a href="D3product.html"> Men  Round Neck Cotton  Black T-Shirt</a></p>
+               <p><a href="D4product.html"> Orange Running Shoes For Men</a></p>
+               <p><a href="D5product.html"> Acer NITRO 21.5 inch Laptop</a></p>
+               <p><a href="D6product.html"> Charger</a></p>
+               
+               <p><a href="sproduct.html"> Pure Cotton Brown T-Shirt</a></p>
+               <p><a href="s1product.html">   Printed Casual Shirt</a></p>
+               <p><a href="s2product.html"> Men check t-shirt</a></p>
+               <p><a href="s3product.html">  Running Shoes For Men</a></p>
+               <p><a href="s4product.html"> Men check t-shirt</a></p>
+               <p><a href="s5product.html">  puma Men Slides </a></p>
+               <p><a href="s6product.html"> Ferrari RS-X Sneakers for men</a></p>
+               <p><a href="s7product.html"> Men Solid  Black T-Shirt </a></p>
+               <p><a href="s8product.html"> allen solly  green Casual Shirt</a></p>
+               <p><a href="s9product.html">  raymond Formal Shirt</a></p>
+
+               <p><a href="mobilecollection.html">phone store</a></p>
+               <p><a href="mobilecollection.html">oppo phones</a></p>
+               <p><a href="mobilecollection.html">realme phones</a></p>
+               <p><a href="mobilecollection.html">nothing phones</a></p>
+
+               <p><a href="Grocery.html">Grocery store</a></p>
+               <p><a href="Appliance.html"> Home Appliances</a></p>
+               <p><a href="countdown.html"> baby products</a></p>
+               
+            </div>
+           </div>
+
+            </div>
+
+           <div class="navbar">
+            
+               <div class="mediaone">
+               <ul>
+                <li><a  href="home.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a  href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               </ul>
+               </div>
+           </div>
+        </section>
+
+
+  <section class="section-p1" id="top-slider">
+
+      <div class="second-slider">
+         
+        <div class="second-slider-img">
+            <img src="https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" onclick="window.location.href='Grocery.html';">
+            <h5  onclick="window.location.href='Grocery.html';"><strong>Grocery</strong></h5>
+        </div>
+
+      </div>
+
+      <div class="second-slider" >
+
+        <div class="second-slider-img">
+            <img src="https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" onclick="window.location.href='mobilecollection.html';">
+            <h5 onclick="window.location.href='mobilecollection.html';"><strong>Mobiles</strong></h5>
+        </div>
+         
+      </div>
+
+
+
+      <div class="second-slider">
+                
+        <div class="second-slider-img">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100" onclick="window.location.href='explore1.html';">
+            <h5 onclick="window.location.href='explore1.html';" style="margin-top: .2cm;"><strong>Fashion</strong></h5>
+        </div>
+
+       </div>
+   
+         
+       
+       <div class="second-slider">
+        <div class="second-slider-img">
+            <img src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100">
+            <h5><strong>Electronics</strong></h5>
+        </div>
+       </div>
+
+       
+      <div class="second-slider" >
+         
+        <div class="second-slider-img">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100"  onclick="window.location.href='Appliance.html';">
+            <h5  onclick="window.location.href='Appliance.html';"><strong>Appliances</strong></h5>
+        </div>
+
+      </div>
+         
+      <div class="second-slider">  
+        <div class="second-slider-img">
+            <img src="https://rukminim2.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100">
+            <h5><strong>Furniture</strong></h5>
+        </div>
+
+       </div>
+
+
+
+       <div class="second-slider" >
+           <div class="second-slider-img">
+            <img src="https://rukminim2.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100">
+            <h5><strong>Toys & More</strong></h5>
+        </div>
+
+       </div>
+      
+
+
+
+
+
+
+
+
+  </section>
+
+
+<section>
+     
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn"  id="radio1">
+            <input type="radio" name="radio-btn"  id="radio2">
+            <input type="radio" name="radio-btn"  id="radio3">
+            <input type="radio" name="radio-btn"  id="radio4">
+
+
+           <div class="slide first">
+              <img width="100%" src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/f9ed97142ac6521a.jpeg?q=20" alt="">
+           </div>
+
+           <div class="slide">
+            <img width="100%" src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/0f9ecd9ce4f86cfa.jpg?q=20" alt="">
+           </div>
+
+           <div class="slide">
+            <img width="100%" src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/ef637eb93bf1a887.jpeg?q=20" alt="">
+           </div>
+
+           <div class="slide">
+            <img width="100%" src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/f48a97359d7f5654.jpeg?q=20" alt="">
+           </div>
+           
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn1"></div>
+                <div class="auto-btn1"></div>
+                <div class="auto-btn1"></div>
+            </div>
+
+        </div>
+
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+
+    </div>
+     
+
+    <script type="text/javascript">
+        var counter =1;
+   
+      setInterval(function(){
+   
+       document.getElementById('radio'+ counter).checked = true;
+       counter++;
+   
+       if(counter >= 5){
+   
+           counter =1;
+       }
+       }, 3000);
+        </script>
+   
+</section>
+
+
+
+
+<section class="section-p1" id="products-container">
+     
+     <div id="first-section" class="section-p1">
+       <h2>Best of Electronics</h2>
+
+       <div  id="sub-of-first">
+          
+        <div style="float: left; margin-left: 1cm;">
+            <div style="height: 7cm;" class="pro" onclick="window.location.href='cproduct.html';">
+              <img style="height: 4cm;" src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/c/m/m/an515-47-gaming-laptop-acer-original-imagzuardhu6zwdd.jpeg?q=70">
+              <div class="des">
+                <span>Acer </span>
+                <h5>Acer Nitro 5 (2023) AMD Ryzen 5...</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;">$830.05</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$1203.13</s></p>
+                   <button id="rating" style="background-color: #329B24;">4.4<i class="fa-solid fa-star"></i></button>
+                 </div>
+             </div>
+            </div>
+          </div> 
+
+          <div style="float: left; margin-left: 1cm;">
+            <div style="height: 7cm;" class="pro" onclick="window.location.href='c1product.html';">
+              <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/v/z/h/-original-imaghxgk8pzmhqja.jpeg?q=70">
+              <div class="des">
+                <span>ASUS</span>
+                <h5>ASUS ROG Strix Scar 17 SE (2022)</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;">$3431.26</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$5775.1</s></p>
+                   <button id="rating" style="background-color: #088178;">4<i class="fa-solid fa-star"></i></button>
+                 </div>
+             </div>
+            </div>
+          </div>
+
+          <div style="float: left;">
+            <div style="height: 7cm; margin-left: 1cm;" class="pro" onclick="window.location.href='c2product.html';">
+              <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/y/h/w/-original-imaghzahgukpkyfu.jpeg?q=70">
+              <div class="des">
+                <span>DELL</span>
+                <h5>DELL Intel Core i5 13th Gen 1335U</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;">$781.92</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$1117.27</s></p>
+                   <button id="rating">3.4<i class="fa-solid fa-star"></i></button>
+                 </div>
+             </div>
+            </div>
+          </div>
+
+          <div style="float: left;">
+            <div style="height: 7cm; margin-left: 1cm;" class="pro" onclick="window.location.href='c3product.html';">
+              <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/r/r/5/-original-imagupz9vdcgzvnf.jpeg?q=70">
+              <div class="des">
+                <span> SAMSUNG</span>
+                <h5>SAMSUNG Galaxy Book 2 Intel Core i5 12th Gen</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;">$577.39</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$1034.58</s></p>
+                   <button id="rating" style="background-color: #088178;" >4.8<i class="fa-solid fa-star"></i></button>
+                   <h3 style="margin-left: 2cm; margin-top: -.1cm;" id="blinking1"><span style="color:#088178;">Best Deal</span></h3>
+                 </div>
+             </div>
+            </div>
+          </div>
+
+         </div>
+     </div>
+
+    
+      
+     
+     
+     <div id="video-product" class="section-p1">
+       
+         
+       
+        <div class="first-video">
+            
+            <div style="float: left; margin-left: 1cm;">
+                <div style="height: 7cm;" class="pro" onclick="window.location.href='c4product.html';">
+                  <img style="height: 4cm;" src="https://www.oneplus.com/content/dam/oasis/page/2023/global/home/salami-share.jpg">
+                  <div class="des">
+                    <span>OnePlus</span>
+                    <h5>OnePlus 11 5G (Eternal Green, 128 GB) </h5>
+                      <div style="margin-left: .4cm;" id="containerIntro">
+                        <h1 class="start" style="color: #088178;">$685.75</h1>&nbsp;&nbsp;
+                       <p class="start" style="color: red;"><s>$722.46</s></p>
+                       <button id="rating" style="background-color: #329B24;">4.4<i class="fa-solid fa-star"></i></button>
+                     </div>
+                 </div>
+                </div>
+              </div> 
+
+
+              <div style="float: left; margin-left: 1cm;">
+                <div style="height: 7cm;" class="pro" onclick="window.location.href='c5product.html';">
+                  <img style="height: 4cm; " src="https://media.wired.com/photos/6244999f73b639a714b7f1b0/master/w_2560%2Cc_limit/OnePlus-10-Review-Top-Gear.jpg">
+                  <div class="des">
+                    <span>OnePlus </span>
+                    <h5>OnePlus 10 Pro 5G (Emerald Forest, 128 GB)</h5>
+                      <div style="margin-left: .4cm;" id="containerIntro">
+                        <h1 class="start" style="color: #088178;">$545.51</h1>&nbsp;&nbsp;
+                       <p class="start" style="color: red;"><s>$806.82</s></p>
+                       <button id="rating" style="background-color:#088178;">4.7<i class="fa-solid fa-star"></i></button>
+                     </div>
+                 </div>
+                </div>
+              </div> 
+
+
+              <div style="float: left; margin-left: 1cm;">
+                <div style="height: 8cm;" class="pro" onclick="window.location.href='c6product.html';">
+                  <img style="height: 5cm;" src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/m/a/l/z7-pro-5g-i2301-iqoo-original-imagtbxbxj5fz6zs.jpeg?q=70">
+                  <div class="des">
+                    <span>IQOO </span>
+                    <h5>IQOO Z7 Pro 5G (Blue Lagoon, 256 GB)  </h5>
+                      <div style="margin-left: .4cm;" id="containerIntro">
+                        <h1 class="start" style="color: #088178;">$313.15</h1>&nbsp;&nbsp;
+                       <p class="start" style="color: red;"><s>$337.22</s></p>
+                       <button id="rating">3.3<i class="fa-solid fa-star"></i></button>
+                     </div>
+                 </div>
+                </div>
+              </div> 
+
+
+              <div style="float: left; margin-left: 1cm;">
+                <div style="height: 8cm;" class="pro" onclick="window.location.href='c7product.html';">
+                  <img style="height: 5cm;" src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70">
+                  <div class="des">
+                    <span>Apple</span>
+                    <h5>Apple iPhone 15 (Pink, 128 GB)</h5>
+                      <div style="margin-left: .4cm;" id="containerIntro">
+                        <h1 class="start" style="color: #088178;">$842.97</h1>&nbsp;&nbsp;
+                       <p class="start" style="color: red;"><s>$962.20</s></p>
+                       <button id="rating" style="background-color: #088178;">4.8 <i class="fa-solid fa-star"></i></button>
+                     </div>
+                 </div>
+                </div>
+              </div> 
+
+
+         </div>
+
+         
+         <div class="second-video">
+          <marquee bgcolor="#ccc" style="border-radius: 5px;"  loop="-1" scrollamount="5" width="92%" class="runningletters" >  On March 10th 2024 , Sunday 9:00AM-9:00PM ,<strong id="blinking2" style="color: red;">M E G A &nbsp;&nbsp;  O F F E R...</strong> &nbsp;&nbsp;<strong style="color: red;">N E V E R &nbsp;&nbsp; S E T T L E</strong></marquee>
+
+          <img class="oneplusimg" src="oneplus 11 images.jpg" onclick="window.location.href='c4product.html';">
+          <img class="flashsale" id="blinking1" src="flash_sale_img-removebg-preview.png" onclick="window.location.href='c4product.html';">
+           
+          
+
+          <div class="oneplussale">
+          <h5 style="margin-left: 3cm;">ON</h5>
+          <h5 style="margin-left: .5cm;"> 10th  March 2024 </h5>
+          <h5><strong  style="color: white;" ><i>9:00 AM to 9:00 PM</i></strong></h5>
+          </div>
+         </div>
+
+
+
+      </div>   
+           
+     
+</section>
+
+
+
+
+
+<section class="section-p1" id="third-products">
+      
+      <div style="background-color: aqua ;">
+
+          
+
+        <div style="float: left; margin-left: 1cm;">
+          <div style="height: 7cm;" class="pro" onclick="window.location.href='c8product.html';">
+            <img style="height: 4cm;" src="https://rukminim2.flixcart.com/image/612/612/l31x2fk0/headphone/m/5/v/-original-image9ehhvpt8vzt.jpeg?q=70">
+            <div class="des">
+              <span>boAt</span>
+              <h5>boAt Rockerz 255 Pro+ /258 Pro+ </h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$14.09</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$48.09</s></p>
+                 <button id="rating">2.9<i class="fa-solid fa-star"></i></button>
+               </div>
+           </div>
+          </div>
+        </div> 
+
+        <div style="float: left; margin-left: 1cm;">
+          <div style="height: 7cm;" class="pro" onclick="window.location.href='c9product.html';">
+            <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/312/312/kk01pjk0/dslr-camera/f/v/o/eos-1500d-canon-original-imafzfugydh2mjgf.jpeg?q=70">
+            <div class="des">
+              <span>Canon</span>
+              <h5>Canon EOS 1500D DSLR Camera </h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$482.05</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$578.42</s></p>
+                 <button id="rating" style="background-color: #088178;">4.6 <i class="fa-solid fa-star"></i></button>
+               </div>
+           </div>
+          </div>
+        </div>
+
+        <div style="float: left;">
+          <div style="height: 7cm; margin-left: 1cm;" class="pro" onclick="window.location.href='c10product.html';">
+            <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/6/b/c/-original-imagxn2bx85ydevf.jpeg?q=70">
+            <div class="des">
+              <span>beatXP</span>
+              <h5>beatXP Tune XPods with 50H Playtime...</h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$9.63</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$42.17</s></p>
+                 <button id="rating" style="background-color:#329B24;">4.0<i class="fa-solid fa-star"></i></button>
+               </div>
+           </div>
+          </div>
+        </div>
+
+        <div style="float: left;">
+          <div style="height: 7cm; margin-left: 1cm;" class="pro" onclick="window.location.href='c11product.html';">
+            <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/smart-glass/h/x/p/shinecon-vr-box-techon-original-imagxhvx564zujdx.jpeg?q=70">
+            <div class="des">
+              <span>TECHON</span>
+              <h5>TECHON shinecon vr box  </h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$12.04</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$12.12</s></p>
+                 <button id="rating">2.4<i class="fa-solid fa-star"></i></button>
+               </div>
+           </div>
+          </div>
+        </div>   
+
+      
+
+        
+         
+      </div>
+</section>
+
+ 
+
+<section id="fourth-banner">
+
+  <img style="width: 100%; height: 7cm; " src="https://img.freepik.com/free-vector/green-golden-realistic-christmas-sale-banner-template_1361-3173.jpg">
+
+  
+</section>
+
+ 
+
+<section class="fourth-products">
+
+    <div class="fourth-img-one">
+       <div>
+          <img class="christmas-sidebar" src="christmas-sidebar.png">
+          <img class="additional-items"  src="christmas-additional items.png">
+       </div>
+       <div id="animateball">
+        <img class="img-ball1"  src="christmas-ball-img.png">
+       </div>
+       
+       <div id="animateball2">
+        <img class="img-ball2"  src="christmas-ball-img.png">
+
+         </div>
+       <img style="width: 4.3cm; height: 4cm; margin-top: 5.9cm; margin-left: -.8cm; " src="https://img.freepik.com/premium-photo/group-christmas-balls-with-white-background_755409-271.jpg">
+    </div>
+
+
+
+
+
+    <div class="all-products" style="background-color: #ccc;">
+       
+      <img style=" z-index: 3; height: 2.5cm; width: 5cm; margin-top: -.2cm; margin-left: -.2cm;" src="christmas-sidebar.png">
+      <img class="side-imgs" src="christmas-sidebar.png">
+      <img class="side-imgs" src="christmas-sidebar.png">
+      <img class="side-imgs" src="christmas-sidebar.png">
+      <img class="side-imgs" src="christmas-sidebar.png">
+      <img style=" z-index: 3; height: 2.5cm; width: 4.69cm; margin-top: -.2cm; margin-left: -.5cm;" src="christmas-sidebar.png">
+
+   <div style="margin-top: -1.6cm; z-index: -3;"> 
+
+      <div style="float: left; margin-left: .33cm;">
+        <div style="height: 7cm;" class="pro" onclick="window.location.href='Dproduct.html';">
+          <img style="height: 4cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/b/v/v/9-brd-991-9-birde-white-original-imagztecdvvh9qbh.jpeg?q=70">
+          <div class="des">
+            <span>BIRDE</span>
+            <h5>Men Lightweight White Sandal</h5>
+              <div style="margin-left: .4cm;" id="containerIntro">
+                <h1 class="start" style="color: #088178;">$3.89</h1>&nbsp;&nbsp;
+               <p class="start" style="color: red;"><s>$12.04</s></p>
+               <button id="rating">3.9<i class="fa-solid fa-star"></i></button>
+             </div>
+         </div>
+        </div>
+      </div> 
+
+      <div style="float: left; margin-left: .8cm;">
+        <div style="height: 7cm;" class="pro" onclick="window.location.href='D1product.html';">
+          <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/y/7/s/l-men-s-stylish-trendy-half-sleeve-digital-printed-latest-design-original-imagqz69mu8sryvh.jpeg?q=70">
+          <div class="des">
+            <span>sti</span>
+            <h5>Men Striped Round Neck T-Shirt</h5>
+              <div style="margin-left: .4cm;" id="containerIntro">
+                <h1 class="start" style="color: #088178;">$3.00</h1>&nbsp;&nbsp;
+               <p class="start" style="color: red;"><s>$12.04</s></p>
+               <button id="rating">3.7 <i class="fa-solid fa-star"></i></button>
+             </div>
+         </div>
+        </div>
+      </div>
+
+      <div style="float: left;">
+        <div style="height: 7cm; margin-left: 1cm;" class="pro" onclick="window.location.href='D2product.html';">
+          <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/u/8/y/m-4ms1001-missille-original-imagnsugrzc8arqd.jpeg?q=70">
+          <div class="des">
+            <span>MISSILLE</span>
+            <h5>Pack of 4 Men Solid Round Neck T-Shirt</h5>
+              <div style="margin-left: .4cm;" id="containerIntro">
+                <h1 class="start" style="color: #088178;">$5.95</h1>&nbsp;&nbsp;
+               <p class="start" style="color: red;"><s>$20.47</s></p>
+               <button id="rating" style="background-color:#329B24;">4.1<i class="fa-solid fa-star"></i></button>
+             </div>
+         </div>
+        </div>
+      </div>
+
+      <div style="float: left;">
+        <div style="height: 7cm; margin-left: 1cm;" class="pro" onclick="window.location.href='D3product.html';">
+          <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/y/g/f/s-os-naruto-001-mkzone-original-imagteudwuqtmvgv.jpeg?q=70">
+          <div class="des">
+            <span>MKzone</span>
+            <h5>Men Printed Round Neck T-Shirt </h5>
+              <div style="margin-left: .4cm;" id="containerIntro">
+                <h1 class="start" style="color: #088178;">$3.00</h1>&nbsp;&nbsp;
+               <p class="start" style="color: red;"><s>$6.02</s></p>
+               <button id="rating">3.3<i class="fa-solid fa-star"></i></button>
+             </div>
+         </div>
+        </div>
+      </div> 
+
+      <div style="float: left; margin-left: -.6cm;">
+        <div style="height: 7cm; margin-left: 1cm;" class="pro" onclick="window.location.href='D4product.html';">
+          <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/612/612/kyhlfgw0/shoe/z/l/j/9-m7-22509-zebra-l-grey-orange-m7-by-metronaut-zebra-l-grey-original-imagapfhzyh9crfx.jpeg?q=70">
+          <div class="des">
+            <span>M7 By Metronaut </span>
+            <h5>M7-22509-Zebra Shoes For Men</h5>
+              <div style="margin-left: .4cm;" id="containerIntro">
+                <h1 class="start" style="color: #088178;">$6.93</h1>&nbsp;&nbsp;
+               <p class="start" style="color: red;"><s>$24.10</s></p>
+               <button id="rating">2.4<i class="fa-solid fa-star"></i></button>
+             </div>
+         </div>
+        </div>
+      </div>
+      
+      <div style="float: left;">
+        <div style="height: 7cm; margin-left: 1cm;" class="pro" onclick="window.location.href='D5product.html';">
+          <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/312/312/xif0q/monitor/9/x/a/-original-imagsatb6cbghctx.jpeg?q=70">
+          <div class="des">
+            <span>Acer</span>
+            <h5>Acer NITRO 21.5 inch Full HD LED</h5>
+              <div style="margin-left: .4cm;" id="containerIntro">
+                <h1 class="start" style="color: #088178;">$71.78</h1>&nbsp;&nbsp;
+               <p class="start" style="color: red;"><s>$120.42</s></p>
+               <button id="rating" style="background-color:#088178;">4.8<i class="fa-solid fa-star"></i></button>
+             </div>
+         </div>
+        </div>
+      </div>
+
+      <div style="float: left;">
+        <div style="height: 7cm; margin-left: 1cm;" class="pro" onclick="window.location.href='D6product.html';">
+          <img style="height: 4cm; width: 4.5cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/battery-charger/x/w/w/20-watt-fast-type-c-pd-charger-with-lightning-cable-compatible-original-imaguv8gm685xfyu.jpeg?q=70">
+          <div class="des">
+            <span>MAK</span>
+            <h5>MAK 20 W  3.1 A Mobile Charger</h5>
+              <div style="margin-left: .4cm;" id="containerIntro">
+                <h1 class="start" style="color: #088178;">$5.37</h1>&nbsp;&nbsp;
+               <p class="start" style="color: red;"><s>$24.10</s></p>
+               <button id="rating" style="background-color:#329B24;">4.4<i class="fa-solid fa-star"></i></button>
+             </div>
+         </div>
+        </div>
+      </div>
+       
+        <img class="pappa"src="christmas pappa.png">
+
+    </div>
+
+
+  </div>
+
+
+
+    
+
+    <div class="fourth-img-two">
+      <div>
+        <img style="height: 4cm; width: 3.55cm;  margin-top: -.4cm; margin-left: -.1cm;" src="christmas-sidebar.png">
+        <img style="height: 4cm; width: 1.7cm; margin-top: -2.9cm; margin-left: .86cm;" src="christmas-additional items.png">
+
+        <img style="height: 8cm; width: 100%; margin-top: 5.5cm;" src="christmas tree.png"> 
+     </div>
+    </div>
+
+
+    <img id="christmas-ending" src="christmas-endinggg.png">
+</section>
+
+
+<section id="product-cointainer">
+
+     <div style="  height: 6cm; width: 31%;  float: left;  margin-left: 2%; box-shadow: 4px 4px 8px black;">
+       <img class="product-imgsss"  src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/379d14b1296f8bb4.jpg?q=20" onclick="window.location.href='Dproduct.html';">
+     </div>
+
+     <div style="  height: 6cm; width: 31%;  float: left;  margin-left: 2%; box-shadow: 4px 4px 8px black;">
+       <img class="product-imgsss" src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/1b5711d9ce0285f5.jpg?q=20" onclick="window.location.href='mobilecollection.html';">
+     </div>
+
+     <div style="  height: 6cm; width: 31%;  float: left;  margin-left: 2%; box-shadow: 4px 4px 8px black;" >
+       <img class="product-imgsss" src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/015f494868ce74b7.png?q=20" onclick="window.location.href='Dproduct.html';">
+     </div>
+
+  </section>
+
+
+  <section id="product-cointainer" style="margin-top: 1cm;">
+
+    <div style="  height: 6cm; width: 31%;  float: left;  margin-left: 2%; box-shadow: 4px 4px 8px black;">
+      <img class="product-imgsss"  src="https://blog.grabon.in/wp-content/uploads/2021/07/Online-Grocery-Stores-in-india.jpg" onclick="window.location.href='Grocery.html';">
+    </div>
+
+    <div style="  height: 6cm; width: 31%;  float: left;  margin-left: 2%; box-shadow: 4px 4px 8px black;">
+      <img class="product-imgsss" src="https://cdn.create.vista.com/downloads/4ec02184-6b31-47dd-8933-d2acdd49cdde_1024.jpeg" onclick="window.location.href='appliance.html';">
+    </div>
+
+    <div style="  height: 6cm; width: 31%;  float: left;  margin-left: 2%; box-shadow: 4px 4px 8px black;" >
+      <img class="product-imgsss" src="https://i.pinimg.com/originals/d0/78/70/d078705c172a131d88c67bd19986172d.jpg" onclick="window.location.href='explore1.html';">
+    </div>
+
+ </section>
+
+
+
+
+<section class="section-p1" id="pagination">
+  <div class="pagediv">
+    <a href="shop.html">1</a>
+    <a href="explore1.html">2</a>
+    
+  </div>
+</section>
+
+
+
+<section id="newsletters" >
+  <div style="float: left; width: 50%; background-color:#253342; height: 4cm;">
+    <div style="margin-top: 1.5cm; margin-left: 3cm;">
+     <h4 style="color: #c8c8c8; font-size: 22px ; font-weight: 700;">Sign Up For Newsletters</h4>
+     <p style="font-size: 14px ; font-weight: 600; color: #818ea0;">Get E-mail update about our shop and <span style="color: #ffbd27;">Special offers</span></p>
+    </div>
+  </div>
+  
+  <div style="float: left; width: 50%; background-color: #253342; height: 4cm;">
+    <div class="form"  style="margin-top: 1.5cm; margin-left: 4cm;">
+       <input  type="email" placeholder="Enter your E-mail address">
+       <a href="#"><button class="normal">Sign Up</button></a>
+       </div>
+  </div>
+</section>
+
+
+<footer id="footdiv" class="section-p1" style="height: 9cm; background-color:white;">
+
+<div class="col" style="float: left; width: 35%;">
+  <img class="logo" style="width: 4cm; height: 3.8cm; margin-top: -1.4cm;" src="S-removebg-preview.png">
+  
+  <h4 style="font-size: large; margin-top: 2.4cm; margin-left: .4cm;">Contact</h4>
+  <p style="margin-left: .4cm;"><strong>Address: </strong>562 Willington road, Street 32 ,San Francisco </p>
+  <p style="margin-left: .4cm;"><strong>Phone: </strong> 6235763536 / (+91) 88 2568 7536</p>
+  <p style="margin-left: .4cm;"><strong>Hours</strong>10:00 - 18:00 , Mon - Sat</p>
+  <br>
+  <div class="follow">
+    <h4 style="font-size: large; margin-left: .4cm;">Follow us</h4>
+    <div class="icon" style="margin-left: .4cm;">
+         <i style="color: #088178;" class="fab fa-facebook-f"></i>
+         <i style="color: #088178;" class="fab fa-twitter"></i>
+         <i style="color: #DD2A7B;" class="fab fa-instagram"></i>
+         <i style="color: #bd081c;" class="fab fa-pinterest-p"></i>
+         <i style="color: #E62117;" class="fab fa-youtube"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="col" style="float: left; width: 15%;">
+  <h4 style="font-size: large; margin-left: .4cm;">About</h4>
+
+  <a  href="#">About us</a>
+  <br>
+  <p></p>
+  <a  href="#">Delivery Information</a>
+  <br>
+  <p></p>
+  <a href="#">Privacy Policy</a>
+  <br>
+  <p></p>
+  <a href="#">Terms & Conditions</a>
+  <br>
+  <p></p>
+  <a href="#">Contact us</a>
+</div>
+
+
+<div class="col" style="float: left; width: 15%;">
+
+  <h4 style="font-size: large; margin-left: .4cm;">My Accounts</h4>
+  <a href="#">Sign In</a>
+  <br>
+  <p></p>
+  <a href="#">View Cart</a>
+  <br>
+  <p></p>
+  <a href="#">My Wishlist</a>
+  <br>
+  <p></p>
+  <a  href="#">Track My Order</a>
+  <br>
+  <p></p>
+  <a href="#">Help</a>
+</div>
+
+
+<div class="col install" style="float: left; width: 35%;">
+<h4 style="font-size: large; margin-left: .4cm;">Install App</h4>
+<p style="margin-left: .4cm;">From App Store or Google Play</p>
+<br>
+  <div class="row">
+      <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;"  src="png-transparent-google-play-app-store-app-market-download-button (1).png">
+      <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;" src="playstore.png">
+   </div>
+   <br>
+   <p style="margin-left:.4cm;">Secured Payment Gateways</p>
+   <img style="width: 5.5cm; height: 2.3cm; margin-left: .4cm; margin-top: -.5cm;" src="Payment-methods.png.2b9ba23475aaa15189f555f77ec3a549-removebg-preview.png">
+</div>
+
+<div class="copyright">
+   <p style="margin-left: 10.8cm; margin-top: -.8cm;"><i>copyright @ 2024 Coding Artist | Salex reserved</i></p>
+</div>
+</footer>
+
+
+        <script src="ecommerce.js"></script>
+    </body>
+</html>

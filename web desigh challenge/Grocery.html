@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>salex.com</title>
+        <link rel="stylesheet" href="ecommerce.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   </head>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script> 
+   $(document).ready(function(){
+     $("#flip").click(function(){
+       $("#panel").slideToggle("slow");
+     });
+   });
+   </script>
+
+
+<script> 
+  $(document).ready(function(){
+    $("#flip1").click(function(){
+      $("#panel1").slideToggle("slow");
+    });
+  });
+  </script>
+
+<script> 
+  $(document).ready(function(){
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle("slow");
+    });
+  });
+  </script>
+
+
+<script> 
+  $(document).ready(function(){
+    $("#flip3").click(function(){
+      $("#panel3").slideToggle("slow");
+    });
+  });
+  </script>
+
+  
+<script> 
+  $(document).ready(function(){
+    $("#flip4").click(function(){
+      $("#panel4").slideToggle("slow");
+    });
+  });
+  </script>
+
+<script> 
+  $(document).ready(function(){
+    $("#flip5").click(function(){
+      $("#panel5").slideToggle("slow");
+    });
+  });
+  </script>
+
+
+<script>
+  $(document).ready(function(){
+    $("#searchproduct").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myDiv *").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+  </script>
+  
+  
+  <script> 
+      $(document).ready(function(){
+        $("#searchproduct").click(function(){
+          $(".demosearch").slideToggle();
+        });
+      });
+      </script>
+
+
+
+
+     
+<style>
+.demosearch{
+  background-color: white; 
+  height: 3cm;
+   width: 6cm;
+    margin-left: 3.5cm;
+     position: absolute;
+     box-shadow: 2px 2px 4px black;
+     margin-top: .3cm;
+     overflow: hidden;
+    display: none;
+    border-radius: 10px;
+  
+}
+.demosearch p a{
+  font-size: 17px;
+  color: black;
+  text-decoration: none;
+  margin-left: .3cm;
+}
+.demosearch p a:hover{
+  color: blue;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+</style>
+
+
+
+    <body>
+
+      
+      
+        <section id="header">
+           <div class="logo" onclick="window.location.href='home.html';">
+               <img style="width: 4cm; height: 4cm; margin-top: -.8cm; margin-left: .8cm;"  src="S-removebg-preview.png">
+           </div>
+
+           <div class="searchbar">
+
+            <input id="searchproduct" type="text" placeholder="Search...">
+           <div class="demosearch">
+            <div id="myDiv">
+               <p><a href="b1product.html">G-Shock Watch</a></p>
+               <p><a href="bproduct.html">Blue Cotton  Trousers</a></p>
+               <p><a href="b2product.html">Black Regular Shorts</a></p>
+               <p><a href="b3product.html">Men Solid Ankle </a></p>
+               <p><a href="b5product.html"> Round Neck  Black T-Shirt</a></p>
+               <p><a href="b6product.html">Round Neck Red T-Shirt </a></p>
+               <p><a href="b7product.html">Women Black Dress </a></p>
+               <p><a href="b8product.html"> Women  Pink Dress</a></p>
+               <p><a href="b9product.html"> Women Dark Blue  Dress</a></p>
+               <p><a href="cproduct.html"> Acer Nitro 5 Laptop</a></p>
+               <p><a href="c1product.html"> ASUS ROG Strix Laptop</a></p>
+               <p><a href="c2product.html"> DELL Intel Core i5 Laptop</a></p>
+               <p><a href="c3product.html"> SAMSUNG  Book 2 Laptop</a></p>
+               <p><a href="c4product.html"> OnePlus 11 5G Phone</a></p>
+               <p><a href="c5product.html"> OnePlus 10 Pro 5G</a></p>
+               <p><a href="c6product.html"> IQOO Z7 Pro 5G </a></p>
+               <p><a href="c7product.html"> Apple iPhone 15</a></p>
+               <p><a href="c8product.html"> boAt Rockerz 255 earphone</a></p>
+               <p><a href="c9product.html"> Canon 1500D DSLR Camera</a></p>
+               <p><a href="c10product.html"> beatXP Tune XPods wirless earphone</a></p>
+               <p><a href="c11product.html"> TECHON shinecon vr box</a></p>
+
+               <p><a href="Dproduct.html"> Men Regular Wear  White Sandal</a></p>
+               <p><a href="D1product.html"> Men Polyester White, Black T-Shirt</a></p>
+               <p><a href="D2product.html"> Pack of 4 Men Round Neck t-shirt</a></p>
+               <p><a href="D3product.html"> Men  Round Neck Cotton  Black T-Shirt</a></p>
+               <p><a href="D4product.html"> Orange Running Shoes For Men</a></p>
+               <p><a href="D5product.html"> Acer NITRO 21.5 inch Laptop</a></p>
+               <p><a href="D6product.html"> Charger</a></p>
+               
+               <p><a href="sproduct.html"> Pure Cotton Brown T-Shirt</a></p>
+               <p><a href="s1product.html">   Printed Casual Shirt</a></p>
+               <p><a href="s2product.html"> Men check t-shirt</a></p>
+               <p><a href="s3product.html">  Running Shoes For Men</a></p>
+               <p><a href="s4product.html"> Men check t-shirt</a></p>
+               <p><a href="s5product.html">  puma Men Slides </a></p>
+               <p><a href="s6product.html"> Ferrari RS-X Sneakers for men</a></p>
+               <p><a href="s7product.html"> Men Solid  Black T-Shirt </a></p>
+               <p><a href="s8product.html"> allen solly  green Casual Shirt</a></p>
+               <p><a href="s9product.html">  raymond Formal Shirt</a></p>
+
+               <p><a href="mobilecollection.html">phone store</a></p>
+               <p><a href="mobilecollection.html">oppo phones</a></p>
+               <p><a href="mobilecollection.html">realme phones</a></p>
+               <p><a href="mobilecollection.html">nothing phones</a></p>
+
+               <p><a href="Grocery.html">Grocery store</a></p>
+               <p><a href="Appliance.html"> Home Appliances</a></p>
+               <p><a href="countdown.html"> baby products</a></p>
+               
+            </div>
+           </div>
+
+            </div>
+             
+             <div class="navbar">
+            
+               
+               <ul>
+              
+                 <li><a  href="home.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               </ul>
+               
+           </div>
+        </section>
+
+        <section class="items-sections">
+            <div class="itemone" id="flip">
+                <img src="https://rukminim2.flixcart.com/flap/128/128/image/50474c.jpg?q=100">
+                <p  style="margin-left: 1.8cm;"><strong>Staples</strong></p>
+            </div>
+
+            <div class="itemone" id="flip1">
+               <img src="https://rukminim2.flixcart.com/flap/128/128/image/9fbd36.jpg?q=100">
+               <p style="margin-left: 1.8cm;"><strong>Snacks</strong></p>
+            </div>
+
+            <div class="itemone" id="flip2">
+              <img src="https://rukminim2.flixcart.com/flap/128/128/image/ac8550.jpg?q=100">
+              <p><strong>Packaged Food</strong></p>
+            </div>
+
+            <div class="itemone" id="flip3">
+               <img src="https://rukminim2.flixcart.com/flap/128/128/image/7670e2.jpg?q=100">
+               <p style="margin-left: 1.5cm;"><strong>Baby Care</strong></p>
+            </div>
+
+            <div class="itemone" id="flip4">
+               <img src="https://rukminim2.flixcart.com/flap/128/128/image/b7ade9.jpg?q=100">
+               <p><strong>Household Care</strong></p>
+            </div>
+
+            <div class="itemone" id="flip5">
+              <img src="https://rukminim2.flixcart.com/flap/128/128/image/8014b1.jpg?q=100">
+              <p style="margin-left: 1.4cm;"><strong>Dairy & Eggs</strong></p>
+            </div>
+        </section>
+
+        <div id="panel">
+           <p>Dals & Pulses</p>
+           <p>Ghee & Oils</p>
+           <p>Atta & Flours</p>
+           <p>Rice Products</p>
+           <p>Dry Fruits</p>
+        </div>
+
+        <div id="panel1">
+           <p>Biscuits</p>
+           <p>Chips & Snacks</p>
+           <p>Tea</p>
+           <p>Coffee</p>
+           <p>Soft Drinks</p>
+        </div>
+
+        <div id="panel2">
+         <p>Noodles </p>
+         <p>Jams & Honey</p>
+         <p>Pickles</p>
+         <p>Chocolates</p>
+         <p>Baking</p>
+        </div>
+
+        <div id="panel3">
+            <p>Hair Care</p>
+            <p>Oral Care</p>
+            <p>Kajal</p>
+            <p>Makeup</p>
+            <p>Perfumes</p>
+
+        </div>
+
+        <div id="panel4">
+          <p>Pooja Needs</p>
+          <p>Floor Cleaners</p>
+          <p>Papers</p>
+          <p>Disposables</p>
+          <p>Pet Food</p>
+        </div>
+
+        <div id="panel5">
+           <p>All</p>
+           <p>Milk</p>
+           <p>Cheese</p>
+           <p>Curd</p>
+           <p>Paneer</p>
+        </div>
+
+      <section class="Grocerydetails">
+           <p class="section-p1"><i><strong>Whether</strong> you work from home or office or other workplaces, daily grocery items are a requisite for everybody.
+             Regardless of the size of the family or where you live, one can easily browse for the required food or other 
+             daily use products and have them brought to your home . Explore the variety of products, whether oils or foodgrains, 
+             from the online stock and choose the quantity required. You can save the time otherwise lost in waiting in lengthy 
+             queues for billing and payments by easily adding the chosen items to your cart online. Select the required date for 
+             delivery and pay with a suitable payment option. This will help you receive the items whenever you need them and in
+              the available quantity. The information you are reading has been last updated on <strong>08-March-24.</strong></i></p>
+        </section>
+
+        <section class="Groceryimg">
+            <img  src="https://1.bp.blogspot.com/-V5f4DYfO8is/Xesx2Qc0CgI/AAAAAAAAALk/1jWn3L_Zp-I4XyJR_GEpby8E8afq0uOxACLcBGAsYHQ/s1600/banner_54c9af89-36d2-41b7-8fd0-4065f1a916e2_1920x.jpg">
+        </section>
+
+        <sections class="groceryproducts">
+             <div class="groletter">
+               <h2>PERSONAL CARE <span style="color: orange;">OFFER ZONE </span></h2>
+             </div>
+
+             <div class="maingrocessory">
+                 <div class="subgone">
+                   <img width="100%" height="100%" src="https://img.freepik.com/free-vector/cosmetics-beauty-product-bottles-advertising-banner_33099-1799.jpg">
+                 </div>
+
+                 <div class="subgone">
+                    <img height="100%" width="100%" src="https://cdn.myportfolio.com/9c36b408-844a-4291-b685-30536228d6b5/dd961377-fa22-441f-a27e-f967c6a7a8f4_rw_1920.png?h=4958b16ad8ab5294ad23e5c72c23fcb0">
+                 </div>
+
+                 <div class="subgone">
+                   <img width="100%" height="100%" src="https://img.freepik.com/premium-vector/ad-banner-beauty-product_317442-1871.jpg">
+                 </div>
+             </div>
+
+             <div class="maingrocessory">
+              <div class="subgone">
+                <img width="100%" height="100%" src="https://www.bombayshavingcompany.com/cdn/shop/collections/shave-banner.jpg?v=1605249096">
+              </div>
+
+              <div class="subgone">
+                 <img height="100%" width="100%" src="https://rukminim2.flixcart.com/image/800/600/cms-rpd-images/ee3e6d9737e74c8c8315f23ce70dc5f2_170521e4808_image.jpeg?q=90">
+              </div>
+
+              <div class="subgone">
+                <img width="100%" height="100%" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/68966c62714585.5a9906f2e942c.jpg">
+              </div>
+          </div>
+        </sections>
+
+        <section class="household">
+          <div class="groletter">
+            <h2>HOUSEHOLD CARE <span style="color:#f57e07;">OFFER ZONE </span></h2>
+          </div>
+
+          <div class="houseproducts">
+
+
+
+           <div class="hproductone">
+            <img height="100%" width="100%" src="https://www.parryware.in/parryware-web-static/resources/harpicbanner.4ded0fde-18c7-4788-947b-7de7384286c5.png">
+           </div>
+
+           <div class="hproductone">
+            <img height="100%" width="100%" src="https://i.pinimg.com/736x/89/e0/48/89e0484c51a2620e32d1c3aec0285381.jpg">
+          </div>
+
+          <div class="hproductone">
+            <img height="100%" width="100%" src="https://img.freepik.com/premium-vector/realistic-laundry-detergent-ad_1284-54614.jpg">
+          </div>
+
+          <div class="hproductone">
+            <img width="100%" height="100%" src="https://m.media-amazon.com/images/S/aplus-media/vc/6378ee44-4094-44b6-a353-17f5f05f584f.__CR0,0,970,600_PT0_SX970_V1___.jpg">
+          </div>
+             
+          </div>
+        </section>
+
+    <section class="homekitchen">
+       
+      <div class="groletter">
+        <h2>HOME & KITCHEN <span style="color: orange;">OFFER ZONE </span></h2>
+      </div>
+
+
+        <div class="kitchencontainer">
+            <img height="60%" width="90%" style="margin-left: .3cm; margin-top: .7cm;" src="https://rukminim2.flixcart.com/image/280/280/jchz3ww0/pot-pan/9/w/s/ven17871p30s1nsibln-flipkart-smartbuy-original-imaffm7ygpqqnevn.jpeg?q=70">
+            <button>Buy Now</button>
+        </div>
+        <div class="kitchencontainerone">
+          <img width="100%" height="100%" src="https://cdn.shopify.com/s/files/1/0104/9211/7092/files/Top-Banner_5e8fa508-0f60-428f-b729-2188d5aeb32a.jpg?v=1643015412">
+        </div>
+
+
+
+        
+        <div class="kitchencontainer">
+          <img height="65%" width="85%" style="margin-left: .5cm; margin-top: .7cm;" src="https://rukminim2.flixcart.com/image/280/280/l4hcx3k0/container/k/e/q/-original-imagfd62hgzvyygz.jpeg?q=70">
+          <button>Buy Now</button>
+      </div>
+      <div class="kitchencontainerone">
+        <img width="100%" height="100%" src="https://sumeetcookware.in/cdn/shop/articles/The_Best_Tiffin_Boxes_for_Office_Going_Professionals_-_Banner_1200x1200.jpg?v=1613560869">
+      </div>
+
+
+
+      
+      <div class="kitchencontainer">
+        <img height="70%" width="70%" style="margin-left: .9cm; margin-top: .7cm;" src="https://rukminim2.flixcart.com/image/280/280/k0r15e80/bottle/3/c/u/1000-bottle-pack-of-6-btbasicbp6-flipkart-smartbuy-original-imafkh98dhzgeyry.jpeg?q=70">
+        <button>Buy Now</button>
+    </div>
+    <div class="kitchencontainerone">
+      <img width="100%" height="100%" src="https://img.freepik.com/free-vector/mineral-water-bottle-ad-banner-flask-with-drink_107791-2565.jpg">
+    </div>
+    </section>
+ 
+
+    <section class="grocerydesc">
+       <h3 class="section-p1">SaleX Grocery: Your New Go-to Online Grocery Store</h3>
+       <p>Hate standing in queues at the grocery store? Unable to find all grocery products you need under the same roof? The supermarket is too far away from your home? 
+        This is where technology can come in handy to make life simpler for you. SaleX's online grocery store.
+       Currently available in selected cities only, we will be expanding to as many Indian cities as possible very soon. 
+       Choose from a wide variety of household products which have been exclusively chosen to meet industry standards. Not 
+       only that, you can avail “grocery from Rs. 1” deals every day! You can even find exciting bank offers across leading 
+       banks like HDFC, SBI, & Axis bank on select days, to make your grocery shopping more fruitful.  Online Grocery Shopping for Super Quality and Super Savings!</p>
+
+
+        <h3 class="section-p1">Why Buy Groceries Online on SaleX?</h3>
+        <p>You needn’t head to a grocery store to buy your monthly staples. From fresh food to those sumptuous
+           snacks, you can find everything you need right here! If you are looking for grocery items online,
+            you’ll come across a wide range of products from various brands, thereby leaving you spoilt with
+             choices. Not to forget, you can make your shopping experience much more simple and hassle-free. 
+             When you head to supermarkets nearby, you might spend more time than you had anticipated by 
+             thinking of buying things you probably didn’t plan to. Hence, shopping for groceries on your 
+             favourite shopping app is time-saving. You can apply filters quickly and find the product you
+              are exactly looking for quickly.</p>
+
+              <h3 class="section-p1"><strong>Question and Answers</strong></h3>
+              <p><strong>Q</strong>.What kind of products can we find while buying groceries online?</p>
+              <p> <strong>A.</strong> online grocery offers various products like dal, flour, spices, cooking masala, salt, sugar, oils, dry fruits, breakfast cereals, cookies, etc.
+                 You can scroll, search, compare, and buy all your needed products from one place using your phone only.</p>
+               <br>
+                 <p><strong>Q.</strong> I do grocery shopping from my small city and get it delivered to my doorstep?</p>
+                 <p><strong>A.</strong> You can buy your needed grocery from the comfort of your home and get them delivered hassle-free in just a few days. Please enter your
+                   city code while filling your cart to be sure about getting them delivered to your desired place.</p>
+                 <br>
+                   <p><strong>Q.</strong> is the quality of online groceries?</p>
+                   <p><strong>A.</strong> brands are offering high-quality groceries online. Items are fresh and ready to be used.</p>
+                  <br>
+                   <p><strong>Q.</strong>Can I use my coupons while purchasing online groceries?</p>
+                   <p><strong>A.</strong>Yes. You can use relevant coupons in your shopping when paying before check out.</p>
+                   <br>
+                   <p><strong>Q.</strong>What is the grocery shopping and delivery fee?</p>
+                   <p><strong>A.</strong>It depends on what you buy, your location, and the total number of items. Usually, you don't need to give any extra charges if you buy sufficient items.</p>
+    </section>
+
+
+    <section id="newsletters">
+      <div style="float: left; width: 50%; background-color:#253342; height: 4cm;">
+        <div style="margin-top: 1.5cm; margin-left: 3cm;">
+         <h4 style="color: #c8c8c8; font-size: 22px ; font-weight: 700;">Sign Up For Newsletters</h4>
+         <p style="font-size: 14px ; font-weight: 600; color: #818ea0;">Get E-mail update about our shop and <span style="color: #ffbd27;">Special offers</span></p>
+        </div>
+      </div>
+      
+      <div style="float: left; width: 50%; background-color: #253342; height: 4cm;">
+        <div class="form"  style="margin-top: 1.5cm; margin-left: 4cm;">
+           <input  type="email" placeholder="Enter your E-mail address">
+           <a href="#"><button class="normal">Sign Up</button></a>
+           </div>
+      </div>
+   </section>
+
+  
+ <footer id="footdiv" class="section-p1" style="height: 9cm; background-color:white;">
+
+  <div class="col" style="float: left; width: 35%;">
+    <img class="logo" style="width: 4cm; height: 3.8cm; margin-top: -1.4cm;" src="S-removebg-preview.png">
+    
+    <h4 style="font-size: large; margin-top: 2.4cm; margin-left: .4cm;">Contact</h4>
+    <p style="margin-left: .4cm;"><strong>Address: </strong>562 Willington road, Street 32 ,San Francisco </p>
+    <p style="margin-left: .4cm;"><strong>Phone: </strong> 6235763536 / (+91) 88 2568 7536</p>
+    <p style="margin-left: .4cm;"><strong>Hours</strong>10:00 - 18:00 , Mon - Sat</p>
+    <br>
+    <div class="follow">
+      <h4 style="font-size: large; margin-left: .4cm;">Follow us</h4>
+      <div class="icon" style="margin-left: .4cm;">
+           <i style="color: #088178;" class="fab fa-facebook-f"></i>
+           <i style="color: #088178;" class="fab fa-twitter"></i>
+           <i style="color: #DD2A7B;" class="fab fa-instagram"></i>
+           <i style="color: #bd081c;" class="fab fa-pinterest-p"></i>
+           <i style="color: #E62117;" class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col" style="float: left; width: 15%;">
+    <h4 style="font-size: large; margin-left: .4cm;">About</h4>
+
+    <a  href="about.html">About us</a>
+    <br>
+    <p></p>
+    <a  href="#">Delivery Information</a>
+    <br>
+    <p></p>
+    <a href="#">Privacy Policy</a>
+    <br>
+    <p></p>
+    <a href="#">Terms & Conditions</a>
+    <br>
+    <p></p>
+    <a href="contact.html">Contact us</a>
+  </div>
+
+
+  <div class="col" style="float: left; width: 15%;">
+
+    <h4 style="font-size: large; margin-left: .4cm;">My Accounts</h4>
+    <a href="#">Sign In</a>
+    <br>
+    <p></p>
+    <a href="#">View Cart</a>
+    <br>
+    <p></p>
+    <a href="#">My Wishlist</a>
+    <br>
+    <p></p>
+    <a  href="#">Track My Order</a>
+    <br>
+    <p></p>
+    <a href="#">Help</a>
+  </div>
+
+
+  <div class="col install" style="float: left; width: 35%;">
+  <h4 style="font-size: large; margin-left: .4cm;">Install App</h4>
+  <p style="margin-left: .4cm;">From App Store or Google Play</p>
+  <br>
+    <div class="row">
+        <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;"  src="png-transparent-google-play-app-store-app-market-download-button (1).png">
+        <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;" src="playstore.png">
+     </div>
+     <br>
+     <p style="margin-left:.4cm;">Secured Payment Gateways</p>
+     <img style="width: 5.5cm; height: 2.3cm; margin-left: .4cm; margin-top: -.5cm;" src="Payment-methods.png.2b9ba23475aaa15189f555f77ec3a549-removebg-preview.png">
+  </div>
+
+  <div class="copyright">
+     <p style="margin-left: 10.8cm; margin-top: -.8cm;"><i>copyright @ 2024 Coding Artist | Salex reserved</i></p>
+  </div>
+ </footer>
+       
+    
+    </body>
+</html>

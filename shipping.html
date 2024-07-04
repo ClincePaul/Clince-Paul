@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>salex.com</title>
+        <link rel="stylesheet" href="ecommerce.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#searchproduct").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myDiv *").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+        
+        
+        <script> 
+            $(document).ready(function(){
+              $("#searchproduct").click(function(){
+                $(".demosearch").slideToggle();
+              });
+            });
+            </script>
+
+
+
+
+           
+<style>
+   .demosearch{
+        background-color: white; 
+        height: 3cm;
+         width: 6cm;
+          margin-left: 3.5cm;
+           position: absolute;
+           box-shadow: 2px 2px 4px black;
+           margin-top: .3cm;
+           overflow: hidden;
+          display: none;
+          border-radius: 10px;
+        
+    }
+    .demosearch p a{
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+        margin-left: .3cm;
+    }
+    .demosearch p a:hover{
+        color: blue;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+</style>
+    </head>
+
+    <body>
+      
+        <section id="header">
+           <div class="logo" onclick="window.location.href='home.html';">
+              <img style="width: 4cm; height: 4cm; margin-top: -.8cm; margin-left: .8cm;" src="S-removebg-preview.png">
+           </div>
+
+           <div class="searchbar">
+
+            <input id="searchproduct" type="text" placeholder="Search...">
+           <div class="demosearch">
+            <div id="myDiv">
+               <p><a href="b1product.html">G-Shock Watch</a></p>
+               <p><a href="bproduct.html">Blue Cotton  Trousers</a></p>
+               <p><a href="b2product.html">Black Regular Shorts</a></p>
+               <p><a href="b3product.html">Men Solid Ankle </a></p>
+               <p><a href="b5product.html"> Round Neck  Black T-Shirt</a></p>
+               <p><a href="b6product.html">Round Neck Red T-Shirt </a></p>
+               <p><a href="b7product.html">Women Black Dress </a></p>
+               <p><a href="b8product.html"> Women  Pink Dress</a></p>
+               <p><a href="b9product.html"> Women Dark Blue  Dress</a></p>
+               <p><a href="cproduct.html"> Acer Nitro 5 Laptop</a></p>
+               <p><a href="c1product.html"> ASUS ROG Strix Laptop</a></p>
+               <p><a href="c2product.html"> DELL Intel Core i5 Laptop</a></p>
+               <p><a href="c3product.html"> SAMSUNG  Book 2 Laptop</a></p>
+               <p><a href="c4product.html"> OnePlus 11 5G Phone</a></p>
+               <p><a href="c5product.html"> OnePlus 10 Pro 5G</a></p>
+               <p><a href="c6product.html"> IQOO Z7 Pro 5G </a></p>
+               <p><a href="c7product.html"> Apple iPhone 15</a></p>
+               <p><a href="c8product.html"> boAt Rockerz 255 earphone</a></p>
+               <p><a href="c9product.html"> Canon 1500D DSLR Camera</a></p>
+               <p><a href="c10product.html"> beatXP Tune XPods wirless earphone</a></p>
+               <p><a href="c11product.html"> TECHON shinecon vr box</a></p>
+
+               <p><a href="Dproduct.html"> Men Regular Wear  White Sandal</a></p>
+               <p><a href="D1product.html"> Men Polyester White, Black T-Shirt</a></p>
+               <p><a href="D2product.html"> Pack of 4 Men Round Neck t-shirt</a></p>
+               <p><a href="D3product.html"> Men  Round Neck Cotton  Black T-Shirt</a></p>
+               <p><a href="D4product.html"> Orange Running Shoes For Men</a></p>
+               <p><a href="D5product.html"> Acer NITRO 21.5 inch Laptop</a></p>
+               <p><a href="D6product.html"> Charger</a></p>
+               
+               <p><a href="sproduct.html"> Pure Cotton Brown T-Shirt</a></p>
+               <p><a href="s1product.html">   Printed Casual Shirt</a></p>
+               <p><a href="s2product.html"> Men check t-shirt</a></p>
+               <p><a href="s3product.html">  Running Shoes For Men</a></p>
+               <p><a href="s4product.html"> Men check t-shirt</a></p>
+               <p><a href="s5product.html">  puma Men Slides </a></p>
+               <p><a href="s6product.html"> Ferrari RS-X Sneakers for men</a></p>
+               <p><a href="s7product.html"> Men Solid  Black T-Shirt </a></p>
+               <p><a href="s8product.html"> allen solly  green Casual Shirt</a></p>
+               <p><a href="s9product.html">  raymond Formal Shirt</a></p>
+
+               <p><a href="mobilecollection.html">phone store</a></p>
+               <p><a href="mobilecollection.html">oppo phones</a></p>
+               <p><a href="mobilecollection.html">realme phones</a></p>
+               <p><a href="mobilecollection.html">nothing phones</a></p>
+
+               <p><a href="Grocery.html">Grocery store</a></p>
+               <p><a href="Appliance.html"> Home Appliances</a></p>
+               <p><a href="countdown.html"> baby products</a></p>
+               
+            </div>
+           </div>
+
+            </div>
+
+           <div class="navbar">
+            
+               <div class="mediaone">
+               <ul>
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a  href="blog.html">Blog</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a  href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               </ul>
+               </div>
+           </div>
+        </section>
+
+
+<section id="shipping-details" class="section-p1">
+   
+    <div>
+        <h3>Shipping</h3>
+        <p style="color: black; font-size: 17px;"><strong> What are the delivery charges?</strong></p>
+        <p>Delivery charge varies with each Seller.</p>
+        <p style="line-height: .6cm;">Sellers incur relatively higher shipping costs on low value items. In such cases, charging a nominal delivery charge helps them offset logistics costs. 
+            Please check your order summary to understand the delivery charges for individual products.</p>
+
+            <p style="line-height: .6cm;">For Products listed as SaleX , a Rs 40 charge for delivery per item may be applied if the order value is less than Rs 500. 
+                While, orders of Rs 500 or above are delivered free.</p>
+
+     <p style="color: black; font-size: 17px;"><strong>Why does the delivery date not correspond to the delivery timeline of X-Y business days?</strong></p>
+       
+       <p style="line-height: .6cm;">It is possible that the Seller or our courier partners have a holiday between the day your placed your order and the date of delivery,
+         which is based on the timelines shown on the product page. 
+         In this case, we add a day to the estimated date.
+         Some courier partners and Sellers do not work on Sundays and this is factored in to the delivery dates.</p>
+     
+    <p style="color: black; font-size: 17px;"><strong>What is the estimated delivery time?</strong></p>
+      
+     <p style="line-height: .6cm;">Sellers generally procure and ship the items within the time specified on the product page. 
+        Business days exclude public holidays and Sundays.</p>
+    
+    <p>Estimated delivery time depends on the following factors:</p>
+      
+    <div style="width: 12cm; margin-left: 1cm; height: 5cm;">
+      <ol>
+
+        <li>
+            <p><i>The Seller offering the product</i></p>
+        </li>
+
+        <li>
+            <p><i>Product's availability with the Seller</i></p>
+        </li>
+
+        <li>
+            <p><i>The destination to which you want the order shipped to and location of the Seller.</i></p>
+        </li>
+      </ol>
+    </div>
+      
+     <p style="color: black; font-size: 17px;"><strong>Are there any hidden costs (sales tax, octroi etc) on items sold by Sellers on SaleX?</strong></p>
+        
+    <p style="line-height: .6cm;">There are NO hidden charges when you make a purchase on Flipkart.
+         List prices are final and all-inclusive.
+          The price you see on the product page is exactly what you would pay. </p>
+
+          <p>Delivery charges are not hidden charges and are charged (if at all) extra depending on the Seller's shipping policy. </p>
+
+
+     <p style="color: black; font-size: 17px;"><strong>Why does the estimated delivery time vary for each seller?</strong></p>
+      <p style="line-height: .6cm;">You have probably noticed varying estimated delivery times for sellers of the product you are interested in. Delivery times are influenced by product availability, geographic location of the Seller,
+         your shipping destination and the courier partner's time-to-deliver in your location.  </p>
+    
+
+         <p style="line-height: .6cm;">Please enter your default pin code on the product page (you don't have to enter it every single time) to
+             know more accurate delivery times on the product page itself.</p>
+
+
+             <p  style="color: black; font-size: 17px;"><strong>Seller does not/cannot ship to my area. Why?</strong></p>
+  
+             <p style="line-height: .6cm;">Please enter your pincode on the product page (you don't have to enter it every single time) to 
+                know whether the product can be delivered to your location.</p>
+             
+                <p>If you haven't provided your pincode until the checkout stage, the pincode in your shipping address will be used to check for serviceability.</p>
+
+         <p style="line-height: .6cm;">Whether your location can be serviced or not depends on</p>
+
+       
+         <div style="width: 12cm; margin-left: 1cm; height: 5cm;">
+            <ol>
+      
+              <li>
+                  <p><i>Whether the Seller ships to your location</i></p>
+              </li>
+      
+              <li>
+                  <p><i>Legal restrictions, if any, in shipping particular products to your location</i></p>
+              </li>
+      
+              <li>
+                  <p><i>The availability of reliable courier partners in your location</i></p>
+              </li>
+            </ol>
+          </div>
+
+       <p>At times Sellers prefer not to ship to certain locations. This is entirely at their discretion</p>
+
+        <p style="color: black; font-size: 17px;"><strong>I need to return an item, how do I arrange for a pick-up?</strong></p>
+        
+         <p>Returns are easy. Contact Us to initiate a return. You will receive a call explaining the process, once you have initiated a return.</p>
+
+        <p style="line-height: .6cm;"> Wherever possible SaleX Logistics will facilitate the pick-up of the item. In case, the pick-up cannot be arranged through SaleX, you can return the item through a third-party courier service.
+             Return fees are borne by the Seller.</p>
+
+         <p style="color: black; font-size: 17px;"><strong>I did not receive my order but got a delivery confirmation SMS/Email.</strong></p>
+          <p style="line-height: .6cm;">In case the product was not delivered and you received a delivery confirmation email/SMS, report the issue within 7 days from the date of delivery confirmation
+             for the seller to investigate.</p>
+
+        <p style="color: black; font-size: 17px;"><strong> SaleX deliver internationally? </strong></p>
+        <p>As of now, SaleX doesn't deliver items internationally.</p>
+        <p style="line-height: .6cm;">You will be able to make your purchases on our site from anywhere in the world with credit/debit cards issued in India ,
+             but please ensure the delivery address is in India.</p>
+
+    </div>
+     
+</section>
+
+  
+    
+   <footer id="footdiv" class="section-p1" style="height: 9cm; margin-top: 1cm; background-color:white;">
+
+    <div class="col" style="float: left; width: 35%;">
+      <img class="logo" style="width: 4cm; height: 3.8cm; margin-top: -1.4cm;" src="S-removebg-preview.png">
+      
+      <h4 style="font-size: large; margin-top: 2.4cm; margin-left: .4cm;">Contact</h4>
+      <p style="margin-left: .4cm;"><strong>Address: </strong>562 Willington road, Street 32 ,San Francisco </p>
+      <p style="margin-left: .4cm;"><strong>Phone: </strong> 6235763536 / (+91) 88 2568 7536</p>
+      <p style="margin-left: .4cm;"><strong>Hours</strong>10:00 - 18:00 , Mon - Sat</p>
+      <br>
+      <div class="follow">
+        <h4 style="font-size: large; margin-left: .4cm;">Follow us</h4>
+        <div class="icon" style="margin-left: .4cm;">
+             <i style="color: #088178;" class="fab fa-facebook-f"></i>
+             <i style="color: #088178;" class="fab fa-twitter"></i>
+             <i style="color: #DD2A7B;" class="fab fa-instagram"></i>
+             <i style="color: #bd081c;" class="fab fa-pinterest-p"></i>
+             <i style="color: #E62117;" class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col" style="float: left; width: 15%;">
+      <h4 style="font-size: large; margin-left: .4cm;">About</h4>
+
+      <a  href="about.html">About us</a>
+      <br>
+      <p></p>
+      <a  href="#">Delivery Information</a>
+      <br>
+      <p></p>
+      <a href="#">Privacy Policy</a>
+      <br>
+      <p></p>
+      <a href="#">Terms & Conditions</a>
+      <br>
+      <p></p>
+      <a href="contact.html">Contact us</a>
+    </div>
+
+
+    <div class="col" style="float: left; width: 15%;">
+
+      <h4 style="font-size: large; margin-left: .4cm;">My Accounts</h4>
+      <a href="#">Sign In</a>
+      <br>
+      <p></p>
+      <a href="#">View Cart</a>
+      <br>
+      <p></p>
+      <a href="#">My Wishlist</a>
+      <br>
+      <p></p>
+      <a  href="#">Track My Order</a>
+      <br>
+      <p></p>
+      <a href="#">Help</a>
+    </div>
+
+
+    <div class="col install" style="float: left; width: 35%;">
+    <h4 style="font-size: large; margin-left: .4cm;">Install App</h4>
+    <p style="margin-left: .4cm;">From App Store or Google Play</p>
+    <br>
+      <div class="row">
+          <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;"  src="png-transparent-google-play-app-store-app-market-download-button (1).png">
+          <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;" src="playstore.png">
+       </div>
+       <br>
+       <p style="margin-left:.4cm;">Secured Payment Gateways</p>
+       <img style="width: 5.5cm; height: 2.3cm; margin-left: .4cm; margin-top: -.5cm;" src="Payment-methods.png.2b9ba23475aaa15189f555f77ec3a549-removebg-preview.png">
+    </div>
+
+    <div class="copyright">
+       <p style="margin-left: 10.8cm; margin-top: -.8cm;"><i>copyright @ 2024 Coding Artist | Salex reserved</i></p>
+    </div>
+   </footer>
+
+
+        <script src="ecommerce.js"></script>
+    </body>
+</html>

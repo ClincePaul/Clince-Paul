@@ -1,0 +1,412 @@
+
+<html>
+    <head>
+        <title>salex.com</title>
+        <link rel="stylesheet" href="ecommerce.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#searchproduct").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myDiv *").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+        
+        
+        <script> 
+            $(document).ready(function(){
+              $("#searchproduct").click(function(){
+                $(".demosearch").slideToggle();
+              });
+            });
+            </script>
+
+
+
+
+           
+<style>
+   .demosearch{
+        background-color: white; 
+        height: 3cm;
+         width: 6cm;
+          margin-left: 3.5cm;
+           position: absolute;
+           box-shadow: 2px 2px 4px black;
+           margin-top: .3cm;
+           overflow: hidden;
+          display: none;
+          border-radius: 10px;
+        
+    }
+    .demosearch p a{
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+        margin-left: .3cm;
+    }
+    .demosearch p a:hover{
+        color: blue;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+</style>
+    </head>
+
+    <style>
+      table *{
+         border: 2px solid black;
+         border-collapse: collapse;
+         
+      }
+      table:hover{
+
+         color: blue;
+      }
+    
+      .divone{
+         margin-left: 4cm;
+      }
+    </style>
+
+    <body>
+      
+        <section id="header">
+           <div class="logo" onclick="window.location.href='home.html';">
+              <img style="width: 4cm; height: 4cm; margin-top: -.8cm; margin-left: .8cm;" src="S-removebg-preview.png">
+           </div>
+
+               
+           <div class="searchbar">
+
+            <input id="searchproduct" type="text" placeholder="Search...">
+           <div class="demosearch">
+            <div id="myDiv">
+               <p><a href="b1product.html">G-Shock Watch</a></p>
+               <p><a href="bproduct.html">Blue Cotton  Trousers</a></p>
+               <p><a href="b2product.html">Black Regular Shorts</a></p>
+               <p><a href="b3product.html">Men Solid Ankle </a></p>
+               <p><a href="b5product.html"> Round Neck  Black T-Shirt</a></p>
+               <p><a href="b6product.html">Round Neck Red T-Shirt </a></p>
+               <p><a href="b7product.html">Women Black Dress </a></p>
+               <p><a href="b8product.html"> Women  Pink Dress</a></p>
+               <p><a href="b9product.html"> Women Dark Blue  Dress</a></p>
+               <p><a href="cproduct.html"> Acer Nitro 5 Laptop</a></p>
+               <p><a href="c1product.html"> ASUS ROG Strix Laptop</a></p>
+               <p><a href="c2product.html"> DELL Intel Core i5 Laptop</a></p>
+               <p><a href="c3product.html"> SAMSUNG  Book 2 Laptop</a></p>
+               <p><a href="c4product.html"> OnePlus 11 5G Phone</a></p>
+               <p><a href="c5product.html"> OnePlus 10 Pro 5G</a></p>
+               <p><a href="c6product.html"> IQOO Z7 Pro 5G </a></p>
+               <p><a href="c7product.html"> Apple iPhone 15</a></p>
+               <p><a href="c8product.html"> boAt Rockerz 255 earphone</a></p>
+               <p><a href="c9product.html"> Canon 1500D DSLR Camera</a></p>
+               <p><a href="c10product.html"> beatXP Tune XPods wirless earphone</a></p>
+               <p><a href="c11product.html"> TECHON shinecon vr box</a></p>
+
+               <p><a href="Dproduct.html"> Men Regular Wear  White Sandal</a></p>
+               <p><a href="D1product.html"> Men Polyester White, Black T-Shirt</a></p>
+               <p><a href="D2product.html"> Pack of 4 Men Round Neck t-shirt</a></p>
+               <p><a href="D3product.html"> Men  Round Neck Cotton  Black T-Shirt</a></p>
+               <p><a href="D4product.html"> Orange Running Shoes For Men</a></p>
+               <p><a href="D5product.html"> Acer NITRO 21.5 inch Laptop</a></p>
+               <p><a href="D6product.html"> Charger</a></p>
+               
+               <p><a href="sproduct.html"> Pure Cotton Brown T-Shirt</a></p>
+               <p><a href="s1product.html">   Printed Casual Shirt</a></p>
+               <p><a href="s2product.html"> Men check t-shirt</a></p>
+               <p><a href="s3product.html">  Running Shoes For Men</a></p>
+               <p><a href="s4product.html"> Men check t-shirt</a></p>
+               <p><a href="s5product.html">  puma Men Slides </a></p>
+               <p><a href="s6product.html"> Ferrari RS-X Sneakers for men</a></p>
+               <p><a href="s7product.html"> Men Solid  Black T-Shirt </a></p>
+               <p><a href="s8product.html"> allen solly  green Casual Shirt</a></p>
+               <p><a href="s9product.html">  raymond Formal Shirt</a></p>
+
+               <p><a href="mobilecollection.html">phone store</a></p>
+               <p><a href="mobilecollection.html">oppo phones</a></p>
+               <p><a href="mobilecollection.html">realme phones</a></p>
+               <p><a href="mobilecollection.html">nothing phones</a></p>
+
+               <p><a href="Grocery.html">Grocery store</a></p>
+               <p><a href="Appliance.html"> Home Appliances</a></p>
+               <p><a href="countdown.html"> baby products</a></p>
+               
+            </div>
+           </div>
+
+            </div>
+            
+           <div class="navbar">
+            
+               <div class="mediaone">
+               <ul>
+                <li><a  class="active" href="home.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               </ul>
+               </div>
+           </div>
+        </section>
+
+
+        <section class="bannerimgofmoney">
+          <img height="100%" width="100%" src="savemoneyonline.png">
+        </section>
+  
+<section class="savemoney">
+   <div class="section-p1">
+      <h3>How to save money while shopping online</h3>
+      <p style="margin-left: 1cm; color: black;">Everyone loves shopping online. There’s nothing better than snatching great deals without even leaving the sofa.
+         We know It’s no secret that it can be a total strain on the old bank account.</p>
+
+         <p style="color: black; margin-left: 1cm;" > In this article we’ve written a whole load of  tips and tricks that will get you spending smart in no time. By the time you finish you’ll be 
+            a shopping assassin.</p>
+   </div>
+</section>
+
+<section class="savemoney-img">
+     <img style="height: 100%; width: 100%;" src="https://slash.com/lp/assets/posts/63d772247fa4a81c794315fd_12.jpeg">
+</section>
+
+<section class="moneydetails">
+    <div class="moneyone">
+       <h3 style="margin-left: 1cm; margin-top: 1cm; color: white;">1. Create a budget for your online <span style="margin-left: 2.7cm;">shopping </span></h3>
+       <p class="section-p1" style="color: white;" ><i>Your budget should be closely tied to your shopping list. You’ll have essential items factored in to create the core of your budget. It should be roughly calculated as prices dipp and weave. 
+        Once you’ve factored in the important stuff you can start adding things that are just nice to have. It’s important to buy yourself nice things sometimes. </i></p>
+    </div>
+
+    <div class="moneyone">
+      <h3 style="text-align: center; margin-top: 1cm; color: white;">2. Make a list </h3>
+      <p class="section-p1" style="color: white;"><i>Shopping around your budget doesn’t mean you need to squeeze all of your
+         style into bullet points or settle for cheaper options with lower quality. No, the list is a guide
+          through the fashion wilderness. It allows you to identify what you value and  gives you more options
+           in the long run. Investing in high quality and sustainable items will actually save you money. </i></p>
+    </div>
+
+    <div class="moneyone">
+        <h3 style="text-align: center; margin-top: 1cm; color: white;">3. Compare prices and check for special <span>deals</span></h3>
+       <p class="section-p1" style="color: white;"><i>Comparing prices and looking for discounts is a great way to save money. “Doing it all yourself?” Not so much. It can be a real bore and a waste of everyone’s time.
+         We’ve all heard stories of sketchy websites and expired coupon codes.</i></p>
+    </div>
+</section>
+   
+  <section class="paymentdetails">
+        
+       <h3 class="section-p1">Payments</h3>
+       <p><strong>How do I pay for a Flipkart purchase?</strong></p>
+       <p>SaleX offers you multiple payment methods. Whatever your online mode of payment,
+          you can rest assured that Salex's trusted payment gateway partners use secure encryption
+           technology to keep your transaction details confidential at all times.</p>
+
+           <p>You may use Internet Banking, Gift Card, Cash on Delivery and Wallet to make your purchase.</p>
+
+           <p>SaleX also accepts payments made using Visa, MasterCard, Maestro and American Express
+             credit/debit cards in India and 21 other countries.</p>
+
+             <p style="margin-top: .8cm;"><strong>Are there any hidden charges (Octroi or Sales Tax) when I make a purchase on SaleX?</strong></p>
+             <p>There are NO hidden charges when you make a purchase on SaleX. The prices listed for all the items are final and all-inclusive.
+                The price you see on the product page is exactly what you pay.</p>
+            <p>Delivery charges may be extra depending on the seller policy. Please check individual seller for the same. In case of seller WS Retail, 
+               the ₹50 delivery charge is waived off on orders worth ₹500 and over.</p>
+
+               <p style="margin-top: .8cm;"><strong>What is Cash on Delivery?</strong></p>
+               <p>If you are not comfortable making an online payment on SaleX.com, you can opt for the Cash on Delivery (C-o-D) payment method instead. With C-o-D you can pay in cash at the time of actual 
+                  delivery of the product at your doorstep, without requiring you to make any advance payment online.</p>
+                <p>The maximum order value for a Cash on Delivery (C-o-D) payment is ₹50,000. It is strictly a cash-only payment method. Gift Cards or store credit cannot be used for C-o-D orders.
+                   Foreign currency cannot be used to make a C-o-D payment. Only Indian Rupees accepted.</p>  
+                   
+                   <p><strong>How do I pay using a credit/debit card?</strong></p>
+                   <p>We accept payments made by credit/debit cards issued in India and 21 other countries.</p>
+
+                   <p><strong>Is it safe to use my credit/debit card on SaleX?</strong></p>
+                   <p>Your online transaction on SaleX is secure with the highest levels of transaction security currently available on the Internet. SaleX uses 256-bit encryption technology to protect your card
+                      information while securely transmitting it to the respective banks for payment processing.</p>
+
+                  <p><strong>How does 'Instant Cashback' work?</strong></p>
+                  <p>The 'Cashback' offer is instant and exclusive to SaleX.com. You only pay the final price you see in your shopping cart.</p>
+
+                  <p><strong>What is SaleX's credit card EMI option?</strong></p>
+                  <p>With SaleX's credit card EMI option, you can choose to pay in easy installments </p>
+
+
+                   <ol style="margin-left: 5cm;">
+                     <li>HDFC</li>
+                     <br>
+                     <br>
+                     <li>Citi</li>
+                     <br>
+                     <br>
+                     <li>ICICI</li>
+                     <br>
+                     <br>
+                     <li>Kotak</li>
+                     <br>
+                     <br>
+                     <li>SBI</li>
+                     <br>
+                     <br>
+                     <li>Axis</li>
+                     <br>
+                     <br>
+                     <li>HSBC</li>
+                   </ol>
+
+                   <br>
+                   <br>
+                   <div class="divone">
+                   <table>
+                     <tr>
+                        <th>BANKS</th>
+                        <th>	Supports 18 & 24 months tenure</th>
+                        <th>Minimum order value to avail 18 & 24 months EMI options</th>
+                     </tr>
+
+                     <tr>
+                          <td>HDFC</td>
+                          <td>Yes</td>
+                          <td>₹ 10,000</td>
+                     </tr>
+
+                     <tr>
+                        <td>Citi</td>
+                        <td>Yes</td>
+                        <td>₹ 10,000</td>
+                     </tr>
+
+                     <tr>
+                        <td>ICICI</td>
+                        <td>Yes</td>
+                        <td>₹ 10,000</td>
+                     </tr>
+
+
+                     <tr>
+                        <td>Axis</td>
+                        <td>Yes</td>
+                        <td>₹ 10,000</td>
+                     </tr>
+
+                  </tr>
+
+                  <tr>
+                     <td>SBI</td>
+                     <td>No</td>
+                     <td>NA</td>
+                  </tr>
+                   </table>
+                   </div>
+
+  </section>  
+
+  <section id="newsletters" style="margin-top: 1cm;">
+   <div style="float: left; width: 50%; background-color:#253342; height: 4cm;">
+     <div style="margin-top: 1.5cm; margin-left: 3cm;">
+      <h4 style="color: #c8c8c8; font-size: 22px ; font-weight: 700;">Sign Up For Newsletters</h4>
+      <p style="font-size: 14px ; font-weight: 600; color: #818ea0;">Get E-mail update about our shop and <span style="color: #ffbd27;">Special offers</span></p>
+     </div>
+   </div>
+   
+   <div style="float: left; width: 50%; background-color: #253342; height: 4cm;">
+     <div class="form"  style="margin-top: 1.5cm; margin-left: 4cm;">
+        <input  type="text" placeholder="Enter your E-mail address">
+        <a href="#"><button class="normal">Sign Up</button></a>
+        </div>
+   </div>
+</section>
+
+ 
+<footer id="footdiv" class="section-p1" style="height: 9cm; background-color:white;">
+
+ <div class="col" style="float: left; width: 35%;">
+   <img class="logo" style="width: 4cm; height: 3.8cm; margin-top: -1.4cm;" src="S-removebg-preview.png">
+   
+   <h4 style="font-size: large; margin-top: 2.4cm; margin-left: .4cm;">Contact</h4>
+   <p style="margin-left: .4cm;"><strong>Address: </strong>562 Willington road, Street 32 ,San Francisco </p>
+   <p style="margin-left: .4cm;"><strong>Phone: </strong> 6235763536 / (+91) 88 2568 7536</p>
+   <p style="margin-left: .4cm;"><strong>Hours</strong>10:00 - 18:00 , Mon - Sat</p>
+   <br>
+   <div class="follow">
+     <h4 style="font-size: large; margin-left: .4cm;">Follow us</h4>
+     <div class="icon" style="margin-left: .4cm;">
+          <i style="color: #088178;" class="fab fa-facebook-f"></i>
+          <i style="color: #088178;" class="fab fa-twitter"></i>
+          <i style="color: #DD2A7B;" class="fab fa-instagram"></i>
+          <i style="color: #bd081c;" class="fab fa-pinterest-p"></i>
+          <i style="color: #E62117;" class="fab fa-youtube"></i>
+     </div>
+   </div>
+ </div>
+
+
+ <div class="col" style="float: left; width: 15%;">
+   <h4 style="font-size: large; margin-left: .4cm;">About</h4>
+
+   <a  href="about.html">About us</a>
+   <br>
+   <p></p>
+   <a  href="#">Delivery Information</a>
+   <br>
+   <p></p>
+   <a href="#">Privacy Policy</a>
+   <br>
+   <p></p>
+   <a href="#">Terms & Conditions</a>
+   <br>
+   <p></p>
+   <a href="contact.html">Contact us</a>
+ </div>
+
+
+ <div class="col" style="float: left; width: 15%;">
+
+   <h4 style="font-size: large; margin-left: .4cm;">My Accounts</h4>
+   <a href="#">Sign In</a>
+   <br>
+   <p></p>
+   <a href="#">View Cart</a>
+   <br>
+   <p></p>
+   <a href="#">My Wishlist</a>
+   <br>
+   <p></p>
+   <a  href="#">Track My Order</a>
+   <br>
+   <p></p>
+   <a href="#">Help</a>
+ </div>
+
+
+ <div class="col install" style="float: left; width: 35%;">
+ <h4 style="font-size: large; margin-left: .4cm;">Install App</h4>
+ <p style="margin-left: .4cm;">From App Store or Google Play</p>
+ <br>
+   <div class="row">
+       <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;"  src="png-transparent-google-play-app-store-app-market-download-button (1).png">
+       <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;" src="playstore.png">
+    </div>
+    <br>
+    <p style="margin-left:.4cm;">Secured Payment Gateways</p>
+    <img style="width: 5.5cm; height: 2.3cm; margin-left: .4cm; margin-top: -.5cm;" src="Payment-methods.png.2b9ba23475aaa15189f555f77ec3a549-removebg-preview.png">
+ </div>
+
+ <div class="copyright">
+    <p style="margin-left: 10.8cm; margin-top: -.8cm;"><i>copyright @ 2024 Coding Artist | Salex reserved</i></p>
+ </div>
+</footer>
+
+
+
+
+    </body>
+</html>

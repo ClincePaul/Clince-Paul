@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>salex.com</title>
+        <link rel="stylesheet" href="ecommerce.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#searchproduct").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myDiv *").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+        
+        
+        <script> 
+            $(document).ready(function(){
+              $("#searchproduct").click(function(){
+                $(".demosearch").slideToggle();
+              });
+            });
+            </script>
+
+
+
+
+           
+<style>
+   .demosearch{
+        background-color: white; 
+        height: 3cm;
+         width: 6cm;
+          margin-left: 3.5cm;
+           position: absolute;
+           box-shadow: 2px 2px 4px black;
+           margin-top: .3cm;
+           overflow: hidden;
+          display: none;
+          border-radius: 10px;
+        
+    }
+    .demosearch p a{
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+        margin-left: .3cm;
+    }
+    .demosearch p a:hover{
+        color: blue;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+</style>
+
+
+    </head>
+
+    <body>
+      
+        <section id="header">
+           <div class="logo"onclick="window.location.href='home.html';">
+              <img style="width: 4cm; height: 4cm; margin-top: -.8cm; margin-left: .8cm;" src="S-removebg-preview.png">
+           </div>
+           
+            
+             
+           <div class="searchbar">
+
+            <input id="searchproduct" type="text" placeholder="Search...">
+           <div class="demosearch">
+            <div id="myDiv">
+               <p><a href="b1product.html">G-Shock Watch</a></p>
+               <p><a href="bproduct.html">Blue Cotton  Trousers</a></p>
+               <p><a href="b2product.html">Black Regular Shorts</a></p>
+               <p><a href="b3product.html">Men Solid Ankle </a></p>
+               <p><a href="b5product.html"> Round Neck  Black T-Shirt</a></p>
+               <p><a href="b6product.html">Round Neck Red T-Shirt </a></p>
+               <p><a href="b7product.html">Women Black Dress </a></p>
+               <p><a href="b8product.html"> Women  Pink Dress</a></p>
+               <p><a href="b9product.html"> Women Dark Blue  Dress</a></p>
+               <p><a href="cproduct.html"> Acer Nitro 5 Laptop</a></p>
+               <p><a href="c1product.html"> ASUS ROG Strix Laptop</a></p>
+               <p><a href="c2product.html"> DELL Intel Core i5 Laptop</a></p>
+               <p><a href="c3product.html"> SAMSUNG  Book 2 Laptop</a></p>
+               <p><a href="c4product.html"> OnePlus 11 5G Phone</a></p>
+               <p><a href="c5product.html"> OnePlus 10 Pro 5G</a></p>
+               <p><a href="c6product.html"> IQOO Z7 Pro 5G </a></p>
+               <p><a href="c7product.html"> Apple iPhone 15</a></p>
+               <p><a href="c8product.html"> boAt Rockerz 255 earphone</a></p>
+               <p><a href="c9product.html"> Canon 1500D DSLR Camera</a></p>
+               <p><a href="c10product.html"> beatXP Tune XPods wirless earphone</a></p>
+               <p><a href="c11product.html"> TECHON shinecon vr box</a></p>
+
+               <p><a href="Dproduct.html"> Men Regular Wear  White Sandal</a></p>
+               <p><a href="D1product.html"> Men Polyester White, Black T-Shirt</a></p>
+               <p><a href="D2product.html"> Pack of 4 Men Round Neck t-shirt</a></p>
+               <p><a href="D3product.html"> Men  Round Neck Cotton  Black T-Shirt</a></p>
+               <p><a href="D4product.html"> Orange Running Shoes For Men</a></p>
+               <p><a href="D5product.html"> Acer NITRO 21.5 inch Laptop</a></p>
+               <p><a href="D6product.html"> Charger</a></p>
+               
+               <p><a href="sproduct.html"> Pure Cotton Brown T-Shirt</a></p>
+               <p><a href="s1product.html">   Printed Casual Shirt</a></p>
+               <p><a href="s2product.html"> Men check t-shirt</a></p>
+               <p><a href="s3product.html">  Running Shoes For Men</a></p>
+               <p><a href="s4product.html"> Men check t-shirt</a></p>
+               <p><a href="s5product.html">  puma Men Slides </a></p>
+               <p><a href="s6product.html"> Ferrari RS-X Sneakers for men</a></p>
+               <p><a href="s7product.html"> Men Solid  Black T-Shirt </a></p>
+               <p><a href="s8product.html"> allen solly  green Casual Shirt</a></p>
+               <p><a href="s9product.html">  raymond Formal Shirt</a></p>
+
+               <p><a href="mobilecollection.html">phone store</a></p>
+               <p><a href="mobilecollection.html">oppo phones</a></p>
+               <p><a href="mobilecollection.html">realme phones</a></p>
+               <p><a href="mobilecollection.html">nothing phones</a></p>
+
+               <p><a href="Grocery.html">Grocery store</a></p>
+               <p><a href="Appliance.html"> Home Appliances</a></p>
+               <p><a href="countdown.html"> baby products</a></p>
+               
+            </div>
+           </div>
+
+            </div>
+
+
+
+           <div class="navbar">
+            
+               <div class="mediaone">
+               <ul>
+                <li><a  href="home.html">Home</a></li>
+                <li><a class=active  href="shop.html">Shop</a></li>
+                <li><a  href="Blog.html">Blog</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               </ul>
+               </div>
+           </div>
+        </section>
+
+
+        <section id="page-header">
+            <img class="page-img" style="height: 11cm; width: 100%; margin-top: 2.5cm;" src="https://d14vpcucj0dct5.cloudfront.net/filters:format(webp)/images/home_banner/Home_Slider_4.png">
+        </section>
+
+        <section class="appliance-container">
+            <br>
+              <div class="appliances">
+                  <a href="#washingmachine"><div class="appliancesection1">
+                      <img width="100%" height="100%" src="https://www.voltasbeko.com/media/Plazathemes/blog/images/w/a/washing_machine.png">
+                   </div></a>
+                 <a href="#fridge"><div class="appliancesection1">
+                    <img width="100%" height="100%" src="https://gumlet.assettype.com/TNIE/import/2023/12/27/original/banner-4.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true">
+                   </div></a>
+                  <a href="#kitchenzone"><div class="appliancesection1">
+                    <img width="100%" height="100%" src="https://www.shakedeal.com/blog/content/images/2022/01/Top-10-Small-Kitchen-Appliances.png">
+                   </div></a>
+                 <a href="#ac"><div class="appliancesection1">
+                    <img width="100%" height="100%" src="https://www.reliancedigital.in/medias/LG-AC-CLP-Banner-21-03-2023-Mobile.jpg?context=bWFzdGVyfGltYWdlc3wxNzcxNDN8aW1hZ2UvanBlZ3xpbWFnZXMvaDYzL2hmYS85OTcyODY2MzE4MzY2LmpwZ3xjMGQ5MTE0NjVkOWUwNjdiMDg5ZjVhODg1ZDMzZTMyZDhmNDAyYTIxZDNkMjQyMzVlNmI3NThkM2Q1ZTViMGRj">
+                   </div></a>
+              </div>
+               
+              <br>
+
+
+
+
+              <div class="appliances">
+                 
+                <div class="appliancesection1">
+                    <img width="100%" height="100%" src="https://hariomretail.com/wp-content/uploads/2022/01/banner.jpg">
+                </div>
+              <a href="#tv"><div class="appliancesection1">
+                    <img width="100%" height="100%" src="https://images.livemint.com/img/2022/05/16/1600x900/KV_Big-TV-days-1920x1080_1652689247596_1652689256576.jpg">
+                </div></a>
+                <div class="appliancesection1">
+                    <img width="100%" height="100%" src="https://i.pinimg.com/736x/53/f4/10/53f410e8ac9c9e8d8a1aca86a9b86770.jpg">
+                </div>
+                <div class="appliancesection1">
+                    <img width="100%" height="100%" src="https://thomsonhome.in//wp-content/uploads/2023/03/Banner1.webp">
+                </div>
+
+              </div>
+        </section>
+     
+
+        <section class="kitchen-appliances-banner" id="kitchenzone">
+              <img height="100%" width="100%" src="https://miro.medium.com/v2/resize:fit:1400/1*Bkm1VLQt34X0hVT562jJTg.jpeg">
+        </section>
+
+
+        <section class="kitchen-appliances-container" >
+               <div class="kitchenone">
+
+
+
+                  <div class="kitchen-products">
+                    <div class="pree-products">
+                       <img style="height: 4cm; width: 5.3cm; margin-top: .8cm;" src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-pressure-cooker/i/o/c/1-psapcc-001-pressure-cooker-pressure-pan-prestlee-original-imagprvdgxxzp3fu.jpeg?q=70">
+                       <p style="color: black; margin-top: -4.8cm; margin-left: 1.4cm;"><strong>Pressure Cooker</strong></p>
+                    </div>
+                    <div class="pre-product-details">
+                       <h3 style="margin-top: 1.3cm; margin-left: 1cm; font-size: 22px;">10.03 $</h3>
+                       <p><s><strong style="color: green; margin-left: 1.3cm;">18.30 $</strong></s></p>
+                       <button class="kitchen-button">Buy Now</button>
+                    </div>
+
+                  </div>
+
+                  <div class="kitchen-products">
+                    <div class="pree-products">
+                       <img style="height: 4cm; width: 5.3cm; margin-top: .8cm;" src="https://rukminim2.flixcart.com/image/612/612/knj7wcw0/electric-kettle/g/u/k/insta-electric-kettle-2000-insta-electric-kettle-2000-milton-original-imag26y6qu4tekzk.jpeg?q=70">
+                       <p style="color: black; margin-top: -4.8cm; margin-left: 1.4cm;"><strong>Kettle</strong></p>
+                    </div>
+                    <div class="pre-product-details">
+                       <h3 style="margin-top: 1.3cm; margin-left: 1cm; font-size: 22px;">12.03 $</h3>
+                       <p><s><strong style="color: green; margin-left: 1.3cm;">14.45 $</strong></s></p>
+                       <button class="kitchen-button">Buy Now</button>
+                    </div>
+
+                  </div>
+
+
+                  <div class="kitchen-products">
+                    <div class="pree-products">
+                       <img style="height: 4cm; width: 5.3cm; margin-top: .8cm;" src="https://rukminim2.flixcart.com/image/612/612/koudfgw0/pop-up-toaster/v/l/0/krispy-4-slice-pop-up-toaster-borosil-original-imag37f2r2fegmse.jpeg?q=70">
+                       <p style="color: black; margin-top: -4.8cm; margin-left: 1.4cm;"><strong>Toaster</strong></p>
+                    </div>
+                    <div class="pre-product-details">
+                       <h3 style="margin-top: 1.3cm; margin-left: 1cm; font-size: 22px;">33.71 $</h3>
+                       <p><s><strong style="color: green; margin-left: 1.3cm;">38.98 $</strong></s></p>
+                       <button class="kitchen-button">Buy Now</button>
+                    </div>
+
+                  </div>
+
+
+
+           </div>
+
+
+             <br>
+             <br>
+
+        <div class="kitchenone">
+                        
+            <div class="kitchen-products">
+                <div class="pree-products">
+                   <img style="height: 4cm; width: 5.3cm; margin-top: .8cm;" src="https://glenindia.com/cdn/shop/products/MO-675_700x700.jpg?v=1631862453">
+                   <p style="color: black; margin-top: -4.7cm; margin-left: 1.4cm;"><strong>Microwave</strong></p>
+                </div>
+                <div class="pre-product-details">
+                   <h3 style="margin-top: 1.2cm; margin-left: 1cm; font-size: 22px;">60.09 $</h3>
+                   <p><s><strong style="color: green; margin-left: 1.3cm;">68.32 $</strong></s></p>
+                   <button class="kitchen-button">Buy Now</button>
+                </div>
+
+              </div>
+               
+              
+              <div class="kitchen-products">
+                <div class="pree-products">
+                   <img style="height: 4cm; width: 5.3cm; margin-top: .8cm;" src="https://shop.ttkprestige.com/media/catalog/product/4/1/41877-IMG1_5.jpg">
+                   <p style="color: black; margin-top: -4.8cm; margin-left: 1.4cm;"><strong>Coffee Maker</strong></p>
+                </div>
+                <div class="pre-product-details">
+                   <h3 style="margin-top: 1.2cm; margin-left: 1cm; font-size: 22px;">60.09 $</h3>
+                   <p><s><strong style="color: green; margin-left: 1.3cm;">68.32 $</strong></s></p>
+                   <button class="kitchen-button">Buy Now</button>
+                </div>
+
+              </div>
+
+               
+                 
+              <div class="kitchen-products">
+                <div class="pree-products">
+                   <img style="height: 4cm; width: 5.3cm; margin-top: .8cm;" src="https://www.ifbappliances.com/media/catalog/product/n/e/neptune_vx_12place_setting_dishwasher_fv_1.png">
+                   <p style="color: black; margin-top: -4.7cm; margin-left: 1.4cm;"><strong>Dishwasher</strong></p>
+                </div>
+                <div class="pre-product-details">
+                   <h3 style="margin-top: 1.2cm; margin-left: 1cm; font-size: 22px;">60.09 $</h3>
+                   <p><s><strong style="color: green; margin-left: 1.3cm;">68.32 $</strong></s></p>
+                   <button class="kitchen-button">Buy Now</button>
+                </div>
+
+              </div>
+
+         </div>
+     </section>
+
+
+     
+     <section class="kitchen-appliances-banner" style="margin-top: .8cm;" id="ac">
+      <img height="100%" width="100%" src="https://www.bluestarindia.com/media/343181/corporate-website-banner-1920x648.png">
+</section>
+
+
+<section class="ac">
+      <div class="ac-container">
+         <div class="ac-one">
+            <div class="ac-image">
+               <h3 style="text-align: center;margin-top: .5cm;">Godrej 5-in-1 Convertible AC</h3>
+              <img style="height: 2cm; width:6cm; margin-left: 1.4cm;margin-top: 1cm; " src="https://rukminim2.flixcart.com/image/312/312/xif0q/air-conditioner-new/x/p/3/-original-imagxgpbgszfhzvq.jpeg?q=70">
+              
+            </div>
+            <div class="ac-details">
+               <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">397.24 $</h3>
+               <p><s><strong style="color: green;margin-left: 2.3cm;">402.02 $</strong></s></p>
+               <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+            </div>
+
+         </div>
+
+         <div class="ac-two">
+            <div class="ac-image">
+               <h3 style="text-align: center;margin-top: .5cm;">LG 1.5 Ton 3 Star AC</h3>
+              <img style="height: 2cm; width:6cm; margin-left: 1.4cm;margin-top: 1cm; " src="https://rukminim2.flixcart.com/image/312/312/xif0q/air-conditioner-new/f/c/m/-original-imagxuychhhw9qgh.jpeg?q=70">
+              
+            </div>
+            <div class="ac-details">
+               <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">463.46 $</h3>
+               <p><s><strong style="color: green;margin-left: 2.3cm;">475.30 $</strong></s></p>
+               <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+            </div>
+         </div>
+      </div>
+
+
+      <br>
+      <br>
+
+      <div class="ac-container">
+         <div class="ac-one">
+            <div class="ac-image">
+               <h3 style="text-align: center;margin-top: .5cm;">SAMSUNG Convertible 5-in-1 AC</h3>
+              <img style="height: 2cm; width:6cm; margin-left: 1.4cm;margin-top: 1cm; " src="https://rukminim2.flixcart.com/image/312/312/xif0q/air-conditioner-new/q/p/v/-original-imagx7r3vubr8edw.jpeg?q=70">
+              
+            </div>
+            <div class="ac-details">
+               <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">650.21 $</h3>
+               <p><s><strong style="color: green;margin-left: 2.3cm;">655.77 $</strong></s></p>
+               <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+            </div>
+
+         </div>
+
+         <div class="ac-two">
+            <div class="ac-image">
+               <h3 style="text-align: center;margin-top: .5cm;">Panasonic  7-in-1 AC</h3>
+              <img style="height: 2cm; width:6cm; margin-left: 1.4cm;margin-top: 1cm; " src="https://rukminim2.flixcart.com/image/312/312/xif0q/air-conditioner-new/f/a/j/-original-imagnqgu5mj3btdf.jpeg?q=70">
+              
+            </div>
+            <div class="ac-details">
+               <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">602.06 $</h3>
+               <p><s><strong style="color: green;margin-left: 2.3cm;">612.73 $</strong></s></p>
+               <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+            </div>
+         </div>
+      </div>
+</section>
+
+
+<section class="kitchen-appliances-banner" style="margin-top: .8cm;" id="tv">
+   <img height="100%" width="100%" src="https://www.daiwa.in/wp-content/uploads/2020/06/banner-2-4k-2.png">
+</section>
+
+
+
+<section class="ac">
+   <div class="ac-container">
+      <div class="ac-one">
+         <div class="ac-image">
+            <h3 style="text-align: center;margin-top: .5cm;">SAMSUNG Crystal  TV</h3>
+           <img style="height: 4cm; width:6cm; margin-left: 1.4cm;margin-top: .3cm; " src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/b/i/i/-original-imaguy5ffnchjcyh.jpeg?q=70">
+           
+         </div>
+         <div class="ac-details">
+            <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">349.19 $</h3>
+            <p><s><strong style="color: green;margin-left: 2.3cm;">370.02 $</strong></s></p>
+            <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+         </div>
+
+      </div>
+
+      <div class="ac-two">
+         <div class="ac-image">
+            <h3 style="text-align: center;margin-top: .5cm;">OnePlus Q1 Series </h3>
+           <img style="height: 4cm; width:6cm; margin-left: 1.4cm;margin-top: .5cm; " src="https://rukminim2.flixcart.com/image/312/312/kf5pzm80/television/e/e/p/oneplus-55q1in-original-imafvz83hxngfgey.jpeg?q=70">
+           
+         </div>
+         <div class="ac-details">
+            <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">577.98 $</h3>
+            <p><s><strong style="color: green;margin-left: 2.3cm;">600.88 $</strong></s></p>
+            <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+         </div>
+      </div>
+   </div>
+
+
+   <br>
+   <br>
+
+   <div class="ac-container">
+      <div class="ac-one">
+         <div class="ac-image">
+            <h3 style="text-align: center;margin-top: .5cm;">LG UR7500 (55 inch)</h3>
+           <img style="height: 4cm; width:6cm; margin-left: 1.4cm;margin-top: .5cm; " src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/e/i/m/-original-imagtvdyjzxgz3f7.jpeg?q=70">
+           
+         </div>
+         <div class="ac-details">
+            <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">529.69 $</h3>
+            <p><s><strong style="color: green;margin-left: 2.3cm;">570.00 $</strong></s></p>
+            <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+         </div>
+
+      </div>
+
+      <div class="ac-two">
+         <div class="ac-image">
+            <h3 style="text-align: center;margin-top: .5cm;">Mi 5X (43 inch) TV</h3>
+           <img style="height: 4cm; width:6cm; margin-left: 1.4cm;margin-top: .5cm; " src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/3/h/8/-original-imagu436jn9rsuta.jpeg?q=70">
+           
+         </div>
+         <div class="ac-details">
+            <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">337.15 $</h3>
+            <p><s><strong style="color: green;margin-left: 2.3cm;">349.88 $</strong></s></p>
+            <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+
+<section class="kitchen-appliances-banner" style="margin-top: .8cm;" id="fridge">
+   <img height="100%" width="100%" src="https://home.liebherr.com/media/lhi/homepage/lhi-website-banners-2021/liebherreasyfresh_web-banner2.2-(1).jpg">
+</section>
+
+<section class="fridge">
+    <div class="fridge-sidebar">
+      <div style="height: 100%; width: 100%;">
+       <h3 style="text-orientation: upright; writing-mode: vertical-lr; font-size: 30px; margin-top: 3cm; margin-left: 2cm; color: black; text-shadow: 4px 4px 8px black;"><i>Easy &nbsp; Fresh &nbsp; Technology</i></h3>
+       </div>
+    </div>
+
+    <div class="fridge-mainsection">
+       <div class="fridge-one">
+         <img class="fridge-image" src="https://rukminim2.flixcart.com/image/312/312/xif0q/refrigerator-new/z/i/r/-original-imagx8sgkgpzygzf.jpeg?q=70">
+       </div>
+
+
+       <div  class="fridge-two">
+         <div class="fridge-interior">
+         <h3>SAMSUNG 236 L Frost Free Double Door 2 Star Refrigerator</h3>
+         <button id="rating" style="margin-top: .2cm;background-color:#088178;">4.7<i class="fa-solid fa-star"></i></button>
+         <span>525 Ratings and 25 Reviews</span>
+         
+           <p style="color: black;">Digital Inverter Compressor</p>
+           <p style="color: black;">Built In Stabilizer</p>
+           <p style="color: black;">253L Capacity</p>
+           <p style="color: black;">154.5cm Height</p>
+           <p style="color: black;">55.5cm Width</p>
+           <p style="color: black;"> <span>1 Year</span></p>
+         </div>
+           <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+              <button class="buy-now">Buy Now</button>
+           </div>
+            
+       </div>
+
+
+
+       <div class="fridge-three">
+         <div style="margin-top: 3.5cm;">
+         <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">240.63 <strong style="color:#088178;">$</strong></h2>
+         <p style="color: black; text-align: center;"><s><strong>252.78 </strong></s><strong style="color: #088178;">$</strong></p>
+       </div>
+       </div>
+    </div>
+
+    <br>
+
+    
+    <div class="fridge-mainsection" style="margin-top: .5cm;">
+      <div class="fridge-one">
+        <img class="fridge-image" src="https://rukminim2.flixcart.com/image/312/312/xif0q/refrigerator-new/8/x/t/-original-imagwnjz3dnknunt.jpeg?q=70">
+      </div>
+
+
+      <div  class="fridge-two">
+        <div class="fridge-interior">
+        <h3>SAMSUNG 183 L Direct Cool Single Door 4 Star Refrigerator</h3>
+        <button id="rating" style="margin-top: .2cm;background-color:green;">4.2<i class="fa-solid fa-star"></i></button>
+        <span>315 Ratings and 30 Reviews</span>
+        
+          <p style="color: black;">Digital Inverter Compressor</p>
+          <p style="color: black;">Built In Stabilizer</p>
+          <p style="color: black;">183L Capacity</p>
+          <p style="color: black;">4 Star : For Energy savings up to 45%</p>
+          <p style="color: black;">Base Stand with Drawer</p>
+          <p style="color: black;"> <span>1 Year</span></p>
+        </div>
+          <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+             <button class="buy-now">Buy Now</button>
+          </div>
+           
+      </div>
+
+
+
+      <div class="fridge-three">
+        <div style="margin-top: 3.5cm;">
+        <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">197.35 <strong style="color:#088178;">$</strong></h2>
+        <p style="color: black; text-align: center;"><s><strong>200.45 </strong></s><strong style="color: #088178;">$</strong></p>
+      </div>
+      </div>
+   </div>
+
+   <br>
+
+   <div class="fridge-mainsection" style="margin-top: .5cm;">
+      <div class="fridge-one">
+        <img class="fridge-image" src="https://rukminim2.flixcart.com/image/312/312/xif0q/refrigerator-new/d/n/r/-original-imagw4sn5mhz6hr3.jpeg?q=70">
+      </div>
+
+
+      <div  class="fridge-two">
+        <div class="fridge-interior">
+        <h3>SAMSUNG 363 L Frost Free Double Door 2 Star Refrigerator</h3>
+        <button id="rating" style="margin-top: .2cm;background-color:#088178;">4.9<i class="fa-solid fa-star"></i></button>
+        <span>5211 Ratings and 259 Reviews</span>
+        
+          <p style="color: black;">Digital Inverter Compressor</p>
+          <p style="color: black;">Built In Stabilizer</p>
+          <p style="color: black;">363L Capacity</p>
+          <p style="color: black;">2 Star : For Energy savings up to 20%</p>
+          <p style="color: black;">Frost Free </p>
+          <p style="color: black;"> <span>1 Year</span></p>
+        </div>
+          <div style="margin-top: -2.4cm; margin-left: 11.5cm;">
+             <button class="buy-now">Buy Now</button>
+          </div>
+           
+      </div>
+
+
+
+      <div class="fridge-three">
+        <div style="margin-top: 3.5cm;">
+        <h2 style="font-size: 32px; text-align: center; margin-top: 2.5cm;">481.65 <strong style="color:#088178;">$</strong></h2>
+        <p style="color: black; text-align: center;"><s><strong>502.77 </strong></s><strong style="color: #088178;">$</strong></p>
+      </div>
+      </div>
+   </div>
+
+
+</section>
+
+<section class="kitchen-appliances-banner" style="margin-top: .8cm;" id="washingmachine">
+   <img height="100%" width="100%" src="https://www.mylloyd.com/media/features/Power_Jet_Tech_check.png">
+</section>
+
+<section class="washdefinition">
+  <h3 class="section-p1">Washing  Machine: A Home Pre-requisite</h3>
+  <p style="margin-left: 3cm; margin-top: -.5cm; line-height: .6cm;"><i>Who enjoys doing laundry? Who enjoys going to the laundry? Well, if there is a pile of dirty clothes lying
+    in your house, that only keeps growing every passing day, it’s time you did yourself and your family a
+     favour by investing in a washing machine! Don’t own one? You’re missing out on a wonderful home appliance
+      that can truly transform your lifestyle! Time saving and hugely resourceful,  a washing machine is 
+      probably one of the top most recommendations when it comes to practical home solutions</i></p>
+
+</section>
+
+
+
+<section class="ac">
+   <div class="ac-container">
+      <div class="ac-one">
+         <div class="ac-image">
+            <h3 style="text-align: center;margin-top: .5cm;">Haier 8 kg Super Drum 525</h3>
+           <img style="height: 4cm; width:3cm; margin-left: 3cm;margin-top: .3cm; " src="https://rukminim2.flixcart.com/image/150/150/xif0q/washing-machine-new/i/n/v/-original-imagx3bzu6c9jtzh.jpeg?q=70">
+           
+         </div>
+         <div class="ac-details">
+            <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">361.14 $</h3>
+            <p><s><strong style="color: green;margin-left: 2.3cm;">382.22 $</strong></s></p>
+            <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+         </div>
+
+      </div>
+
+      <div class="ac-two">
+         <div class="ac-image">
+            <h3 style="text-align: center;margin-top: .5cm;">SAMSUNG 8 kg 5 star...</h3>
+           <img style="height: 4.2cm; width:2.8cm; margin-left: 3cm;margin-top: .3cm; " src="https://rukminim2.flixcart.com/image/312/312/xif0q/washing-machine-new/k/0/p/-original-imagh74bvhrzepng.jpeg?q=70">
+           
+         </div>
+         <div class="ac-details">
+            <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">235.20 $</h3>
+            <p><s><strong style="color: green;margin-left: 2.3cm;">245.33 $</strong></s></p>
+            <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+         </div>
+      </div>
+   </div>
+
+
+   <br>
+   <br>
+
+   <div class="ac-container">
+      <div class="ac-one">
+         <div class="ac-image">
+            <h3 style="text-align: center;margin-top: .5cm;">IFB 9 kg Aqua Dual Steam,</h3>
+           <img style="height: 4.4cm; width:3cm; margin-left: 3cm;margin-top: .2cm; " src="https://rukminim2.flixcart.com/image/312/312/xif0q/washing-machine-new/w/q/r/-original-imagkd23xfssqu9j.jpeg?q=70">
+           
+         </div>
+         <div class="ac-details">
+            <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">370.77 $</h3>
+            <p><s><strong style="color: green;margin-left: 2.3cm;">390.23 $</strong></s></p>
+            <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+         </div>
+
+      </div>
+
+      <div class="ac-two">
+         <div class="ac-image">
+            <h3 style="text-align: center;margin-top: .5cm;">IFB 8 kg Powered by AI</h3>
+           <img style="height: 4.4cm; width:3cm; margin-left: 3cm;margin-top: .1cm; " src="https://rukminim2.flixcart.com/image/312/312/xif0q/washing-machine-new/f/7/p/-original-imagteu9y9gajbyh.jpeg?q=70">
+           
+         </div>
+         <div class="ac-details">
+            <h3 style="margin-top: 1.3cm; text-align: center; font-size: 22px;">409.31 $</h3>
+            <p><s><strong style="color: green;margin-left: 2.3cm;">412.44 $</strong></s></p>
+            <button class="kitchen-button" style="margin-left: 2cm;">Buy Now</button>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+   
+<section id="newsletters" class="section-p1" style="margin-top: 1cm;">
+   <div style="float: left; width: 50%; background-color:#253342; height: 4cm;">
+     <div style="margin-top: 1.5cm; margin-left: 3cm;">
+      <h4 style="color: #c8c8c8; font-size: 22px ; font-weight: 700;">Sign Up For Newsletters</h4>
+      <p style="font-size: 14px ; font-weight: 600; color: #818ea0;">Get E-mail update about our shop and <span style="color: #ffbd27;">Special offers</span></p>
+     </div>
+   </div>
+   
+   <div style="float: left; width: 50%; background-color: #253342; height: 4cm;">
+     <div class="form"  style="margin-top: 1.5cm; margin-left: 4cm;">
+        <input  type="email" placeholder="Enter your E-mail address">
+        <a href="#"><button class="normal">Sign Up</button></a>
+        </div>
+   </div>
+</section>
+
+
+<footer id="footdiv" class="section-p1" style="height: 9cm; background-color:white;">
+
+<div class="col" style="float: left; width: 35%;">
+ <img class="logo" style="width: 4cm; height: 3.8cm; margin-top: -1.4cm;" src="S-removebg-preview.png">
+ 
+ <h4 style="font-size: large; margin-top: 2.4cm; margin-left: .4cm;">Contact</h4>
+ <p style="margin-left: .4cm;"><strong>Address: </strong>562 Willington road, Street 32 ,San Francisco </p>
+ <p style="margin-left: .4cm;"><strong>Phone: </strong> 6235763536 / (+91) 88 2568 7536</p>
+ <p style="margin-left: .4cm;"><strong>Hours</strong>10:00 - 18:00 , Mon - Sat</p>
+ <br>
+ <div class="follow">
+   <h4 style="font-size: large; margin-left: .4cm;">Follow us</h4>
+   <div class="icon" style="margin-left: .4cm;">
+        <i style="color: #088178;" class="fab fa-facebook-f"></i>
+        <i style="color: #088178;" class="fab fa-twitter"></i>
+        <i style="color: #DD2A7B;" class="fab fa-instagram"></i>
+        <i style="color: #bd081c;" class="fab fa-pinterest-p"></i>
+        <i style="color: #E62117;" class="fab fa-youtube"></i>
+   </div>
+ </div>
+</div>
+
+
+<div class="col" style="float: left; width: 15%;">
+ <h4 style="font-size: large; margin-left: .4cm;">About</h4>
+
+ <a  href="about.html">About us</a>
+ <br>
+ <p></p>
+ <a  href="#">Delivery Information</a>
+ <br>
+ <p></p>
+ <a href="#">Privacy Policy</a>
+ <br>
+ <p></p>
+ <a href="#">Terms & Conditions</a>
+ <br>
+ <p></p>
+ <a href="contact.html">Contact us</a>
+</div>
+
+
+<div class="col" style="float: left; width: 15%;">
+
+ <h4 style="font-size: large; margin-left: .4cm;">My Accounts</h4>
+ <a href="#">Sign In</a>
+ <br>
+ <p></p>
+ <a href="#">View Cart</a>
+ <br>
+ <p></p>
+ <a href="#">My Wishlist</a>
+ <br>
+ <p></p>
+ <a  href="#">Track My Order</a>
+ <br>
+ <p></p>
+ <a href="#">Help</a>
+</div>
+
+
+<div class="col install" style="float: left; width: 35%;">
+<h4 style="font-size: large; margin-left: .4cm;">Install App</h4>
+<p style="margin-left: .4cm;">From App Store or Google Play</p>
+<br>
+ <div class="row">
+     <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;"  src="png-transparent-google-play-app-store-app-market-download-button (1).png">
+     <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;" src="playstore.png">
+  </div>
+  <br>
+  <p style="margin-left:.4cm;">Secured Payment Gateways</p>
+  <img style="width: 5.5cm; height: 2.3cm; margin-left: .4cm; margin-top: -.5cm;" src="Payment-methods.png.2b9ba23475aaa15189f555f77ec3a549-removebg-preview.png">
+</div>
+
+<div class="copyright">
+  <p style="margin-left: 10.8cm; margin-top: -.8cm;"><i>copyright @ 2024 Coding Artist | Salex reserved</i></p>
+</div>
+</footer>
+
+
+
+        <script src="ecommerce.js"></script>
+    </body>
+</html>

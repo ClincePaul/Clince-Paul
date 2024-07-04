@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>salex.com</title>
+        <link rel="stylesheet" href="ecommerce.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#searchproduct").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myDiv *").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+        
+        
+        <script> 
+            $(document).ready(function(){
+              $("#searchproduct").click(function(){
+                $(".demosearch").slideToggle();
+              });
+            });
+            </script>
+
+
+
+
+           
+<style>
+   .demosearch{
+        background-color: white; 
+        height: 3cm;
+         width: 6cm;
+          margin-left: 3.5cm;
+           position: absolute;
+           box-shadow: 2px 2px 4px black;
+           margin-top: .3cm;
+           overflow: hidden;
+          display: none;
+          border-radius: 10px;
+        
+    }
+    .demosearch p a{
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+        margin-left: .3cm;
+    }
+    .demosearch p a:hover{
+        color: blue;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+</style>
+
+   </head>
+
+    <body>
+      
+        <section id="header">
+           <div class="logo" onclick="window.location.href='home.html';">
+               <img style="width: 4cm; height: 4cm; margin-top: -.8cm; margin-left: .8cm;"  src="S-removebg-preview.png">
+           </div>
+
+             
+           <div class="searchbar">
+
+            <input id="searchproduct" type="text" placeholder="Search...">
+           <div class="demosearch">
+            <div id="myDiv">
+               <p><a href="b1product.html">G-Shock Watch</a></p>
+               <p><a href="bproduct.html">Blue Cotton  Trousers</a></p>
+               <p><a href="b2product.html">Black Regular Shorts</a></p>
+               <p><a href="b3product.html">Men Solid Ankle </a></p>
+               <p><a href="b5product.html"> Round Neck  Black T-Shirt</a></p>
+               <p><a href="b6product.html">Round Neck Red T-Shirt </a></p>
+               <p><a href="b7product.html">Women Black Dress </a></p>
+               <p><a href="b8product.html"> Women  Pink Dress</a></p>
+               <p><a href="b9product.html"> Women Dark Blue  Dress</a></p>
+               <p><a href="cproduct.html"> Acer Nitro 5 Laptop</a></p>
+               <p><a href="c1product.html"> ASUS ROG Strix Laptop</a></p>
+               <p><a href="c2product.html"> DELL Intel Core i5 Laptop</a></p>
+               <p><a href="c3product.html"> SAMSUNG  Book 2 Laptop</a></p>
+               <p><a href="c4product.html"> OnePlus 11 5G Phone</a></p>
+               <p><a href="c5product.html"> OnePlus 10 Pro 5G</a></p>
+               <p><a href="c6product.html"> IQOO Z7 Pro 5G </a></p>
+               <p><a href="c7product.html"> Apple iPhone 15</a></p>
+               <p><a href="c8product.html"> boAt Rockerz 255 earphone</a></p>
+               <p><a href="c9product.html"> Canon 1500D DSLR Camera</a></p>
+               <p><a href="c10product.html"> beatXP Tune XPods wirless earphone</a></p>
+               <p><a href="c11product.html"> TECHON shinecon vr box</a></p>
+
+               <p><a href="Dproduct.html"> Men Regular Wear  White Sandal</a></p>
+               <p><a href="D1product.html"> Men Polyester White, Black T-Shirt</a></p>
+               <p><a href="D2product.html"> Pack of 4 Men Round Neck t-shirt</a></p>
+               <p><a href="D3product.html"> Men  Round Neck Cotton  Black T-Shirt</a></p>
+               <p><a href="D4product.html"> Orange Running Shoes For Men</a></p>
+               <p><a href="D5product.html"> Acer NITRO 21.5 inch Laptop</a></p>
+               <p><a href="D6product.html"> Charger</a></p>
+               
+               <p><a href="sproduct.html"> Pure Cotton Brown T-Shirt</a></p>
+               <p><a href="s1product.html">   Printed Casual Shirt</a></p>
+               <p><a href="s2product.html"> Men check t-shirt</a></p>
+               <p><a href="s3product.html">  Running Shoes For Men</a></p>
+               <p><a href="s4product.html"> Men check t-shirt</a></p>
+               <p><a href="s5product.html">  puma Men Slides </a></p>
+               <p><a href="s6product.html"> Ferrari RS-X Sneakers for men</a></p>
+               <p><a href="s7product.html"> Men Solid  Black T-Shirt </a></p>
+               <p><a href="s8product.html"> allen solly  green Casual Shirt</a></p>
+               <p><a href="s9product.html">  raymond Formal Shirt</a></p>
+
+               <p><a href="mobilecollection.html">phone store</a></p>
+               <p><a href="mobilecollection.html">oppo phones</a></p>
+               <p><a href="mobilecollection.html">realme phones</a></p>
+               <p><a href="mobilecollection.html">nothing phones</a></p>
+
+               <p><a href="Grocery.html">Grocery store</a></p>
+               <p><a href="Appliance.html"> Home Appliances</a></p>
+               <p><a href="countdown.html"> baby products</a></p>
+               
+            </div>
+           </div>
+
+            </div>
+
+             
+             <div class="navbar">
+            
+               
+               <ul>
+              
+                 <li><a class="active href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               </ul>
+               
+           </div>
+        </section>
+
+
+        <section id="page-header" style="  background-color:#fbc3d8; height: 18cm;">
+         <div id="hero1">
+            <div class="motion1" >
+            <h4>Trade-in-offer</h4>
+            <h2>Super value deals</h2>
+            <h1 style="color: #088178;">On all products</h1>
+            <p>save more with coupons & up to 70% off !</p>
+            
+            <button id="blinking" style="width: 4cm; height: 2cm;border: none; border-radius: 50%; color: #088178;
+            background-color: aquamarine; color: black; font-weight: 600; font-size:20px;" class="firstbtn"><a style="text-decoration: none; color: black;" href="shop.html">Shop Now</a></button>
+            </div>
+         </div>
+         <div id="hero2">
+           <img class="motion" src="resect img.png">
+         </div>
+        </section>
+        
+
+      <section id="feature" style="margin-top: 2cm;">
+         <div class="box1" onclick="window.location.href='shipping.html';">
+             <div class="imgbox1">
+                <img style="height: 3cm; width: 4cm; margin-left: 1.2cm; " src="istockphoto-1435225162-612x612-removebg-preview.png">
+                <h6 style="text-align: center;  color: #088178;border-radius: 50%; font-size: medium;">Free Shipping</h6>
+             </div>
+         </div>
+
+         <div class="box1">
+            <div class="imgbox1">
+               <img class="img1" style="height: 3cm; width: 4cm; margin-left: .45cm;" src="images-removebg-preview (2).png">
+               <h6 style="text-align: center; color: #088178;border-radius: 50%; font-size: medium;">Online Order</h6>
+            </div>
+        </div>
+        
+        <div class="box1" onclick="window.location.href='Savemoney.html';">
+            <div class="imgbox1">
+               <img class="img1" style="height: 3cm; width: 4cm; margin-left: .1cm;" src="how-to-save-money-daily-monthly-and-long-term-4684028_V1-80848e0491954ca48f276a4032476a42-removebg-preview.png">
+               <h6 style="text-align: center; color: #088178;border-radius: 50%; font-size: medium;">Save Money</h6>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="imgbox1">
+               <img class="img1" style="height: 2.8cm; width: 3.8cm; margin-left: .5cm; margin-top: .2cm;" src="download__1_-removebg-preview (1).png">
+               <h6 style="text-align: center; color: #088178;border-radius: 50%; font-size: medium;">Promotions</h6>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="imgbox1">
+               <img class="img1" style="height: 2.7cm; width: 4cm; margin-left: .5cm; margin-top: .2cm;" src="download-removebg-preview (2).png">
+               <h6 style="text-align: center; color: #088178;border-radius: 50%; font-size: medium;">Happy Sell</h6>
+            </div>
+        </div>  
+      </section>
+
+
+      <section id="product" class="section-p1" style="background-color: white;">
+          <h2 style="text-align: center;">Featured Products</h2>
+          <p style=" text-align: center;"><i>Summer Collection New Modern Design</i></p>
+
+          <div class="pro-container"  style="width: 100%; height: 18.8cm;">
+            <div style="float: left;">
+             <div class="pro" onclick="window.location.href='sproduct.html';">
+               <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/b/y/q/-original-imags9v7z98vjvmw.jpeg?q=70">
+               <div class="des">
+                 <span>ADIDAS</span>
+                 <h5>Men Striped Round Neck  Brown T-Shirt</h5>
+                   <div style="margin-left: .4cm;" id="containerIntro">
+                     <h1 class="start" style="color: #088178;">$18</h1>&nbsp;&nbsp;
+                    <p class="start" style="color: red;"><s>$23.66</s></p>
+                     <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+                  </div>
+              </div>
+             </div>
+           </div> 
+
+           <div style="float: left;">
+            <div class="pro" onclick="window.location.href='s1product.html';">
+              <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/g/9/p/s-black-5-jai-textiles-original-imag42m5hcfue7np-bb.jpeg?q=70&crop=true">
+              <div class="des">
+                <span>ADIDAS</span>
+                <h5>Men Slim Fit Printed Casual Shirt</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;">$16.44</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$28.85</s></p>
+                    <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+                 </div>
+             </div>
+            </div>
+          </div> 
+
+          <div style="float: left;">
+            <div class="pro" onclick="window.location.href='s2product.html';" >
+              <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/c/s/n/xl-nm52-fs-checkered-black-lewel-original-imagszhvvtaeaqzj.jpeg?q=70&crop=true">
+              <div class="des">
+                <span>ADIDAS</span>
+                <h5>Men Slim Fit Solid Casual Shirt</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;">$14.9</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$24.04</s></p>
+                    <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+                 </div>
+             </div>
+            </div>
+          </div>
+
+          <div style="float: left;">
+            <div class="pro" onclick="window.location.href='s3product.html';" >
+              <img src="https://rukminim2.flixcart.com/image/832/832/l3dcl8w0/shoe/d/s/m/8-ga1118-8-adidas-cblack-stone-actgol-original-imagegegzhhgzhk3.jpeg?q=70&crop=true">
+              <div class="des">
+                <span>ADIDAS</span>
+                <h5>SOLARGLIDE 6 M Running Shoes For Men</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;" id="blinking2">$84.17</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$168.35</s></p>
+                    <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+                 </div>
+             </div>
+            </div>
+          </div>
+ 
+          <div style="float: left;">
+            <div class="pro" onclick="window.location.href='s4product.html';" >
+              <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/y/a/0/-original-imagsbywq8hxbdq6.jpeg?q=70">
+              <div class="des">
+                <span>ADIDAS</span>
+                <h5>Men Printed Grey Track Pants</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;">$36.05</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$60.09</s></p>
+                    <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+                 </div>
+             </div>
+            </div>
+          </div>
+
+          
+          
+          <div style="float: left;">
+            <div class="pro" onclick="window.location.href='s5product.html';" >
+              <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/t/h/5/-original-imagwu2vmfwbuc5n.jpeg?q=70">
+              <div class="des">
+                <span>PUMA </span>
+                <h5>Men Slides  ( red,Black 10) </h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;" id="blinking2">$16.58</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$36.05</s></p>
+                    <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+                 </div>
+             </div>
+            </div>
+          </div>
+            
+          <div style="float: left;">
+            <div class="pro1" onclick="window.location.href='s6product.html';" >
+              <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/g/i/p/-original-imagsc2pwtjkfark.jpeg?q=70">
+              <div class="des">
+                <span>PUMA</span>
+                <h5>Ferrari RS-X Sneakers For Men  (White)</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;">$72.12</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$144.24</s></p>
+                    <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+                 </div>
+             </div>
+            </div>
+          </div>
+             
+  
+
+          <div style="float: left;">
+            <div class="pro" onclick="window.location.href='s7product.html';" >
+              <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/j/m/0/xl-68081701-puma-original-imagrsfpuzzhkydt.jpeg?q=70">
+              <div class="des">
+                <span>PUMA</span>
+                <h5>Men Solid Polo Neck  Black T-Shirt</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;">$9.12</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$20.42</s></p>
+                    <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+                 </div>
+             </div>
+            </div>
+          </div>
+
+          <div style="float: left;">
+            <div class="pro" onclick="window.location.href='s8product.html';" >
+              <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/c/n/h/-original-imagsjhhf9vegzef.jpeg?q=70">
+              <div class="des">
+                <span>Allen Solly</span>
+                <h5>Men Slim Fit Spread Collar Casual Shirt</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;" id="blinking2">$8.75</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$18.37</s></p>
+                    <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+                 </div>
+             </div>
+            </div>
+          </div>
+           
+          <div style="float: left;">
+            <div class="pro" onclick="window.location.href='s9product.html';" >
+              <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/2/e/s/-original-imagw7y5ytryddv6.jpeg?q=70">
+              <div class="des">
+                <span>Raymond </span>
+                <h5>Men Slim Fit Self Design Formal Shirt</h5>
+                  <div style="margin-left: .4cm;" id="containerIntro">
+                    <h1 class="start" style="color: #088178;">$10.22</h1>&nbsp;&nbsp;
+                   <p class="start" style="color: red;"><s>$27.64</s></p>
+                    <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+                 </div>
+             </div>
+            </div>
+          </div>
+
+         </div>
+      </section>
+
+       
+      <section id="banner" class="section-m1">
+           <h4 style="margin-left: 16cm; color: aliceblue;">Repair Services</h4>
+           <h2 style="margin-left: 16cm; color: aqua;">Up to <span style="color:green;"> 70% off</span>-All <br> T-Shirts & Electronics</h2>
+           <br>
+           <a href="explore1.html"><button style="margin-left: 16cm;" class="normal" >Explore More</button></a>
+      </section>
+
+      <section id="product" class="section-p1">
+        <h2 style="text-align: center;">New Arrivals</h2>
+        <p style=" text-align:center"><i style="color:#088178;">Summer Collection New Modern Design</i></p>
+        
+        <div class="pro-container" style="width: 100%; height: 20cm;">
+          <div style="float: left;">
+           <div class="pro" onclick="window.location.href='bproduct.html';">
+             <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/b/3/l/-original-imaghhubtgpmbqhe.jpeg?q=70">
+             <div class="des">
+               <span>Roadster </span>
+               <h5>Men Slim Fit Blue Cotton Blend Trousers</h5>
+                 <div style="margin-left: .4cm;" id="containerIntro">
+                   <h1 class="start" style="color: #088178;">$10.99</h1>&nbsp;&nbsp;
+                  <p class="start" style="color: red;"><s>$15.62</s></p>
+                   <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+                </div>
+            </div>
+           </div>
+         </div> 
+
+         <div style="float: left;">
+          <div class="pro" onclick="window.location.href='b1product.html';">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/j/s/v/-original-imagqjestrsymmpf.jpeg?q=70">
+            <div class="des">
+              <span>CASIO </span>
+              <h5>G-Shock ( GA-2100-4ADR ) Digital Watch </h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$82.20</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$110.57</s></p>
+                  <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+               </div>
+           </div>
+          </div>
+        </div> 
+
+        <div style="float: left;">
+          <div class="pro"onclick="window.location.href='b2product.html';" >
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/short/p/r/i/l-bermuda-shorts-wild-camo-original-imagq8pycqfhvtar.jpeg?q=70">
+            <div class="des">
+              <span>WILD CAMO</span>
+              <h5>Pack of 2 Printed Men Regular Shorts</h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$5.04</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$12.01</s></p>
+                  <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color: yellow; height: 1.2cm; width: 1.3cm;" id="blinking">Combo Offer</button></a>
+               </div>
+           </div>
+          </div>
+        </div>
+
+        <div style="float: left;">
+          <div class="pro" onclick="window.location.href='b3product.html';">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sock/r/6/p/free-12-nt-ankle-socks-mix4-12p-5-krijo-original-imagn6thjwfrcydj.jpeg?q=70">
+            <div class="des">
+              <span>krijo</span>
+              <h5>Men Ankle Length (Pack of 12)</h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$2.93</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$7.02</s></p>
+                  <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:yellow; height: 1.2cm; width: 1.3cm;" id="blinking">Combo Offer</button></a>
+               </div>
+           </div>
+          </div>
+        </div>
+
+        <div style="float: left;">
+          <div class="pro"  onclick="window.location.href='b4product.html';">
+            <img src="https://rukminim2.flixcart.com/image/612/612/kxrvi4w0/shoe/d/e/6/11-m490nn6-11-5-new-balance-pigment-gunmetal-original-imaga5zf7tebwhwb.jpeg?q=70">
+            <div class="des">
+              <span>New Balance</span>
+              <h5>490 Running Shoes For Men </h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$30.06</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$60.11</s></p>
+                  <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+               </div>
+           </div>
+          </div>
+        </div>
+
+        <br>
+        
+        <div style="float: left;">
+          <div class="pro" onclick="window.location.href='b5product.html';" >
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/8/x/y/s-mens-compression-top-t-shirt-with-pant-kyk-original-imagg7bnqnnwhvjj.jpeg?q=70">
+            <div class="des">
+              <span>KYK</span>
+              <h5>Men Solid Round Neck T-Shirt</h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;" id="blinking2" >$5.89</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$7.21</s></p>
+                  <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+               </div>
+           </div>
+          </div>
+        </div>
+          
+        <div style="float: left;">
+          <div class="pro"  onclick="window.location.href='b6product.html';"   >
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/l/w/u/xl-men-s-vest-regular-fit-sleeveless-solid-round-neck-sport-original-imagj2rjhbhgkgxq.jpeg?q=70">
+            <div class="des">
+              <span>JUKEBOX </span>
+              <h5>Men Solid Round Neck T-Shirt</h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$72.12</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$144.24</s></p>
+                  <a href="#"><button id="blinking"  style=" margin-left: .3cm; margin-bottom: .4cm;  border-radius: 50%; background-color:yellow; height: 1.2cm; width: 1.2cm;">New Offer</button></a>
+               </div>
+           </div>
+          </div>
+        </div>
+
+        <div style="float: left;">
+          <div class="pro"  onclick="window.location.href='b7product.html';"   >
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/dress/f/x/a/xl-251-annsh-apparel-original-imagw9545h4my9m5.jpeg?q=70">
+            <div class="des">
+              <span>Annsh Apparel </span>
+              <h5>Women Fit and Flare Black Dress</h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$4.80</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$24.05</s></p>
+                  <a href="#"><button  style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+               </div>
+           </div>
+          </div>
+        </div>
+
+        <div style="float: left;">
+          <div class="pro"  onclick="window.location.href='b8product.html';"    >
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/dress/h/j/g/xxl-jenni-dress-sijopa-original-imagrg7agzyefezp.jpeg?q=70">
+            <div class="des">
+              <span>Sijopa </span>
+              <h5>Women Fit and Flare Pink, Grey Dress</h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$3.50</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$18.04</s></p>
+                  <a href="#"><button   style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:#088178; height: 1.2cm; width: 1.2cm;">Buy Now</button></a>
+               </div>
+           </div>
+          </div>
+        </div>
+         
+        <div style="float: left;">
+          <div class="pro3"  onclick="window.location.href='b9product.html';"   >
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/e/6/j/m-all-maternity-combo-1-rangrail-original-imagsc5ty6dgudvc.jpeg?q=70">
+            <div class="des">
+              <span>Puruvanshi </span>
+              <h5>Women Gown Dark Blue, Purple Dress</h5>
+                <div style="margin-left: .4cm;" id="containerIntro">
+                  <h1 class="start" style="color: #088178;">$8.36</h1>&nbsp;&nbsp;
+                 <p class="start" style="color: red;"><s>$18.04</s></p>
+                  <a href="#"><button id="blinking" style=" margin-left: .3cm; margin-bottom: .4cm; border-radius: 50%; background-color:yellow; height: 1.2cm; width: 1.2cm;">Combo Offer</button></a>
+               </div>
+           </div>
+          </div>
+        </div>
+
+       </div>
+    </section>
+
+ 
+
+
+
+     <section class="babybanner">
+       <img width="100%" height="100%" src="https://honestbabyclothing.com/cdn/shop/collections/spring-2023-girls-collection-banner_1296x.jpg?v=1676049517">
+
+       <div class="babybannerbutto">
+        <button onclick="window.location.href='countdown.html';" >Comming Soon</button>
+       </div>
+
+     </section>
+
+
+  
+
+
+    <section class="section-p1" id="photos"  style="height: 7cm;">
+      <div id="minione">
+      <div id="eight">
+        <img style="height: 100%; width: 100%;" src="https://png.pngtree.com/thumb_back/fh260/background/20230426/pngtree-child-looks-to-the-camera-while-standing-in-the-dark-street-image_2522114.jpg">
+        <h4  style="color: white; margin-top: -1.64cm; margin-left: .3cm; font-size: 16px;">SEASONAL SALE</h4>
+        <p style="color: red; margin-left: .3cm;">winter collection-50% off</p>
+       </div>
+
+      <div id="nine">
+         <img style="height: 100%; width: 100%;" src="https://png.pngtree.com/background/20230518/original/pngtree-chinese-boy-is-standing-in-the-middle-of-an-alley-wearing-picture-image_2646148.jpg">
+         <h4 style="color: white; margin-top: -1.64cm; margin-left: .4cm; font-size: 16px;">T-SHIRTS</h4>
+        <p style="color: red; margin-left: .4cm;">new trending prints</p>
+      </div>
+
+      <div id="ten">
+        <img style="width: 100%; height: 100%;" src="https://png.pngtree.com/background/20230612/original/pngtree-young-blonde-woman-in-an-outfit-picture-image_3178929.jpg">
+        <h4 style="color: white; margin-top: -2.1cm; margin-left: 5cm; font-size: 16px;">NEW &nbsp; FOOTWEAR COLLECTION</h4>
+        <p style="color: red; margin-left: 5cm;">Spring/Summer 2024</p>
+      </div>
+      </div>
+    </section>
+
+
+
+
+   <section id="newsletters" >
+      <div style="float: left; width: 50%; background-color:#253342; height: 4cm;">
+        <div style="margin-top: 1.5cm; margin-left: 3cm;">
+         <h4 style="color: #c8c8c8; font-size: 22px ; font-weight: 700;">Sign Up For Newsletters</h4>
+         <p style="font-size: 14px ; font-weight: 600; color: #818ea0;">Get E-mail update about our shop and <span style="color: #ffbd27;">Special offers</span></p>
+        </div>
+      </div>
+      
+      <div style="float: left; width: 50%; background-color: #253342; height: 4cm;">
+        <div class="form"  style="margin-top: 1.5cm; margin-left: 4cm;">
+           <input  type="email" placeholder="Enter your E-mail address">
+           <a href="#"><button class="normal">Sign Up</button></a>
+           </div>
+      </div>
+   </section>
+
+    
+   <footer id="footdiv" class="section-p1" style="height: 9cm; background-color:white;">
+
+    <div class="col" style="float: left; width: 35%;">
+      <img class="logo" style="width: 4cm; height: 3.8cm; margin-top: -1.4cm;" src="S-removebg-preview.png">
+      
+      <h4 style="font-size: large; margin-top: 2.4cm; margin-left: .4cm;">Contact</h4>
+      <p style="margin-left: .4cm;"><strong>Address: </strong>562 Willington road, Street 32 ,San Francisco </p>
+      <p style="margin-left: .4cm;"><strong>Phone: </strong> 6235763536 / (+91) 88 2568 7536</p>
+      <p style="margin-left: .4cm;"><strong>Hours</strong>10:00 - 18:00 , Mon - Sat</p>
+      <br>
+      <div class="follow">
+        <h4 style="font-size: large; margin-left: .4cm;">Follow us</h4>
+        <div class="icon" style="margin-left: .4cm;">
+             <i style="color: #088178;" class="fab fa-facebook-f"></i>
+             <i style="color: #088178;" class="fab fa-twitter"></i>
+             <i style="color: #DD2A7B;" class="fab fa-instagram"></i>
+             <i style="color: #bd081c;" class="fab fa-pinterest-p"></i>
+             <i style="color: #E62117;" class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col" style="float: left; width: 15%;">
+      <h4 style="font-size: large; margin-left: .4cm;">About</h4>
+
+      <a  href="about.html">About us</a>
+      <br>
+      <p></p>
+      <a  href="#">Delivery Information</a>
+      <br>
+      <p></p>
+      <a href="#">Privacy Policy</a>
+      <br>
+      <p></p>
+      <a href="#">Terms & Conditions</a>
+      <br>
+      <p></p>
+      <a href="contact.html">Contact us</a>
+    </div>
+
+
+    <div class="col" style="float: left; width: 15%;">
+
+      <h4 style="font-size: large; margin-left: .4cm;">My Accounts</h4>
+      <a href="#">Sign In</a>
+      <br>
+      <p></p>
+      <a href="#">View Cart</a>
+      <br>
+      <p></p>
+      <a href="#">My Wishlist</a>
+      <br>
+      <p></p>
+      <a  href="#">Track My Order</a>
+      <br>
+      <p></p>
+      <a href="#">Help</a>
+    </div>
+
+
+    <div class="col install" style="float: left; width: 35%;">
+    <h4 style="font-size: large; margin-left: .4cm;">Install App</h4>
+    <p style="margin-left: .4cm;">From App Store or Google Play</p>
+    <br>
+      <div class="row">
+          <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;"  src="png-transparent-google-play-app-store-app-market-download-button (1).png">
+          <img style="width: 4.4cm; height: 1cm; margin-left: .7cm;" src="playstore.png">
+       </div>
+       <br>
+       <p style="margin-left:.4cm;">Secured Payment Gateways</p>
+       <img style="width: 5.5cm; height: 2.3cm; margin-left: .4cm; margin-top: -.5cm;" src="Payment-methods.png.2b9ba23475aaa15189f555f77ec3a549-removebg-preview.png">
+    </div>
+
+    <div class="copyright">
+       <p style="margin-left: 10.8cm; margin-top: -.8cm;"><i>copyright @ 2024 Coding Artist | Salex reserved</i></p>
+    </div>
+   </footer>
+
+
+        <script src="ecommerce.js"></script>
+    </body>
+</html>
